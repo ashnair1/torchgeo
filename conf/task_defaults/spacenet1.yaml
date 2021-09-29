@@ -1,0 +1,14 @@
+experiment:
+  task: "spacenet1"
+  module:
+    loss: "ce"
+    segmentation_model: "unet"
+    encoder_name: "resnet18"
+    encoder_weights: "imagenet"
+    optimizer: "adamw"
+    learning_rate: 1e-3
+    learning_rate_schedule_patience: 2
+  datamodule:
+    batch_size: 2
+    image: "rgb"
+    num_workers: 2

@@ -3,17 +3,26 @@
 
 """TorchGeo trainers."""
 
-from .byol import BYOLTask
-from .classification import ClassificationTask, MultiLabelClassificationTask
-from .regression import RegressionTask
-from .segmentation import SemanticSegmentationTask
+from .chesapeake import ChesapeakeCVPRDataModule, ChesapeakeCVPRSegmentationTask
+from .cyclone import CycloneDataModule, CycloneSimpleRegressionTask
+from .landcoverai import LandcoverAIDataModule, LandcoverAISegmentationTask
+from .naipchesapeake import NAIPChesapeakeDataModule, NAIPChesapeakeSegmentationTask
+from .sen12ms import SEN12MSDataModule, SEN12MSSegmentationTask
+from .spacenet import SpaceNet1DataModule, SpaceNetSegmentationTask
 
 __all__ = (
-    "BYOLTask",
-    "ClassificationTask",
-    "MultiLabelClassificationTask",
-    "RegressionTask",
-    "SemanticSegmentationTask",
+    "ChesapeakeCVPRSegmentationTask",
+    "ChesapeakeCVPRDataModule",
+    "CycloneDataModule",
+    "CycloneSimpleRegressionTask",
+    "LandcoverAIDataModule",
+    "LandcoverAISegmentationTask",
+    "NAIPChesapeakeDataModule",
+    "NAIPChesapeakeSegmentationTask",
+    "SEN12MSDataModule",
+    "SEN12MSSegmentationTask",
+    "SpaceNet1DataModule",
+    "SpaceNetSegmentationTask",
 )
 
 # https://stackoverflow.com/questions/40018681

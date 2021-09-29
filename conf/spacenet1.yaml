@@ -1,0 +1,14 @@
+experiment:
+  task: spacenet1
+  name: spacenet1_test
+
+program:  # These are experiment level arguments
+  experiment_name: spacenet1
+  overwrite: True
+  data_dir: data/spacenet1
+
+trainer:  # These are all the arguments that will be passed to the pl.Trainer
+  min_epochs: 2
+  gpus: 1
+
+
