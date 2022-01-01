@@ -26,6 +26,7 @@ from torchgeo.datamodules import (
     RESISC45DataModule,
     SEN12MSDataModule,
     So2SatDataModule,
+    SpaceNet2DataModule,
     UCMercedDataModule,
 )
 from torchgeo.trainers import (

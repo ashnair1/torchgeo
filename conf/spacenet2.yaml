@@ -1,0 +1,18 @@
+experiment:
+  task: spacenet2
+  name: spacenet2_test
+  datamodule:
+    root_dir: "data/spacenet2"
+    collections: ["sn2_AOI_5_Khartoum"]
+    batch_size: 2
+    image: "PS-RGB"
+    num_workers: 12
+program:  # These are experiment level arguments
+  experiment_name: spacenet2
+  overwrite: True
+
+
+trainer:  # These are all the arguments that will be passed to the pl.Trainer
+  min_epochs: 1
+  max_epochs: 2
+  gpus: 1
