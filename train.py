@@ -53,6 +53,7 @@ TASK_TO_MODULES_MAPPING: Dict[
     "resisc45": (ClassificationTask, RESISC45DataModule),
     "sen12ms": (SemanticSegmentationTask, SEN12MSDataModule),
     "so2sat": (ClassificationTask, So2SatDataModule),
+    "spacenet2": (SemanticSegmentationTask, SpaceNet2DataModule),
     "ucmerced": (ClassificationTask, UCMercedDataModule),
 }
 
