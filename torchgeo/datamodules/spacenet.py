@@ -4,15 +4,15 @@
 """SpaceNet trainers."""
 
 import abc
+import os
 from typing import Any, Dict, List, Optional
 
-import numpy as np
 import pytorch_lightning as pl
-from sklearn.model_selection import train_test_split
-from torch import Generator, Tensor  # type: ignore[attr-defined]
-from torch.utils.data import DataLoader, Subset, random_split
+from torch import Tensor
+from torch.utils.data import DataLoader, Dataset
 from torchvision import transforms as T
 
+from torchgeo.datamodules.utils import dataset_split
 from torchgeo.datasets import SpaceNet2
 
 
@@ -28,6 +28,8 @@ class SpaceNetDataModule(pl.LightningDataModule, abc.ABC):
         seed: int = 42,
         batch_size: int = 64,
         num_workers: int = 4,
+        val_split_pct: float = 0.1,
+        test_split_pct: float = 0.1,
         api_key: Optional[str] = None,
     ) -> None:
         """Initialize a LightningDataModule for SpaceNet DataLoaders.
@@ -42,6 +44,8 @@ class SpaceNetDataModule(pl.LightningDataModule, abc.ABC):
             seed: The seed value to use when doing the train-val split
             batch_size: The batch size to use in all created DataLoaders
             num_workers: The number of workers to use in all created DataLoaders
+            val_split_pct: What percentage of the dataset to use as a validation set
+            test_split_pct: What percentage of the dataset to use as a test set
             api_key: The RadiantEarth MLHub API key to use if the dataset needs to be
                 downloaded
         """
@@ -52,6 +56,8 @@ class SpaceNetDataModule(pl.LightningDataModule, abc.ABC):
         self.seed = seed
         self.batch_size = batch_size
         self.num_workers = num_workers
+        self.val_split_pct = val_split_pct
+        self.test_split_pct = test_split_pct
         self.api_key = api_key
         # TODO: Remove once pretrained backbones with C>3 are ready
         assert len(bands) == 3
@@ -67,14 +73,6 @@ class SpaceNetDataModule(pl.LightningDataModule, abc.ABC):
 
         This includes optionally downloading the dataset. This is done once per node,
         while :func:`setup` is done once per GPU.
-        """
-
-    @abc.abstractmethod
-    def setup(self, stage: Optional[str] = None) -> None:
-        """Create the train/val splits.
-
-        The splits should be done here vs. in :func:`__init__` per the docs:
-        https://pytorch-lightning.readthedocs.io/en/latest/extensions/datamodules.html#setup.
         """
 
     def train_dataloader(self) -> DataLoader[Any]:
@@ -95,11 +93,21 @@ class SpaceNetDataModule(pl.LightningDataModule, abc.ABC):
             shuffle=False,
         )
 
-    # TODO: We need a test_dataloader as well
+    def test_dataloader(self) -> DataLoader[Any]:
+        """Return a DataLoader for testing."""
+        return DataLoader(
+            self.test_dataset,
+            batch_size=self.batch_size,
+            num_workers=self.num_workers,
+            shuffle=False,
+        )
 
 
 class SpaceNet2DataModule(SpaceNetDataModule):
-    """LightningDataModule implementation for SpaceNet 1 dataset."""
+    """LightningDataModule implementation for SpaceNet2 dataset.
+
+    .. versionadded:: 0.3
+    """
 
     def __init__(
         self,
@@ -110,9 +118,11 @@ class SpaceNet2DataModule(SpaceNetDataModule):
         seed: int = 42,
         batch_size: int = 64,
         num_workers: int = 4,
+        val_split_pct: float = 0.1,
+        test_split_pct: float = 0.1,
         api_key: Optional[str] = None,
     ) -> None:
-        """Initialize a LightningDataModule for SpaceNet 1 DataLoader.
+        """Initialize a LightningDataModule for SpaceNet2 DataLoader.
 
         Args:
             root_dir: The ``root`` arugment to pass to the SpaceNet2 Datasets classes
@@ -124,11 +134,22 @@ class SpaceNet2DataModule(SpaceNetDataModule):
             seed: The seed value to use when doing the train-val split
             batch_size: The batch size to use in all created DataLoaders
             num_workers: The number of workers to use in all created DataLoaders
+            val_split_pct: What percentage of the dataset to use as a validation set
+            test_split_pct: What percentage of the dataset to use as a test set
             api_key: The RadiantEarth MLHub API key to use if the dataset needs to be
                 downloaded
         """
         super().__init__(
-            root_dir, image, collections, bands, seed, batch_size, num_workers, api_key
+            root_dir,
+            image,
+            collections,
+            bands,
+            seed,
+            batch_size,
+            num_workers,
+            val_split_pct,
+            test_split_pct,
+            api_key,
         )
 
     def custom_transform(self, sample: Dict[str, Tensor]) -> Dict[str, Tensor]:
@@ -159,10 +180,7 @@ class SpaceNet2DataModule(SpaceNetDataModule):
         This includes optionally downloading the dataset. This is done once per node,
         while :func:`setup` is done once per GPU.
         """
-        # Shouldn't download be true? Also adiant earth
-        # can be enabled as a profile so you can download
-        # w/o api key
-        do_download = self.api_key is not None
+        do_download = len(os.listdir(self.root_dir)) == 0
         _ = SpaceNet2(
             self.root_dir,
             self.image,
@@ -173,39 +191,40 @@ class SpaceNet2DataModule(SpaceNetDataModule):
         )
 
     def setup(self, stage: Optional[str] = None) -> None:
-        """Create the train/val splits.
+        """Initialize the main ``Dataset`` objects.
 
-        The splits should be done here vs. in :func:`__init__` per the docs:
-        https://pytorch-lightning.readthedocs.io/en/latest/extensions/datamodules.html#setup.
+        This method is called once per GPU per run.
         """
-        self.dataset = SpaceNet2(
-            self.root_dir,
-            self.image,
-            self.collections,
-            self.custom_transform,
-            download=False,
-            api_key=self.api_key,
+        train_dataset = SpaceNet2(
+            self.root_dir, self.image, self.collections, self.custom_transform
         )
 
-        # TODO: Choose one of these methods
-        # Method 1
-        train_ids, val_ids = train_test_split(np.arange(len(self.dataset)))
-        self.train_dataset = Subset(self.dataset, train_ids)
-        self.val_dataset = Subset(self.dataset, val_ids)
+        self.train_dataset: Dataset[Any]
+        self.val_dataset: Dataset[Any]
+        self.test_dataset: Dataset[Any]
 
-        # Method 2
-        train_size = 0.75
-        test_size = 1 - train_size
+        if self.val_split_pct > 0.0:
+            if self.test_split_pct > 0.0:
+                self.train_dataset, self.val_dataset, self.test_dataset = dataset_split(
+                    train_dataset,
+                    val_pct=self.val_split_pct,
+                    test_pct=self.test_split_pct,
+                )
+            else:
+                self.train_dataset, self.val_dataset = dataset_split(
+                    train_dataset, val_pct=self.val_split_pct
+                )
+                self.test_dataset = self.val_dataset
 
-        split = [int(i * len(self.dataset)) for i in [train_size, test_size]]
-        self.train_dataset, self.val_dataset = random_split(
-            self.dataset, split, generator=Generator().manual_seed(self.seed)
-        )
+        else:
+            self.train_dataset = train_dataset
+            self.val_dataset = train_dataset
+            self.test_dataset = train_dataset
 
 
 if __name__ == "__main__":
     sn2 = SpaceNet2DataModule(
-        root_dir="/home/ashwin/Desktop/Projects/torchgeo/data/spacenet2",
+        root_dir="/media/ashwin/DATA2/torchgeo/data/spacenet2",
         collections=["sn2_AOI_5_Khartoum"],
         image="MS",
     )
