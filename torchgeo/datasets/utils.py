@@ -15,6 +15,7 @@ from dataclasses import dataclass
 from datetime import datetime, timedelta
 from typing import (
     Any,
+    Callable,
     Dict,
     Iterable,
     Iterator,
@@ -34,6 +35,8 @@ from torch import Tensor
 from torchvision.datasets.utils import check_integrity, download_url
 from torchvision.utils import draw_segmentation_masks
 
+from torchgeo.datasets.geo import VisionDataset
+
 __all__ = (
     "check_integrity",
     "download_url",
@@ -52,6 +55,62 @@ __all__ = (
     "rgb_to_mask",
     "percentile_normalization",
 )
+
+
+class PredictDataset(VisionDataset):
+    """Prediction dataset for VisionDatasets."""
+
+    def __init__(
+        self,
+        root: str,
+        transforms: Optional[Callable[[Dict[str, Any]], Dict[str, Any]]] = None,
+        bands: Tuple[int, ...] = (1, 2, 3),
+    ) -> None:
+        """Initialize a new SpaceNet Dataset instance.
+
+        Args:
+            root: root directory where dataset can be found
+            transforms: a function/transform that takes input sample and its target as
+                entry and returns a transformed version.
+            bands: bands to be used.
+
+        Raises:
+            AssertionError: if len(bands) != 3
+        """
+        self.files = [os.path.join(root, i) for i in os.listdir(root)]
+        self.transforms = transforms
+        assert len(bands) == 3
+        self.bands = bands
+
+    def __len__(self) -> int:
+        """Return the number of samples in the dataset.
+
+        Returns:
+            length of the dataset
+        """
+        return len(self.files)
+
+    def _load_image(self, path: str) -> Tensor:
+        """Load a single image.
+
+        Args:
+            path: path to the image
+
+        Returns:
+            the image
+        """
+        with rasterio.open(path) as img:
+            array = img.read(self.bands).astype(np.int32)
+            tensor: Tensor = torch.from_numpy(array)  # type: ignore[attr-defined]
+            return tensor
+
+    def __getitem__(self, index: int) -> Dict[str, Tensor]:
+        file = self.files[index]
+        img = self._load_image(file)
+        sample = {"image": img}
+        if self.transforms is not None:
+            sample = self.transforms(sample)
+        return sample
 
 
 class _rarfile:

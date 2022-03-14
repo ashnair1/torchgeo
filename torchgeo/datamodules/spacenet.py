@@ -14,6 +14,7 @@ from torchvision import transforms as T
 
 from torchgeo.datamodules.utils import dataset_split
 from torchgeo.datasets import SpaceNet2
+from torchgeo.datasets.utils import PredictDataset
 
 
 class SpaceNetDataModule(pl.LightningDataModule, abc.ABC):
@@ -30,6 +31,7 @@ class SpaceNetDataModule(pl.LightningDataModule, abc.ABC):
         num_workers: int = 4,
         val_split_pct: float = 0.1,
         test_split_pct: float = 0.1,
+        predict_on: Optional[str] = None,
         api_key: Optional[str] = None,
     ) -> None:
         """Initialize a LightningDataModule for SpaceNet DataLoaders.
@@ -46,6 +48,7 @@ class SpaceNetDataModule(pl.LightningDataModule, abc.ABC):
             num_workers: The number of workers to use in all created DataLoaders
             val_split_pct: What percentage of the dataset to use as a validation set
             test_split_pct: What percentage of the dataset to use as a test set
+            predict_on: Directory of images to run inference on
             api_key: The RadiantEarth MLHub API key to use if the dataset needs to be
                 downloaded
         """
@@ -58,6 +61,7 @@ class SpaceNetDataModule(pl.LightningDataModule, abc.ABC):
         self.num_workers = num_workers
         self.val_split_pct = val_split_pct
         self.test_split_pct = test_split_pct
+        self.predict_on = predict_on
         self.api_key = api_key
         # TODO: Remove once pretrained backbones with C>3 are ready
         assert len(bands) == 3
@@ -102,6 +106,15 @@ class SpaceNetDataModule(pl.LightningDataModule, abc.ABC):
             shuffle=False,
         )
 
+    def predict_dataloader(self) -> DataLoader[Any]:
+        """Return a DataLoader for predicting."""
+        return DataLoader(
+            self.predict_dataset,
+            batch_size=1,
+            num_workers=self.num_workers,
+            shuffle=False,
+        )
+
 
 class SpaceNet2DataModule(SpaceNetDataModule):
     """LightningDataModule implementation for SpaceNet2 dataset.
@@ -120,6 +133,7 @@ class SpaceNet2DataModule(SpaceNetDataModule):
         num_workers: int = 4,
         val_split_pct: float = 0.1,
         test_split_pct: float = 0.1,
+        predict_on: Optional[str] = None,
         api_key: Optional[str] = None,
     ) -> None:
         """Initialize a LightningDataModule for SpaceNet2 DataLoader.
@@ -136,6 +150,7 @@ class SpaceNet2DataModule(SpaceNetDataModule):
             num_workers: The number of workers to use in all created DataLoaders
             val_split_pct: What percentage of the dataset to use as a validation set
             test_split_pct: What percentage of the dataset to use as a test set
+            predict_on: Directory of images to run inference on
             api_key: The RadiantEarth MLHub API key to use if the dataset needs to be
                 downloaded
         """
@@ -149,6 +164,7 @@ class SpaceNet2DataModule(SpaceNetDataModule):
             num_workers,
             val_split_pct,
             test_split_pct,
+            predict_on,
             api_key,
         )
 
@@ -171,7 +187,9 @@ class SpaceNet2DataModule(SpaceNetDataModule):
         # Resize to be divisible by 32
         rsz = T.Resize(size)
         sample["image"] = rsz(sample["image"])
-        sample["mask"] = rsz(sample["mask"].unsqueeze(0)).squeeze()
+        if "mask" in sample:
+            sample["mask"] = rsz(sample["mask"].unsqueeze(0)).squeeze()
+
         return sample
 
     def prepare_data(self) -> None:
@@ -202,6 +220,7 @@ class SpaceNet2DataModule(SpaceNetDataModule):
         self.train_dataset: Dataset[Any]
         self.val_dataset: Dataset[Any]
         self.test_dataset: Dataset[Any]
+        self.predict_dataset: Dataset[Any]
 
         if self.val_split_pct > 0.0:
             if self.test_split_pct > 0.0:
@@ -220,14 +239,7 @@ class SpaceNet2DataModule(SpaceNetDataModule):
             self.train_dataset = train_dataset
             self.val_dataset = train_dataset
             self.test_dataset = train_dataset
-
-
-if __name__ == "__main__":
-    sn2 = SpaceNet2DataModule(
-        root_dir="/media/ashwin/DATA2/torchgeo/data/spacenet2",
-        collections=["sn2_AOI_5_Khartoum"],
-        image="MS",
-    )
-
-    sn2.prepare_data()
-    sn2.setup()
+        if self.predict_on:
+            self.predict_dataset = PredictDataset(
+                self.predict_on, self.custom_transform
+            )
