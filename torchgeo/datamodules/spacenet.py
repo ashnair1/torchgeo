@@ -5,12 +5,13 @@
 
 import abc
 import os
+from copy import deepcopy
 from typing import Any, Dict, List, Optional
 
 import pytorch_lightning as pl
 from torch import Tensor
 from torch.utils.data import DataLoader, Dataset
-from torchvision import transforms as T
+from torchvision.transforms.functional import resize
 
 from torchgeo.datamodules.utils import dataset_split
 from torchgeo.datasets import SpaceNet2
@@ -25,7 +26,7 @@ class SpaceNetDataModule(pl.LightningDataModule, abc.ABC):
         root_dir: str,
         image: str,
         collections: List[str],
-        bands: List[int] = [4, 2, 1],  # [5, 3, 2]
+        bands: List[int] = [1, 2, 3],
         seed: int = 42,
         batch_size: int = 64,
         num_workers: int = 4,
@@ -65,6 +66,8 @@ class SpaceNetDataModule(pl.LightningDataModule, abc.ABC):
         self.api_key = api_key
         # TODO: Remove once pretrained backbones with C>3 are ready
         assert len(bands) == 3
+        assert image in {"MS", "PS-MS", "PS-RGB"}
+        bands = [4, 2, 1] if self.image in {"MS", "PS-MS"} else [1, 2, 3]
         self.bands = bands
 
     @abc.abstractmethod
@@ -127,7 +130,7 @@ class SpaceNet2DataModule(SpaceNetDataModule):
         root_dir: str,
         image: str,
         collections: List[str] = [],
-        bands: List[int] = [4, 2, 1],  # [5, 3, 2]
+        bands: List[int] = [1, 2, 3],
         seed: int = 42,
         batch_size: int = 64,
         num_workers: int = 4,
@@ -185,11 +188,22 @@ class SpaceNet2DataModule(SpaceNetDataModule):
         sample["image"] = sample["image"] / 255.0
 
         # Resize to be divisible by 32
-        rsz = T.Resize(size)
-        sample["image"] = rsz(sample["image"])
+        sample["image"] = resize(sample["image"], size)
         if "mask" in sample:
-            sample["mask"] = rsz(sample["mask"].unsqueeze(0)).squeeze()
+            sample["mask"] = resize(sample["mask"].unsqueeze(0), size).squeeze()
 
+        return sample
+
+    def predict_transform(self, sample: Dict[str, Tensor]) -> Dict[str, Tensor]:
+        """Transform a single sample from the Dataset for prediction."""
+        # Size should be divisble by 32
+        size = (160, 160) if self.image == "MS" else (640, 640)
+
+        # scale to [0,1]
+        sample["image"] = sample["image"] / 255.0
+
+        # Resize to be divisible by 32
+        sample["image"] = resize(sample["image"], size)
         return sample
 
     def prepare_data(self) -> None:
@@ -198,7 +212,12 @@ class SpaceNet2DataModule(SpaceNetDataModule):
         This includes optionally downloading the dataset. This is done once per node,
         while :func:`setup` is done once per GPU.
         """
-        do_download = len(os.listdir(self.root_dir)) == 0
+        collections_to_be_dwnlded = deepcopy(self.collections)
+        for collection in self.collections:
+            if collection in os.listdir(self.root_dir):
+                collections_to_be_dwnlded.remove(collection)
+        do_download = bool(collections_to_be_dwnlded)
+
         _ = SpaceNet2(
             self.root_dir,
             self.image,
@@ -241,5 +260,5 @@ class SpaceNet2DataModule(SpaceNetDataModule):
             self.test_dataset = train_dataset
         if self.predict_on:
             self.predict_dataset = PredictDataset(
-                self.predict_on, self.custom_transform
+                self.predict_on, self.predict_transform
             )

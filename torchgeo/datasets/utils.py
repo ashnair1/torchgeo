@@ -32,10 +32,9 @@ import numpy as np
 import rasterio
 import torch
 from torch import Tensor
+from torch.utils.data import Dataset
 from torchvision.datasets.utils import check_integrity, download_url
 from torchvision.utils import draw_segmentation_masks
-
-from torchgeo.datasets.geo import VisionDataset
 
 __all__ = (
     "check_integrity",
@@ -54,10 +53,11 @@ __all__ = (
     "draw_semantic_segmentation_masks",
     "rgb_to_mask",
     "percentile_normalization",
+    "PredictDataset",
 )
 
 
-class PredictDataset(VisionDataset):
+class PredictDataset(Dataset[Any]):
     """Prediction dataset for VisionDatasets."""
 
     def __init__(
@@ -66,7 +66,7 @@ class PredictDataset(VisionDataset):
         transforms: Optional[Callable[[Dict[str, Any]], Dict[str, Any]]] = None,
         bands: Tuple[int, ...] = (1, 2, 3),
     ) -> None:
-        """Initialize a new SpaceNet Dataset instance.
+        """Initialize a new PredictDataset instance.
 
         Args:
             root: root directory where dataset can be found
@@ -74,12 +74,9 @@ class PredictDataset(VisionDataset):
                 entry and returns a transformed version.
             bands: bands to be used.
 
-        Raises:
-            AssertionError: if len(bands) != 3
         """
         self.files = [os.path.join(root, i) for i in os.listdir(root)]
         self.transforms = transforms
-        assert len(bands) == 3
         self.bands = bands
 
     def __len__(self) -> int:
@@ -105,6 +102,14 @@ class PredictDataset(VisionDataset):
             return tensor
 
     def __getitem__(self, index: int) -> Dict[str, Tensor]:
+        """Return an index within the dataset.
+
+        Args:
+            index: index to return
+
+        Returns:
+            data and label at that index
+        """
         file = self.files[index]
         img = self._load_image(file)
         sample = {"image": img}
