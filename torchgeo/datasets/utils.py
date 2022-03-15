@@ -75,9 +75,22 @@ class PredictDataset(Dataset[Any]):
             bands: bands to be used.
 
         """
-        self.files = [os.path.join(root, i) for i in os.listdir(root)]
+        self.root = root
         self.transforms = transforms
         self.bands = bands
+        self.files = self._load_files(root)
+
+    def _load_files(self, root: str) -> List[Dict[str, str]]:
+        """Return the paths of the files in the dataset.
+
+        Args:
+            root: root dir of dataset
+
+        Returns:
+            list of dicts containing paths for each pair of image and label
+        """
+        images = [os.path.join(root, i) for i in os.listdir(root)]
+        return [{"image": img} for img in images]
 
     def __len__(self) -> int:
         """Return the number of samples in the dataset.
@@ -98,7 +111,7 @@ class PredictDataset(Dataset[Any]):
         """
         with rasterio.open(path) as img:
             array = img.read(self.bands).astype(np.int32)
-            tensor: Tensor = torch.from_numpy(array)  # type: ignore[attr-defined]
+            tensor: Tensor = torch.from_numpy(array)
             return tensor
 
     def __getitem__(self, index: int) -> Dict[str, Tensor]:
@@ -111,7 +124,7 @@ class PredictDataset(Dataset[Any]):
             data and label at that index
         """
         file = self.files[index]
-        img = self._load_image(file)
+        img = self._load_image(file["image"])
         sample = {"image": img}
         if self.transforms is not None:
             sample = self.transforms(sample)
