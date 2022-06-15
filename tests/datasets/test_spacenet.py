@@ -46,7 +46,7 @@ class TestSpaceNet1:
     ) -> SpaceNet1:
         radiant_mlhub = pytest.importorskip("radiant_mlhub", minversion="0.2.1")
         monkeypatch.setattr(radiant_mlhub.Collection, "fetch", fetch_collection)
-        test_md5 = {"sn1_AOI_1_RIO": "829652022c2df4511ee4ae05bc290250"}
+        test_md5 = {"sn1_AOI_1_RIO": "2c29b8b72a2474abcccf04595d043485"}
 
         # Refer https://github.com/python/mypy/issues/1032
         monkeypatch.setattr(SpaceNet1, "collection_md5_dict", test_md5)
@@ -57,7 +57,7 @@ class TestSpaceNet1:
         )
 
     def test_getitem(self, dataset: SpaceNet1) -> None:
-        x = dataset[0]
+        x = dataset[1]
         assert isinstance(x, dict)
         assert isinstance(x["image"], torch.Tensor)
         assert isinstance(x["mask"], torch.Tensor)
@@ -93,10 +93,10 @@ class TestSpaceNet2:
         radiant_mlhub = pytest.importorskip("radiant_mlhub", minversion="0.2.1")
         monkeypatch.setattr(radiant_mlhub.Collection, "fetch", fetch_collection)
         test_md5 = {
-            "sn2_AOI_2_Vegas": "6ceae7ff8c557346e8a4c8b6c61cc1b9",
-            "sn2_AOI_3_Paris": "811e6a26fdeb8be445fed99769fa52c5",
-            "sn2_AOI_4_Shanghai": "139d1627d184c74426a85ad0222f7355",
-            "sn2_AOI_5_Khartoum": "435535120414b74165aa87f051c3a2b3",
+            "sn2_AOI_2_Vegas": "d078c1516c19468dd374447a2c5629a2",
+            "sn2_AOI_3_Paris": "e18939c16fa4d3157b24b6156251db00",
+            "sn2_AOI_4_Shanghai": "09d31943b16f7c56e206e3de3f646939",
+            "sn2_AOI_5_Khartoum": "5b0a8fb0c43e498fd4101287a1faaca0",
         }
 
         monkeypatch.setattr(SpaceNet2, "collection_md5_dict", test_md5)
@@ -123,9 +123,8 @@ class TestSpaceNet2:
         else:
             assert x["image"].shape[0] == 1
 
-    # TODO: Change len to 4 when radiantearth/radiant-mlhub#65 is fixed
     def test_len(self, dataset: SpaceNet2) -> None:
-        assert len(dataset) == 5
+        assert len(dataset) == 4
 
     def test_already_downloaded(self, dataset: SpaceNet2) -> None:
         SpaceNet2(root=dataset.root, download=True)
@@ -156,8 +155,8 @@ class TestSpaceNet3:
         radiant_mlhub = pytest.importorskip("radiant_mlhub", minversion="0.2.1")
         monkeypatch.setattr(radiant_mlhub.Collection, "fetch", fetch_collection)
         test_md5 = {
-            "sn3_AOI_3_Paris": "197440e0ade970169a801a173a492c27",
-            "sn3_AOI_5_Khartoum": "b21ff7dd33a15ec32bd380c083263cdf",
+            "sn3_AOI_3_Paris": "ccae432574adc5b43b8c4743d0f7b9ab",
+            "sn3_AOI_5_Khartoum": "b1b94da3aa2fbf3795b6d63af58b965e",
         }
 
         monkeypatch.setattr(SpaceNet3, "collection_md5_dict", test_md5)
@@ -220,7 +219,7 @@ class TestSpaceNet4:
     ) -> SpaceNet4:
         radiant_mlhub = pytest.importorskip("radiant_mlhub", minversion="0.2.1")
         monkeypatch.setattr(radiant_mlhub.Collection, "fetch", fetch_collection)
-        test_md5 = {"sn4_AOI_6_Atlanta": "ea37c2d87e2c3a1d8b2a7c2230080d46"}
+        test_md5 = {"sn4_AOI_6_Atlanta": "275164ae8b3277fff565f81309a9c6b8"}
 
         test_angles = ["nadir", "off-nadir", "very-off-nadir"]
 
@@ -284,8 +283,8 @@ class TestSpaceNet5:
         radiant_mlhub = pytest.importorskip("radiant_mlhub", minversion="0.2.1")
         monkeypatch.setattr(radiant_mlhub.Collection, "fetch", fetch_collection)
         test_md5 = {
-            "sn5_AOI_7_Moscow": "e0d5f41f1b6b0ee7696c15e5ff3141f5",
-            "sn5_AOI_8_Mumbai": "ab898700ee586a137af492b84a08e662",
+            "sn5_AOI_7_Moscow": "78ba2cf048de22f548405c4f3a155f1b",
+            "sn5_AOI_8_Mumbai": "90d8b319db20aba36b1d3e5d942c59ff",
         }
 
         monkeypatch.setattr(SpaceNet5, "collection_md5_dict", test_md5)
@@ -347,9 +346,9 @@ class TestSpaceNet7:
         radiant_mlhub = pytest.importorskip("radiant_mlhub", minversion="0.2.1")
         monkeypatch.setattr(radiant_mlhub.Collection, "fetch", fetch_collection)
         test_md5 = {
-            "sn7_train_source": "254fd6b16e350b071137b2658332091f",
-            "sn7_train_labels": "05befe86b037a3af75c7143553033664",
-            "sn7_test_source": "37d98d44a9da39657ed4b7beee22a21e",
+            "sn7_train_source": "1d9b371c27b974a383c5ab994ac71cc1",
+            "sn7_train_labels": "82384eaeeed16c90436bdecde924dbfa",
+            "sn7_test_source": "f404037990024006a79de4fbf499aefe",
         }
 
         monkeypatch.setattr(SpaceNet7, "collection_md5_dict", test_md5)

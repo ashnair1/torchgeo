@@ -38,13 +38,28 @@ img_count = {
     "8Band.tif": 8,
 }
 
+
+sn4_catalog = [
+    "10300100023BC100",
+    "10300100036D5200",
+    "1030010003BDDC00",
+    "1030010003CD4300",
+]
+sn4_angles = [8, 30, 52, 53]
+
+sn4_imgdirname = "sn4_SN4_buildings_train_AOI_6_Atlanta_732701_3730989-nadir{}_catid_{}"
+sn4_lbldirname = "sn4_SN4_buildings_train_AOI_6_Atlanta_732701_3730989-labels"
+sn4_emptyimgdirname = "sn4_SN4_buildings_train_AOI_6_Atlanta_732701_3720639-nadir53_"
++"catid_1030010003CD4300"
+sn4_emptylbldirname = "sn4_SN4_buildings_train_AOI_6_Atlanta_732701_3720639-labels"
+
+
 datasets = [SpaceNet1, SpaceNet2, SpaceNet3, SpaceNet4, SpaceNet5, SpaceNet7]
 
 
 def to_index(wind_):
     """
     Generates a list of index (row,col):
-
     [[row1,col1],[row2,col2],[row3,col3],[row4,col4],[row1,col1]]
     """
     return [
@@ -81,14 +96,17 @@ def create_test_image(img_dir, imgs):
     return [list(tim.transform * p) for p in slice_index]
 
 
-def create_test_label(lbldir, lblname, coords, det_type):
+def create_test_label(lbldir, lblname, coords, det_type, empty=False, diff_crs=False):
 
-    if det_type == "roads":
-        meta = {
-            "driver": "GeoJSON",
-            "schema": {"properties": OrderedDict(), "geometry": "Polygon"},
-            "crs": {"init": "epsg:4326"},
-        }
+    if empty:
+        # Creates a new file
+        with open(os.path.join(lbldir, lblname), "w"):
+            pass
+        return
+
+    if det_type == "buildings":
+        meta_properties = OrderedDict()
+        geom = "Polygon"
         rec = {
             "type": "Feature",
             "id": "0",
@@ -96,7 +114,7 @@ def create_test_label(lbldir, lblname, coords, det_type):
             "geometry": {"type": "Polygon", "coordinates": [coords]},
         }
     else:
-        road_properties = OrderedDict(
+        meta_properties = OrderedDict(
             [
                 ("heading", "str"),
                 ("lane_number", "str"),
@@ -113,13 +131,10 @@ def create_test_label(lbldir, lblname, coords, det_type):
                 ("inferred_speed_mps", "float"),
             ]
         )
-        meta = {
-            "driver": "GeoJSON",
-            "schema": {"properties": road_properties, "geometry": "LineString"},
-            "crs": {"init": "epsg:4326"},
-        }
+        geom = "LineString"
+
         dummy_vals = {"str": "a", "float": 45.0, "int": 0}
-        ROAD_DICT = [(k, dummy_vals[v]) for k, v in road_properties.items()]
+        ROAD_DICT = [(k, dummy_vals[v]) for k, v in meta_properties.items()]
         rec = {
             "type": "Feature",
             "id": "0",
@@ -127,9 +142,16 @@ def create_test_label(lbldir, lblname, coords, det_type):
             "geometry": {"type": "LineString", "coordinates": [coords[0], coords[2]]},
         }
 
+    meta = {
+        "driver": "GeoJSON",
+        "schema": {"properties": meta_properties, "geometry": geom},
+        "crs": {"init": "epsg:4326"},
+    }
+    if diff_crs:
+        meta["crs"] = {"init": "epsg:3857"}
     out_file = os.path.join(lbldir, lblname)
-    dst = fiona.open(out_file, "w", **meta)
-    dst.write(rec)
+    with fiona.open(out_file, "w", **meta) as dst:
+        dst.write(rec)
 
 
 if __name__ == "__main__":
@@ -143,27 +165,78 @@ if __name__ == "__main__":
         for collection in collections:
             if dataset.dataset_id == "spacenet4":
                 num_samples = 4
-            elif collection == "sn5_AOI_7_Moscow":
+            elif collection == "sn5_AOI_7_Moscow" or collection not in [
+                "sn5_AOI_8_Mumbai",
+                "sn7_test_source",
+            ]:
                 num_samples = 2
             elif collection == "sn5_AOI_8_Mumbai":
                 num_samples = 3
-            elif collection == "sn7_test_source":
-                num_samples = 1
             else:
-                num_samples = 2
+                num_samples = 1
             for sample in range(num_samples):
                 out_dir = os.path.join(ROOT_DIR, collection)
 
                 # Create img dir
-                imgdir = os.path.join(out_dir, f"{collection}_img{sample + 1}")
+                if dataset.dataset_id == "spacenet4":
+                    assert num_samples == 4
+                    if sample != 3:
+                        imgdirname = sn4_imgdirname.format(
+                            sn4_angles[sample], sn4_catalog[sample]
+                        )
+                        lbldirname = sn4_lbldirname
+                    else:
+                        imgdirname = sn4_emptyimgdirname.format(
+                            sn4_angles[sample], sn4_catalog[sample]
+                        )
+                        lbldirname = sn4_emptylbldirname
+                else:
+                    imgdirname = f"{collection}_img{sample + 1}"
+                    lbldirname = f"{collection}_img{sample + 1}-labels"
+
+                imgdir = os.path.join(out_dir, imgdirname)
                 os.makedirs(imgdir, exist_ok=True)
                 bounds = create_test_image(imgdir, list(dataset.imagery.values()))
 
                 # Create lbl dir
-                lbldir = os.path.join(out_dir, f"{collection}_img{sample + 1}-labels")
+                lbldir = os.path.join(out_dir, lbldirname)
                 os.makedirs(lbldir, exist_ok=True)
                 det_type = "roads" if dataset in [SpaceNet3, SpaceNet5] else "buildings"
-                create_test_label(lbldir, dataset.label_glob, bounds, det_type)
+                if dataset.dataset_id == "spacenet4" and sample == 3:
+                    # Creates an empty file
+                    create_test_label(
+                        lbldir, dataset.label_glob, bounds, det_type, empty=True
+                    )
+                else:
+                    create_test_label(lbldir, dataset.label_glob, bounds, det_type)
+
+                if collection == "sn5_AOI_8_Mumbai":
+                    if sample == 1:
+                        create_test_label(
+                            lbldir, dataset.label_glob, bounds, det_type, empty=True
+                        )
+                    if sample == 2:
+                        create_test_label(
+                            lbldir, dataset.label_glob, bounds, det_type, diff_crs=True
+                        )
+
+                if collection == "sn1_AOI_1_RIO" and sample == 1:
+                    create_test_label(
+                        lbldir, dataset.label_glob, bounds, det_type, diff_crs=True
+                    )
+
+                if collection not in [
+                    "sn2_AOI_2_Vegas",
+                    "sn3_AOI_5_Khartoum",
+                    "sn4_AOI_6_Atlanta",
+                    "sn5_AOI_8_Mumbai",
+                    "sn7_train_source",
+                ]:
+                    # Create collection.json
+                    with open(
+                        os.path.join(ROOT_DIR, collection, "collection.json"), "w"
+                    ):
+                        pass
 
             # Create archive
             archive_path = os.path.join(ROOT_DIR, collection)
