@@ -6,16 +6,18 @@
 import os
 import shutil
 from collections import OrderedDict
+from typing import List, cast
 
 import fiona
 import numpy as np
 import rasterio
-from rasterio import windows
 from rasterio.crs import CRS
 from rasterio.transform import Affine
+from rasterio.windows import Window
 from torchvision.datasets.utils import calculate_md5
 
 from torchgeo.datasets import (
+    SpaceNet,
     SpaceNet1,
     SpaceNet2,
     SpaceNet3,
@@ -49,18 +51,23 @@ sn4_angles = [8, 30, 52, 53]
 
 sn4_imgdirname = "sn4_SN4_buildings_train_AOI_6_Atlanta_732701_3730989-nadir{}_catid_{}"
 sn4_lbldirname = "sn4_SN4_buildings_train_AOI_6_Atlanta_732701_3730989-labels"
-sn4_emptyimgdirname = "sn4_SN4_buildings_train_AOI_6_Atlanta_732701_3720639-nadir53_"
-+"catid_1030010003CD4300"
+sn4_emptyimgdirname = (
+    "sn4_SN4_buildings_train_AOI_6_Atlanta_732701_3720639-nadir53_"
+    + "catid_1030010003CD4300"
+)
 sn4_emptylbldirname = "sn4_SN4_buildings_train_AOI_6_Atlanta_732701_3720639-labels"
 
 
 datasets = [SpaceNet1, SpaceNet2, SpaceNet3, SpaceNet4, SpaceNet5, SpaceNet7]
 
 
-def to_index(wind_):
+def to_index(wind_: Window) -> List[List[int]]:
     """
     Generates a list of index (row,col):
     [[row1,col1],[row2,col2],[row3,col3],[row4,col4],[row1,col1]]
+
+    TODO: We don't need this function. Just use
+    [[1, 1], [1, 2], [2, 2], [2, 1], [1, 1]]
     """
     return [
         [wind_.row_off, wind_.col_off],
@@ -71,7 +78,16 @@ def to_index(wind_):
     ]
 
 
-def create_test_image(img_dir, imgs):
+def create_test_image(img_dir: str, imgs: List[str]) -> List[List[float]]:
+    """Create test image
+
+    Args:
+        img_dir (str): Name of image directory
+        imgs (List[str]): List of images to be created
+
+    Returns:
+        List[List[float]]: Boundary coordinates
+    """
     for img in imgs:
         imgpath = os.path.join(img_dir, img)
         Z = np.arange(4, dtype="uint16").reshape(2, 2)
@@ -91,13 +107,30 @@ def create_test_image(img_dir, imgs):
                 dst.write(Z, i)
 
     tim = rasterio.open(imgpath)
-    slice = windows.Window(1, 1, 1, 1)
+    slice = Window(1, 1, 1, 1)
     slice_index = to_index(slice)
     return [list(tim.transform * p) for p in slice_index]
 
 
-def create_test_label(lbldir, lblname, coords, det_type, empty=False, diff_crs=False):
+def create_test_label(
+    lbldir: str,
+    lblname: str,
+    coords: List[List[float]],
+    det_type: str,
+    empty: bool = False,
+    diff_crs: bool = False,
+) -> None:
+    """Create test label
 
+    Args:
+        lbldir (str): Name of label directory
+        lblname (str): Name of label file
+        coords (List[Tuple[float, float]]): Boundary coordinates
+        det_type (str): Type of dataset. Must be either buildings or roads.
+        empty (bool, optional): Creates empty label file if True. Defaults to False.
+        diff_crs (bool, optional): Assigns EPSG:3857 as CRS instead of
+                                   default EPSG:4326. Defaults to False.
+    """
     if empty:
         # Creates a new file
         with open(os.path.join(lbldir, lblname), "w"):
@@ -154,7 +187,7 @@ def create_test_label(lbldir, lblname, coords, det_type, empty=False, diff_crs=F
         dst.write(rec)
 
 
-if __name__ == "__main__":
+def main() -> None:
     ROOT_DIR = os.path.dirname(os.path.realpath(__file__))
 
     num_samples = 2
@@ -163,6 +196,7 @@ if __name__ == "__main__":
 
         collections = list(dataset.collection_md5_dict.keys())
         for collection in collections:
+            dataset = cast(SpaceNet, dataset)
             if dataset.dataset_id == "spacenet4":
                 num_samples = 4
             elif collection == "sn5_AOI_7_Moscow" or collection not in [
@@ -245,3 +279,7 @@ if __name__ == "__main__":
             )
             shutil.rmtree(out_dir)
             print(f"{collection}: " + calculate_md5(f"{archive_path}.tar.gz"))
+
+
+if __name__ == "__main__":
+    main()
