@@ -13,7 +13,6 @@ import numpy as np
 import rasterio
 from rasterio.crs import CRS
 from rasterio.transform import Affine
-from rasterio.windows import Window
 from torchvision.datasets.utils import calculate_md5
 
 from torchgeo.datasets import (
@@ -61,23 +60,6 @@ sn4_emptylbldirname = "sn4_SN4_buildings_train_AOI_6_Atlanta_732701_3720639-labe
 datasets = [SpaceNet1, SpaceNet2, SpaceNet3, SpaceNet4, SpaceNet5, SpaceNet7]
 
 
-def to_index(wind_: Window) -> List[List[int]]:
-    """
-    Generates a list of index (row,col):
-    [[row1,col1],[row2,col2],[row3,col3],[row4,col4],[row1,col1]]
-
-    TODO: We don't need this function. Just use
-    [[1, 1], [1, 2], [2, 2], [2, 1], [1, 1]]
-    """
-    return [
-        [wind_.row_off, wind_.col_off],
-        [wind_.row_off, wind_.col_off + wind_.width],
-        [wind_.row_off + wind_.height, wind_.col_off + wind_.width],
-        [wind_.row_off + wind_.height, wind_.col_off],
-        [wind_.row_off, wind_.col_off],
-    ]
-
-
 def create_test_image(img_dir: str, imgs: List[str]) -> List[List[float]]:
     """Create test image
 
@@ -107,8 +89,7 @@ def create_test_image(img_dir: str, imgs: List[str]) -> List[List[float]]:
                 dst.write(Z, i)
 
     tim = rasterio.open(imgpath)
-    slice = Window(1, 1, 1, 1)
-    slice_index = to_index(slice)
+    slice_index = [[1, 1], [1, 2], [2, 2], [2, 1], [1, 1]]
     return [list(tim.transform * p) for p in slice_index]
 
 
