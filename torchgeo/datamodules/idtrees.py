@@ -22,18 +22,12 @@ DEFAULT_AUGS = K.AugmentationSequential(
 
 def collate_wrapper(batch: List[Dict[str, Any]]) -> Dict[str, Any]:
     """Flatten wrapper."""
-    images = []
-    boxes = []
-    labels = []
+    images = torch.stack([i["image"] for i in batch])
+    r_batch = {"image": images}
 
-    for b in batch:
-        images.append(b["image"])
-        boxes.append(b["boxes"])
-        labels.append(b["label"])
-
-    images = torch.stack(images)  # type: ignore[assignment]
-
-    r_batch = {"images": images, "boxes": boxes, "labels": labels}
+    if "label" in batch[0]:
+        r_batch["boxes"] = [b["boxes"] for b in batch]  # type: ignore[assignment]
+        r_batch["labels"] = [b["label"] for b in batch]  # type: ignore[assignment]
 
     return r_batch
 
@@ -56,11 +50,12 @@ class IDTReeSDataModule(pl.LightningDataModule):
         test_split_pct: float = 0.1,
         augmentations: K.AugmentationSequential = DEFAULT_AUGS,
         predict_on: str = "test",
+        task: str = "task1",
     ) -> None:
-        """Initialize a LightningDataModule for InriaAerialImageLabeling based DataLoaders.
+        """Initialize a LightningDataModule for IDTReeS based DataLoaders.
 
         Args:
-            root_dir: The ``root`` arugment to pass to the InriaAerialImageLabeling
+            root_dir: The ``root`` arugment to pass to the IDTReeS
                 Dataset classes
             batch_size: The batch size used in the train DataLoader
                 (val_batch_size == test_batch_size == 1)
@@ -70,6 +65,8 @@ class IDTReeSDataModule(pl.LightningDataModule):
             patch_size: Size of random patch from image and mask (height, width)
             augmentations: Default augmentations applied
             predict_on: Directory/Dataset of images to run inference on
+            task: 'task1' for detection, 'task2' for detection + classification
+                (only relevant for split='test')
         """
         super().__init__()  # type: ignore[no-untyped-call]
         self.root_dir = root_dir
@@ -79,6 +76,7 @@ class IDTReeSDataModule(pl.LightningDataModule):
         self.test_split_pct = test_split_pct
         self.augmentations = augmentations
         self.predict_on = predict_on
+        self.task = task
 
     def preprocess(self, sample: Dict[str, Any]) -> Dict[str, Any]:
         """Transform a single sample from the Dataset."""
@@ -94,7 +92,7 @@ class IDTReeSDataModule(pl.LightningDataModule):
         This method is called once per GPU per run.
         """
         train_dataset = IDTReeS(
-            self.root_dir, split="train", transforms=self.preprocess
+            self.root_dir, split="train", transforms=self.preprocess, download=True
         )
 
         self.train_dataset: Dataset[Any]
@@ -120,7 +118,11 @@ class IDTReeSDataModule(pl.LightningDataModule):
 
         assert self.predict_on == "test"
         self.predict_dataset = IDTReeS(
-            self.root_dir, self.predict_on, transforms=self.preprocess
+            self.root_dir,
+            self.predict_on,
+            self.task,
+            transforms=self.preprocess,
+            download=True,
         )
 
     def train_dataloader(self) -> DataLoader[Any]:
