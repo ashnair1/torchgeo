@@ -20,6 +20,7 @@ from torchgeo.datamodules import (
     CycloneDataModule,
     ETCI2021DataModule,
     EuroSATDataModule,
+    IDTReeSDataModule,
     InriaAerialImageLabelingDataModule,
     LandCoverAIDataModule,
     NAIPChesapeakeDataModule,
@@ -33,6 +34,7 @@ from torchgeo.trainers import (
     BYOLTask,
     ClassificationTask,
     MultiLabelClassificationTask,
+    ObjectDetectionTask,
     RegressionTask,
     SemanticSegmentationTask,
 )
@@ -47,6 +49,7 @@ TASK_TO_MODULES_MAPPING: Dict[
     "cyclone": (RegressionTask, CycloneDataModule),
     "eurosat": (ClassificationTask, EuroSATDataModule),
     "etci2021": (SemanticSegmentationTask, ETCI2021DataModule),
+    "idtrees": (ObjectDetectionTask, IDTReeSDataModule),
     "inria": (SemanticSegmentationTask, InriaAerialImageLabelingDataModule),
     "landcoverai": (SemanticSegmentationTask, LandCoverAIDataModule),
     "naipchesapeake": (SemanticSegmentationTask, NAIPChesapeakeDataModule),

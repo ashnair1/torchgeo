@@ -1,0 +1,24 @@
+program:
+  overwrite: True
+
+trainer:
+  gpus: 1
+  min_epochs: 5
+  max_epochs: 10
+  benchmark: True
+
+experiment:
+  task: "idtrees"
+  name: "idtrees_test"
+  module:
+    detection_model: "faster-rcnn"
+    backbone: "resnet18"
+    num_classes: 32
+    learning_rate: 1e-3
+    learning_rate_schedule_patience: 6
+    verbose: false
+  datamodule:
+    root_dir: "data/idtrees"
+    batch_size: 3
+    num_workers: 0
+    val_split_pct: 0.1
