@@ -16,8 +16,6 @@ from torchvision.models.detection.backbone_utils import resnet_fpn_backbone
 from torchvision.models.detection.rpn import AnchorGenerator
 from torchvision.ops import MultiScaleRoIAlign
 
-from ..datasets.utils import unbind_samples
-
 # https://github.com/pytorch/pytorch/issues/60979
 # https://github.com/pytorch/pytorch/pull/61045
 DataLoader.__module__ = "torch.utils.data"
@@ -74,7 +72,6 @@ class ObjectDetectionTask(LightningModule):
 
         self.config_task()
 
-        self.train_metrics = MeanAveragePrecision()
         self.val_metrics = MeanAveragePrecision()
         self.test_metrics = MeanAveragePrecision()
 
@@ -99,28 +96,20 @@ class ObjectDetectionTask(LightningModule):
             training loss
         """
         batch = args[0]
-        batch_idx = args[1]
         x = batch["image"]
-        y = [dict(boxes=batch["boxes"][0], labels=batch["labels"][0])]
-        y_hat = self.forward(x)
+        batch_size = x.shape[0]
+        y = [
+            {"boxes": batch["boxes"][i], "labels": batch["labels"][i]}
+            for i in range(batch_size)
+        ]
+        loss_dict = self.forward(x, y)
+        train_loss = sum(loss_dict.values())
 
-        loss = self.loss(y_hat, y)
-
-        # by default, the train step logs every `log_every_n_steps` steps where
-        # `log_every_n_steps` is a parameter to the `Trainer` object
-        # self.log("train_loss", loss, on_step=True, on_epoch=False)
-        self.train_metrics.update(y_hat, y)
+        for loss_type, loss in loss_dict.items():
+            self.log(f"train_{loss_type}", loss, on_step=True, on_epoch=True)
+        self.log("train_loss", train_loss, on_step=True, on_epoch=True)
 
         return cast(Tensor, loss)
-
-    def training_epoch_end(self, outputs: Any) -> None:
-        """Logs epoch level training metrics.
-
-        Args:
-            outputs: list of items returned by training_step
-        """
-        self.log_dict(self.train_metrics.compute())
-        self.train_metrics.reset()
 
     def validation_step(self, *args: Any, **kwargs: Any) -> None:
         """Compute validation loss and log example predictions.
@@ -129,30 +118,17 @@ class ObjectDetectionTask(LightningModule):
             batch: the output of your DataLoader
             batch_idx: the index of this batch
         """
+        # import pdb; pdb.set_trace()
         batch = args[0]
-        batch_idx = args[1]
         x = batch["image"]
-        y = [dict(boxes=batch["boxes"][0], labels=batch["labels"][0])]
+        batch_size = x.shape[0]
+        y = [
+            {"boxes": batch["boxes"][i], "labels": batch["labels"][i]}
+            for i in range(batch_size)
+        ]
         y_hat = self.forward(x)
 
         self.val_metrics.update(y_hat, y)
-
-        if batch_idx < 10:
-            try:
-                datamodule = self.trainer.datamodule  # type: ignore[union-attr]
-                batch["boxes"] = y_hat[0]["boxes"]
-                # TODO: Labels might not be available e.g. idtrees
-                batch["labels"] = y_hat[0]["labels"]
-                for key in ["image", "boxes", "labels"]:
-                    batch[key] = batch[key].cpu()
-                sample = unbind_samples(batch)[0]
-                fig = datamodule.plot(sample)
-                summary_writer = self.logger.experiment  # type: ignore[union-attr]
-                summary_writer.add_figure(
-                    f"image/{batch_idx}", fig, global_step=self.global_step
-                )
-            except AttributeError:
-                pass
 
     def validation_epoch_end(self, outputs: Any) -> None:
         """Logs epoch level validation metrics.
@@ -170,16 +146,14 @@ class ObjectDetectionTask(LightningModule):
             batch: the output of your DataLoader
         """
         batch = args[0]
-        batch_idx = args[1]
         x = batch["image"]
-        y = [dict(boxes=batch["boxes"][0], labels=batch["labels"][0])]
+        batch_size = x.shape[0]
+        y = [
+            {"boxes": batch["boxes"][i], "labels": batch["labels"][i]}
+            for i in range(batch_size)
+        ]
         y_hat = self.forward(x)
-        import pdb; pdb.set_trace()
 
-        loss = self.loss(y_hat, y)
-
-        # by default, the test and validation steps only log per *epoch*
-        self.log("test_loss", loss, on_step=False, on_epoch=True)
         self.test_metrics.update(y_hat, y)
 
     def test_epoch_end(self, outputs: Any) -> None:
@@ -208,6 +182,6 @@ class ObjectDetectionTask(LightningModule):
                     optimizer,
                     patience=self.hyperparams["learning_rate_schedule_patience"],
                 ),
-                "monitor": "val_loss",
+                "monitor": "train_loss",
             },
         }

@@ -14,8 +14,8 @@ from torchgeo.datamodules.utils import dataset_split
 from torchgeo.datasets.idtrees import IDTReeS
 
 DEFAULT_AUGS = K.AugmentationSequential(
-    K.RandomHorizontalFlip(p=0.5),
-    K.RandomVerticalFlip(p=0.5),
+    K.RandomHorizontalFlip(p=1.0),
+    K.RandomVerticalFlip(p=0.0),
     data_keys=["input", "bbox_xyxy"],
 )
 
@@ -27,7 +27,7 @@ def collate_wrapper(batch: List[Dict[str, Any]]) -> Dict[str, Any]:
 
     if "label" in batch[0]:
         r_batch["boxes"] = [b["boxes"].reshape(0, 4) if b["boxes"].numel() == 0 else b["boxes"] for b in batch]  # type: ignore[assignment]
-        r_batch["labels"] = [b["label"] for b in batch]  # type: ignore[assignment]
+        r_batch["labels"] = [b["label"].long() for b in batch]  # type: ignore[assignment]
 
     return r_batch
 

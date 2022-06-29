@@ -3,8 +3,8 @@ program:
 
 trainer:
   gpus: 1
-  min_epochs: 5
-  max_epochs: 10
+  min_epochs: 1
+  max_epochs: 3
   benchmark: True
 
 experiment:
@@ -13,7 +13,7 @@ experiment:
   module:
     detection_model: "faster-rcnn"
     backbone: "resnet18"
-    num_classes: 32
+    num_classes: 33
     learning_rate: 1e-3
     learning_rate_schedule_patience: 6
     verbose: false
