@@ -1,7 +1,7 @@
 # Copyright (c) Microsoft Corporation. All rights reserved.
 # Licensed under the MIT License.
 
-"""Segmentation tasks."""
+"""Detection tasks."""
 
 from typing import Any, Dict, cast
 
@@ -98,21 +98,18 @@ class ObjectDetectionTask(LightningModule):
         Returns:
             training loss
         """
-        import pdb
-
-        pdb.set_trace()
         batch = args[0]
+        batch_idx = args[1]
         x = batch["image"]
-        y = batch["mask"]
+        y = [dict(boxes=batch["boxes"][0], labels=batch["labels"][0])]
         y_hat = self.forward(x)
-        y_hat_hard = y_hat.argmax(dim=1)
 
         loss = self.loss(y_hat, y)
 
         # by default, the train step logs every `log_every_n_steps` steps where
         # `log_every_n_steps` is a parameter to the `Trainer` object
-        self.log("train_loss", loss, on_step=True, on_epoch=False)
-        self.train_metrics(y_hat_hard, y)
+        # self.log("train_loss", loss, on_step=True, on_epoch=False)
+        self.train_metrics.update(y_hat, y)
 
         return cast(Tensor, loss)
 
@@ -136,24 +133,17 @@ class ObjectDetectionTask(LightningModule):
         batch_idx = args[1]
         x = batch["image"]
         y = [dict(boxes=batch["boxes"][0], labels=batch["labels"][0])]
-        # Collation needs work
-        import pdb
-
-        pdb.set_trace()
         y_hat = self.forward(x)
 
-        # loss = self.loss(y_hat, y)
-
-        # self.log("val_loss", loss, on_step=False, on_epoch=True)
         self.val_metrics.update(y_hat, y)
-        # TODO: Temp
-        y_hat_hard = 2
 
         if batch_idx < 10:
             try:
                 datamodule = self.trainer.datamodule  # type: ignore[union-attr]
-                batch["prediction"] = y_hat_hard
-                for key in ["image", "mask", "prediction"]:
+                batch["boxes"] = y_hat[0]["boxes"]
+                # TODO: Labels might not be available e.g. idtrees
+                batch["labels"] = y_hat[0]["labels"]
+                for key in ["image", "boxes", "labels"]:
                     batch[key] = batch[key].cpu()
                 sample = unbind_samples(batch)[0]
                 fig = datamodule.plot(sample)
@@ -180,16 +170,17 @@ class ObjectDetectionTask(LightningModule):
             batch: the output of your DataLoader
         """
         batch = args[0]
+        batch_idx = args[1]
         x = batch["image"]
-        y = batch["mask"]
+        y = [dict(boxes=batch["boxes"][0], labels=batch["labels"][0])]
         y_hat = self.forward(x)
-        y_hat_hard = y_hat.argmax(dim=1)
+        import pdb; pdb.set_trace()
 
         loss = self.loss(y_hat, y)
 
         # by default, the test and validation steps only log per *epoch*
         self.log("test_loss", loss, on_step=False, on_epoch=True)
-        self.test_metrics(y_hat_hard, y)
+        self.test_metrics.update(y_hat, y)
 
     def test_epoch_end(self, outputs: Any) -> None:
         """Logs epoch level test metrics.

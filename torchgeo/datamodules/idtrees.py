@@ -26,7 +26,7 @@ def collate_wrapper(batch: List[Dict[str, Any]]) -> Dict[str, Any]:
     r_batch = {"image": images}
 
     if "label" in batch[0]:
-        r_batch["boxes"] = [b["boxes"] for b in batch]  # type: ignore[assignment]
+        r_batch["boxes"] = [b["boxes"].reshape(0, 4) if b["boxes"].numel() == 0 else b["boxes"] for b in batch]  # type: ignore[assignment]
         r_batch["labels"] = [b["label"] for b in batch]  # type: ignore[assignment]
 
     return r_batch
@@ -186,8 +186,9 @@ class IDTReeSDataModule(pl.LightningDataModule):
             and self.trainer.training
             and self.augmentations is not None
         ):
-            batch["image"], batch["bbox"] = self.augmentations(
-                batch["image"], batch["bbox"]
+
+            batch["image"], batch["boxes"] = self.augmentations(
+                batch["image"], batch["boxes"]
             )
 
         return batch
