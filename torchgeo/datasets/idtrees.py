@@ -482,7 +482,7 @@ class IDTReeS(NonGeoDataset):
 
         if "chm" in sample:
             ncols += 1
-            chm = normalize(sample["chm"][hsi_indices, :, :]).permute((1, 2, 0)).numpy()
+            chm = normalize(sample["chm"]).permute((1, 2, 0)).numpy()
             plots.append(chm)
             titles.append("Canopy Height Model")
 
