@@ -454,10 +454,9 @@ class IDTReeS(NonGeoDataset):
         def normalize(x: Tensor) -> Tensor:
             return (x - x.min()) / (x.max() - x.min())
 
-        ncols = 3
-
-        hsi = normalize(sample["hsi"][hsi_indices, :, :]).permute((1, 2, 0)).numpy()
-        chm = normalize(sample["chm"]).permute((1, 2, 0)).numpy()
+        ncols = 1
+        plots = []
+        titles = []
 
         if "boxes" in sample and len(sample["boxes"]):
             labels = (
@@ -472,7 +471,22 @@ class IDTReeS(NonGeoDataset):
         else:
             image = sample["image"].permute((1, 2, 0)).numpy()
 
-        if "prediction_boxes" in sample and len(sample["prediction_boxes"]):
+        plots.append(image)
+        titles.append("Ground Truth")
+
+        if "hsi" in sample:
+            ncols += 1
+            hsi = normalize(sample["hsi"][hsi_indices, :, :]).permute((1, 2, 0)).numpy()
+            plots.append(hsi)
+            titles.append("Hyperspectral False Color Image")
+
+        if "chm" in sample:
+            ncols += 1
+            chm = normalize(sample["chm"][hsi_indices, :, :]).permute((1, 2, 0)).numpy()
+            plots.append(chm)
+            titles.append("Canopy Height Model")
+
+        if "prediction_boxes" in sample:
             ncols += 1
             labels = (
                 [self.idx2class[int(i)] for i in sample["prediction_label"]]
@@ -483,24 +497,17 @@ class IDTReeS(NonGeoDataset):
                 image=sample["image"], boxes=sample["prediction_boxes"], labels=labels
             )
             preds = preds.permute((1, 2, 0)).numpy()
+            plots.append(preds)
+            titles.append("Predictions")
 
         fig, axs = plt.subplots(ncols=ncols, figsize=(ncols * 10, 10))
-        axs[0].imshow(image)
-        axs[0].axis("off")
-        axs[1].imshow(hsi)
-        axs[1].axis("off")
-        axs[2].imshow(chm)
-        axs[2].axis("off")
-        if ncols > 3:
-            axs[3].imshow(preds)
-            axs[3].axis("off")
+        assert len(plots) == len(titles)
 
-        if show_titles:
-            axs[0].set_title("Ground Truth")
-            axs[1].set_title("Hyperspectral False Color Image")
-            axs[2].set_title("Canopy Height Model")
-            if ncols > 3:
-                axs[3].set_title("Predictions")
+        for i, plot in enumerate(plots):
+            axs[i].imshow(plot)
+            axs[i].axis("off")
+            if show_titles:
+                axs[i].set_title(titles[i])
 
         if suptitle is not None:
             plt.suptitle(suptitle)

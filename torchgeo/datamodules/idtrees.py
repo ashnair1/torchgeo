@@ -6,6 +6,7 @@
 from typing import Any, Dict, List, Optional
 
 import kornia.augmentation as K
+import matplotlib.pyplot as plt
 import pytorch_lightning as pl
 import torch
 from torch.utils.data import DataLoader, Dataset
@@ -14,8 +15,8 @@ from torchgeo.datamodules.utils import dataset_split
 from torchgeo.datasets.idtrees import IDTReeS
 
 DEFAULT_AUGS = K.AugmentationSequential(
-    K.RandomHorizontalFlip(p=1.0),
-    K.RandomVerticalFlip(p=0.0),
+    K.RandomHorizontalFlip(p=0.6),
+    K.RandomVerticalFlip(p=0.4),
     data_keys=["input", "bbox_xyxy"],
 )
 
@@ -192,3 +193,11 @@ class IDTReeSDataModule(pl.LightningDataModule):
             )
 
         return batch
+
+    def plot(self, *args: Any, **kwargs: Any) -> plt.Figure:
+        """Run :meth:`torchgeo.datasets.IDTreeS.plot`."""
+        try:
+            return self.val_dataset.dataset.plot(*args, **kwargs)  # type: ignore[attr-defined]
+        except AttributeError:
+            # If val_split_pct == 0.0
+            return self.val_dataset.plot(*args, **kwargs)  # type: ignore[attr-defined]

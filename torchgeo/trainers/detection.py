@@ -16,6 +16,8 @@ from torchvision.models.detection.backbone_utils import resnet_fpn_backbone
 from torchvision.models.detection.rpn import AnchorGenerator
 from torchvision.ops import MultiScaleRoIAlign
 
+from ..datasets.utils import unbind_samples
+
 # https://github.com/pytorch/pytorch/issues/60979
 # https://github.com/pytorch/pytorch/pull/61045
 DataLoader.__module__ = "torch.utils.data"
@@ -120,6 +122,7 @@ class ObjectDetectionTask(LightningModule):
         """
         # import pdb; pdb.set_trace()
         batch = args[0]
+        batch_idx = args[1]
         x = batch["image"]
         batch_size = x.shape[0]
         y = [
@@ -129,6 +132,25 @@ class ObjectDetectionTask(LightningModule):
         y_hat = self.forward(x)
 
         self.val_metrics.update(y_hat, y)
+
+        if batch_idx < 10:
+            try:
+                datamodule = self.trainer.datamodule  # type: ignore[union-attr]
+                batch["prediction_boxes"] = [b["boxes"].cpu() for b in y_hat]
+                batch["prediction_labels"] = [b["labels"].cpu() for b in y_hat]
+                batch["image"] = batch["image"].cpu()
+                sample = unbind_samples(batch)[0]
+                # Convert image to uint8 for plotting
+                if torch.is_floating_point(sample["image"]):
+                    sample["image"] *= 255
+                    sample["image"] = sample["image"].to(torch.uint8)
+                fig = datamodule.plot(sample)
+                summary_writer = self.logger.experiment  # type: ignore[union-attr]
+                summary_writer.add_figure(
+                    f"image/{batch_idx}", fig, global_step=self.global_step
+                )
+            except AttributeError:
+                pass
 
     def validation_epoch_end(self, outputs: Any) -> None:
         """Logs epoch level validation metrics.
