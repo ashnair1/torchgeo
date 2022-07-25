@@ -36,7 +36,7 @@ class ObjectDetectionTask(LightningModule):
 
             # TODO: Make anchor sizes and feat_maps configurable
             anchor_generator = AnchorGenerator(
-                sizes=((32), (64), (128), (256), (512)), aspect_ratios=((0.5, 1.0, 2.0))
+                sizes=((16), (32), (64), (128), (256)), aspect_ratios=((0.5, 1.0, 2.0))
             )
 
             roi_pooler = MultiScaleRoIAlign(
@@ -107,11 +107,9 @@ class ObjectDetectionTask(LightningModule):
         loss_dict = self.forward(x, y)
         train_loss = sum(loss_dict.values())
 
-        for loss_type, loss in loss_dict.items():
-            self.log(f"train_{loss_type}", loss, on_step=True, on_epoch=True)
-        self.log("train_loss", train_loss, on_step=True, on_epoch=True)
+        self.log_dict(loss_dict)
 
-        return cast(Tensor, loss)
+        return cast(Tensor, train_loss)
 
     def validation_step(self, *args: Any, **kwargs: Any) -> None:
         """Compute validation loss and log example predictions.
@@ -120,7 +118,6 @@ class ObjectDetectionTask(LightningModule):
             batch: the output of your DataLoader
             batch_idx: the index of this batch
         """
-        # import pdb; pdb.set_trace()
         batch = args[0]
         batch_idx = args[1]
         x = batch["image"]
@@ -158,7 +155,9 @@ class ObjectDetectionTask(LightningModule):
         Args:
             outputs: list of items returned by validation_step
         """
-        self.log_dict(self.val_metrics.compute())
+        metrics = self.val_metrics.compute()
+        renamed_metrics = {f"val_{i}": metrics[i] for i in metrics.keys()}
+        self.log_dict(renamed_metrics)
         self.val_metrics.reset()
 
     def test_step(self, *args: Any, **kwargs: Any) -> None:
@@ -184,7 +183,9 @@ class ObjectDetectionTask(LightningModule):
         Args:
             outputs: list of items returned by test_step
         """
-        self.log_dict(self.test_metrics.compute())
+        metrics = self.test_metrics.compute()
+        renamed_metrics = {f"test_{i}": metrics[i] for i in metrics.keys()}
+        self.log_dict(renamed_metrics)
         self.test_metrics.reset()
 
     def configure_optimizers(self) -> Dict[str, Any]:
@@ -202,8 +203,9 @@ class ObjectDetectionTask(LightningModule):
             "lr_scheduler": {
                 "scheduler": ReduceLROnPlateau(
                     optimizer,
+                    mode="max",
                     patience=self.hyperparams["learning_rate_schedule_patience"],
                 ),
-                "monitor": "train_loss",
+                "monitor": "val_map",
             },
         }

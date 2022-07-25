@@ -14,12 +14,6 @@ from torch.utils.data import DataLoader, Dataset
 from torchgeo.datamodules.utils import dataset_split
 from torchgeo.datasets.idtrees import IDTReeS
 
-DEFAULT_AUGS = K.AugmentationSequential(
-    K.RandomHorizontalFlip(p=0.6),
-    K.RandomVerticalFlip(p=0.4),
-    data_keys=["input", "bbox_xyxy"],
-)
-
 
 def collate_wrapper(batch: List[Dict[str, Any]]) -> Dict[str, Any]:
     """Flatten wrapper."""
@@ -49,7 +43,6 @@ class IDTReeSDataModule(pl.LightningDataModule):
         num_workers: int = 0,
         val_split_pct: float = 0.1,
         test_split_pct: float = 0.1,
-        augmentations: K.AugmentationSequential = DEFAULT_AUGS,
         predict_on: str = "test",
         task: str = "task1",
     ) -> None:
@@ -75,7 +68,12 @@ class IDTReeSDataModule(pl.LightningDataModule):
         self.num_workers = num_workers
         self.val_split_pct = val_split_pct
         self.test_split_pct = test_split_pct
-        self.augmentations = augmentations
+        self.augmentations = K.AugmentationSequential(
+            K.RandomHorizontalFlip(p=0.6),
+            K.RandomVerticalFlip(p=0.4),
+            data_keys=["input", "bbox_xyxy"],
+        )
+
         self.predict_on = predict_on
         self.task = task
 

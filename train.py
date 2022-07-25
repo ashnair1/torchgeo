@@ -172,10 +172,10 @@ def main(conf: DictConfig) -> None:
     tb_logger = pl_loggers.TensorBoardLogger(conf.program.log_dir, name=experiment_name)
 
     checkpoint_callback = ModelCheckpoint(
-        monitor="train_loss", dirpath=experiment_dir, save_top_k=1, save_last=True
+        monitor="val_map", dirpath=experiment_dir, save_top_k=1, save_last=True
     )
     early_stopping_callback = EarlyStopping(
-        monitor="train_loss", min_delta=0.00, patience=18
+        monitor="val_map", min_delta=0.00, patience=18
     )
 
     trainer_args = cast(Dict[str, Any], OmegaConf.to_object(conf.trainer))
@@ -186,7 +186,11 @@ def main(conf: DictConfig) -> None:
     trainer = pl.Trainer(**trainer_args)
 
     if trainer_args.get("auto_lr_find"):
-        trainer.tune(model=task, datamodule=datamodule)
+        trainer.tune(
+            model=task,
+            datamodule=datamodule,
+            lr_find_kwargs={"early_stop_threshold": None},
+        )
 
     ######################################
     # Run experiment

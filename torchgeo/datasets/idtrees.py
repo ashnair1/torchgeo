@@ -215,6 +215,12 @@ class IDTReeS(NonGeoDataset):
             sample["boxes"] = self._load_boxes(path)
             sample["label"] = self._load_target(path)
 
+        # Remove negative boxes
+        if sample["boxes"].nelement() != 0:
+            indices = (sample["boxes"] >= 0).all(axis=1)
+            sample["boxes"] = sample["boxes"][indices]
+            sample["label"] = sample["label"][indices]
+
         if self.transforms is not None:
             sample = self.transforms(sample)
 
