@@ -217,7 +217,7 @@ class IDTReeS(NonGeoDataset):
 
         # Remove negative boxes
         if sample["boxes"].nelement() != 0:
-            indices = (sample["boxes"] >= 0).all(axis=1)
+            indices = (sample["boxes"] >= 0).all(axis=1)  # type: ignore[call-overload]
             sample["boxes"] = sample["boxes"][indices]
             sample["label"] = sample["label"][indices]
 

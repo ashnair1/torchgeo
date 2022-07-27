@@ -99,6 +99,16 @@ class NASAMarineDebris(NonGeoDataset):
         boxes = self._load_target(self.files[index]["target"])
         sample = {"image": image, "boxes": boxes}
 
+        # Remove invalid boxes
+        # width = sample["boxes"][:,2] - sample["boxes"][:,0]
+        # height = sample["boxes"][:,3] - sample["boxes"][:,1]
+        # xywh = torch.column_stack((sample["boxes"][:,0:2], width, height))
+        # indices = (xywh >= 0).all(axis=1)
+        w_check = (sample["boxes"][:, 2] - sample["boxes"][:, 0]) > 0
+        h_check = (sample["boxes"][:, 3] - sample["boxes"][:, 1]) > 0
+        indices = w_check & h_check
+        sample["boxes"] = sample["boxes"][indices]
+
         if self.transforms is not None:
             sample = self.transforms(sample)
 

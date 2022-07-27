@@ -24,6 +24,7 @@ from torchgeo.datamodules import (
     InriaAerialImageLabelingDataModule,
     LandCoverAIDataModule,
     NAIPChesapeakeDataModule,
+    NASAMarineDebrisDataModule,
     OSCDDataModule,
     RESISC45DataModule,
     SEN12MSDataModule,
@@ -53,6 +54,7 @@ TASK_TO_MODULES_MAPPING: Dict[
     "inria": (SemanticSegmentationTask, InriaAerialImageLabelingDataModule),
     "landcoverai": (SemanticSegmentationTask, LandCoverAIDataModule),
     "naipchesapeake": (SemanticSegmentationTask, NAIPChesapeakeDataModule),
+    "nasa_marine_debris": (ObjectDetectionTask, NASAMarineDebrisDataModule),
     "oscd": (SemanticSegmentationTask, OSCDDataModule),
     "resisc45": (ClassificationTask, RESISC45DataModule),
     "sen12ms": (SemanticSegmentationTask, SEN12MSDataModule),
@@ -189,7 +191,7 @@ def main(conf: DictConfig) -> None:
         trainer.tune(
             model=task,
             datamodule=datamodule,
-            lr_find_kwargs={"early_stop_threshold": None},
+            # lr_find_kwargs={"early_stop_threshold": None},
         )
 
     ######################################
