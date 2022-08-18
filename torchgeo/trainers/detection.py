@@ -31,12 +31,12 @@ class ObjectDetectionTask(LightningModule):
         if self.hyperparams["detection_model"] == "faster-rcnn":
             if "resnet" in self.hyperparams["backbone"]:
                 backbone = resnet_fpn_backbone(
-                    self.hyperparams["backbone"], pretrained=True, trainable_layers=5
+                    self.hyperparams["backbone"], pretrained=True, trainable_layers=3
                 )
 
             # TODO: Make anchor sizes and feat_maps configurable
             anchor_generator = AnchorGenerator(
-                sizes=((16), (32), (64), (128), (256)), aspect_ratios=((0.5, 1.0, 2.0))
+                sizes=((32), (64), (128), (256), (512)), aspect_ratios=((0.5, 1.0, 2.0))
             )
 
             roi_pooler = MultiScaleRoIAlign(
@@ -49,6 +49,13 @@ class ObjectDetectionTask(LightningModule):
                 rpn_anchor_generator=anchor_generator,
                 box_roi_pool=roi_pooler,
             )
+            # num_classes = self.hyperparams["num_classes"]
+            # self.model = fasterrcnn_resnet50_fpn(pretrained=True)
+            # get number of input features for the classifier
+            # in_features = self.model.roi_heads.box_predictor.cls_score.in_features
+            # replace the pre-trained head with a new one
+            # self.model.roi_heads.box_predictor =
+            # FastRCNNPredictor(in_features, num_classes)
 
         else:
             raise ValueError(

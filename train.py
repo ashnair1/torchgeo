@@ -177,7 +177,7 @@ def main(conf: DictConfig) -> None:
         monitor="val_map", dirpath=experiment_dir, save_top_k=1, save_last=True
     )
     early_stopping_callback = EarlyStopping(
-        monitor="val_map", min_delta=0.00, patience=18
+        monitor="val_map", min_delta=0.00, patience=30
     )
 
     trainer_args = cast(Dict[str, Any], OmegaConf.to_object(conf.trainer))
