@@ -21,8 +21,8 @@ def collate_wrapper(batch: List[Dict[str, Any]]) -> Dict[str, Any]:
     r_batch = {"image": images}
 
     if "label" in batch[0]:
-        r_batch["boxes"] = [b["boxes"].reshape(0, 4) if b["boxes"].numel() == 0 else b["boxes"] for b in batch]  # type: ignore[assignment]
-        r_batch["labels"] = [b["label"].long() for b in batch]  # type: ignore[assignment]
+        r_batch["boxes"] = [b["boxes"].reshape(0, 4) if b["boxes"].numel() == 0 else b["boxes"] for b in batch]  # type: ignore[assignment] # noqa:E501
+        r_batch["labels"] = [b["label"].long() for b in batch]  # type: ignore[assignment] # noqa:E501
 
     return r_batch
 
@@ -62,7 +62,7 @@ class IDTReeSDataModule(pl.LightningDataModule):
             task: 'task1' for detection, 'task2' for detection + classification
                 (only relevant for split='test')
         """
-        super().__init__()  # type: ignore[no-untyped-call]
+        super().__init__()
         self.root_dir = root_dir
         self.batch_size = batch_size
         self.num_workers = num_workers
@@ -195,7 +195,7 @@ class IDTReeSDataModule(pl.LightningDataModule):
     def plot(self, *args: Any, **kwargs: Any) -> plt.Figure:
         """Run :meth:`torchgeo.datasets.IDTreeS.plot`."""
         try:
-            return self.val_dataset.dataset.plot(*args, **kwargs)  # type: ignore[attr-defined]
+            return self.val_dataset.dataset.plot(*args, **kwargs)  # type: ignore[attr-defined] # noqa:E501
         except AttributeError:
             # If val_split_pct == 0.0
             return self.val_dataset.plot(*args, **kwargs)  # type: ignore[attr-defined]

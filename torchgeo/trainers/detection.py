@@ -139,7 +139,7 @@ class ObjectDetectionTask(LightningModule):
 
         if batch_idx < 10:
             try:
-                datamodule = self.trainer.datamodule  # type: ignore[union-attr]
+                datamodule = self.trainer.datamodule  # type: ignore[attr-defined]
                 batch["prediction_boxes"] = [b["boxes"].cpu() for b in y_hat]
                 batch["prediction_labels"] = [b["labels"].cpu() for b in y_hat]
                 batch["image"] = batch["image"].cpu()
@@ -168,7 +168,7 @@ class ObjectDetectionTask(LightningModule):
         self.val_metrics.reset()
 
     def test_step(self, *args: Any, **kwargs: Any) -> None:
-        """Compute test loss.
+        """Compute test map.
 
         Args:
             batch: the output of your DataLoader
