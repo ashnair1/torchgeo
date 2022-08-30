@@ -173,11 +173,18 @@ def main(conf: DictConfig) -> None:
     ######################################
     tb_logger = pl_loggers.TensorBoardLogger(conf.program.log_dir, name=experiment_name)
 
+    if isinstance(task, ObjectDetectionTask):
+        monitor_metric = "val_map"
+        mode = "max"
+    else:
+        monitor_metric = "val_loss"
+        mode = "min"
+
     checkpoint_callback = ModelCheckpoint(
-        monitor="val_map", dirpath=experiment_dir, save_top_k=1, save_last=True
+        monitor=monitor_metric, dirpath=experiment_dir, save_top_k=1, save_last=True
     )
     early_stopping_callback = EarlyStopping(
-        monitor="val_map", min_delta=0.00, patience=18, mode="max"
+        monitor=monitor_metric, min_delta=0.00, patience=18, mode=mode
     )
 
     trainer_args = cast(Dict[str, Any], OmegaConf.to_object(conf.trainer))
