@@ -50,6 +50,7 @@ class InriaAerialImageLabelingDataModule(pl.LightningDataModule):
         patch_size: Union[int, Tuple[int, int]] = 512,
         num_patches_per_tile: int = 32,
         predict_on: str = "test",
+        **kwargs: Any,
     ) -> None:
         """Initialize a LightningDataModule for InriaAerialImageLabeling.
 

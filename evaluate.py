@@ -120,6 +120,9 @@ def run_eval_loop(
             ]
         with torch.inference_mode():
             y_pred = model(x)
+            # TODO: Won't work with Inria
+            if "mask" in batch:
+                y_pred = y_pred.argmax(dim=1).unsqueeze(1)
         metrics(y_pred, y)
     results = metrics.compute()
     metrics.reset()

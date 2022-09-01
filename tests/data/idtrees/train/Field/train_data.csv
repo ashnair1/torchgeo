@@ -1,0 +1,1167 @@
+indvdID,siteID,taxonID,scientificName,taxonRank,utmZone,nlcdClass,elevation,growthForm,plantStatus,stemDiameter,height,maxCrownDiameter,ninetyCrownDiameter,canopyPosition
+MLBS00797,MLBS,ACPE,Acer pensylvanicum L.,species,17N,deciduousForest,1172.84,single bole tree,Live,12.4,12.2,NA,NA,NA
+MLBS01563,MLBS,ACPE,Acer pensylvanicum L.,species,17N,deciduousForest,1221.21,single bole tree,"Live, disease damaged",12.3,6.7,4.5,4.4,Mostly shaded
+MLBS01628,MLBS,ACPE,Acer pensylvanicum L.,species,17N,deciduousForest,1310.19,single bole tree,"Live, physically damaged",13.9,6.5,6.1,3.6,Mostly shaded
+MLBS01682,MLBS,ACPE,Acer pensylvanicum L.,species,17N,deciduousForest,1267.66,single bole tree,Live,19.8,11.5,6.3,6,Partially shaded
+MLBS01675,MLBS,ACPE,Acer pensylvanicum L.,species,17N,deciduousForest,1310.19,single bole tree,Live,22.8,8.4,8.2,6.4,Mostly shaded
+MLBS01671A,MLBS,ACPE,Acer pensylvanicum L.,species,17N,deciduousForest,1310.19,multi-bole tree,Live,10.3,7.5,8.6,4.9,Mostly shaded
+MLBS01643,MLBS,ACPE,Acer pensylvanicum L.,species,17N,deciduousForest,1310.19,single bole tree,Live,17.5,9.1,6,6,Mostly shaded
+MLBS01729,MLBS,ACPE,Acer pensylvanicum L.,species,17N,deciduousForest,897.62,single bole tree,Live,6.5,14.6,8.3,6,Mostly shaded
+MLBS00128,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1175.1,single bole tree,Live,19.2,14.5,NA,NA,NA
+MLBS00100A,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1175.1,multi-bole tree,Live,25.5,15.4,NA,NA,NA
+MLBS00094,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1180.77,single bole tree,Live,29.4,15.5,NA,NA,NA
+MLBS00274,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1173.12,single bole tree,Live,29.8,17.4,NA,NA,NA
+MLBS00292A,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1178.17,multi-bole tree,Live,31.1,18.4,NA,NA,NA
+MLBS00091,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1180.77,single bole tree,Live,17.2,16.1,NA,NA,NA
+MLBS00256,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1173.12,single bole tree,Live,17,17.2,NA,NA,NA
+MLBS00217,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1173.12,single bole tree,Live,34.5,15.7,NA,NA,NA
+MLBS00251A,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1173.12,multi-bole tree,Live,20.4,18.6,NA,NA,NA
+MLBS00072,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1180.77,single bole tree,"Live, broken bole",12,6.2,NA,NA,NA
+MLBS00202C,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1173.12,multi-bole tree,Live,11.3,16.1,NA,NA,NA
+MLBS00083,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1180.77,single bole tree,Standing dead,21.4,14.5,NA,NA,NA
+MLBS00070,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1180.77,multi-bole tree,Live,22.8,16.4,NA,NA,NA
+MLBS00067,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1180.77,multi-bole tree,Live,23.2,16.1,NA,NA,NA
+MLBS00088,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1180.77,single bole tree,Live,29,18.6,NA,NA,NA
+MLBS00138A,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1175.1,multi-bole tree,Standing dead,10.5,15,NA,NA,NA
+MLBS00178A,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1175.1,multi-bole tree,Live,18.3,18.6,NA,NA,NA
+MLBS00183,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1175.1,single bole tree,Live,26.7,17.7,NA,NA,NA
+MLBS00277,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1173.12,single bole tree,Live,15,14.6,NA,NA,NA
+MLBS00265,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1173.12,single bole tree,Live,28.6,15.6,NA,NA,NA
+MLBS00252,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1173.12,multi-bole tree,Live,16.7,17.1,NA,NA,NA
+MLBS00312,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1178.17,multi-bole tree,Live,35.6,19.4,NA,NA,NA
+MLBS00556,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1169.01,single bole tree,Standing dead,12.2,9.8,NA,NA,NA
+MLBS00473,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1169.65,single bole tree,"Live,  other damage",15,7.9,NA,NA,NA
+MLBS00462,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1169.65,single bole tree,Live,15.3,15.3,NA,NA,NA
+MLBS00505,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1169.65,single bole tree,Live,17.4,16.4,NA,NA,NA
+MLBS00578,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1175.83,single bole tree,Live,14.6,14.6,NA,NA,NA
+MLBS00427,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1175.68,single bole tree,Live,15.2,13.2,NA,NA,NA
+MLBS00401B,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1175.68,multi-bole tree,Live,15.6,17.1,NA,NA,NA
+MLBS00404,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1175.68,multi-bole tree,Live,33.1,23.1,NA,NA,NA
+MLBS00441,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1175.68,single bole tree,Standing dead,11.8,9,NA,NA,NA
+MLBS00386,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1175.68,single bole tree,"Live,  other damage",13.5,14.8,NA,NA,NA
+MLBS00423,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1175.68,single bole tree,Live,22.4,19,NA,NA,NA
+MLBS00508,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1169.65,single bole tree,Live,17.5,17.5,NA,NA,NA
+MLBS00595,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1175.83,single bole tree,Live,13,15.3,NA,NA,NA
+MLBS00409,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1175.68,single bole tree,Live,10.6,12.4,NA,NA,NA
+MLBS00513,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1169.65,single bole tree,Live,18.7,15.5,NA,NA,NA
+MLBS00419,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1175.68,single bole tree,Live,10.1,11.4,NA,NA,NA
+MLBS00363,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1175.68,single bole tree,Live,19.9,18.9,NA,NA,NA
+MLBS00558,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1169.01,single bole tree,Live,24.9,16.3,NA,NA,NA
+MLBS00471,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1169.65,single bole tree,Live,36.1,23,NA,NA,NA
+MLBS00511,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1169.65,single bole tree,Live,59.9,21.3,NA,NA,NA
+MLBS00560,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1169.01,single bole tree,Live,41.8,17.1,NA,NA,NA
+MLBS00444,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1175.68,single bole tree,Live,29.1,19.9,NA,NA,NA
+MLBS00661,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1170.24,single bole tree,Live,14.2,19,NA,NA,NA
+MLBS00653C,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1170.24,multi-bole tree,Live,12.9,18.1,NA,NA,NA
+MLBS00652,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1170.24,multi-bole tree,Live,39.1,20.8,NA,NA,NA
+MLBS00645,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1170.24,single bole tree,Live,25.2,19.2,NA,NA,NA
+MLBS00644A,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1170.24,multi-bole tree,Live,39.8,21.5,NA,NA,NA
+MLBS00658,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1170.24,single bole tree,Live,38.6,20,NA,NA,NA
+MLBS00726,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1173.13,single bole tree,Live,24.5,16.5,NA,NA,NA
+MLBS00733A,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1173.13,multi-bole tree,Live,40.5,20,NA,NA,NA
+MLBS00729C,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1173.13,multi-bole tree,Live,30.9,20.8,NA,NA,NA
+MLBS00749,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1173.13,single bole tree,Live,20.8,13.6,NA,NA,NA
+MLBS00757,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1173.13,single bole tree,Standing dead,20.1,14.5,NA,NA,NA
+MLBS00754,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1173.13,single bole tree,Live,29.1,18.5,NA,NA,NA
+MLBS00791,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1172.84,single bole tree,Live,13.6,10.6,NA,NA,NA
+MLBS01110,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1174.15,single bole tree,Live,16.8,11.3,NA,NA,NA
+MLBS00834,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1172.84,single bole tree,"Live, disease damaged",17.2,10.2,NA,NA,NA
+MLBS00662,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1170.24,single bole tree,Live,30.3,19.7,NA,NA,NA
+MLBS00725,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1173.13,single bole tree,Live,20.2,16.8,NA,NA,NA
+MLBS01117,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1174.15,single bole tree,Live,22.1,18.5,NA,NA,NA
+MLBS01099,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1174.15,multi-bole tree,Live,35.4,21,NA,NA,NA
+MLBS01119,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1174.15,single bole tree,Live,31.8,20.7,NA,NA,NA
+MLBS00853,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1172.84,multi-bole tree,Live,22.6,17.4,NA,NA,NA
+MLBS00641,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1170.24,single bole tree,Live,26.8,20.2,NA,NA,NA
+MLBS00752,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1173.13,single bole tree,Standing dead,23.5,16.1,NA,NA,NA
+MLBS01115,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1174.15,single bole tree,Live,17,13.9,NA,NA,NA
+MLBS01399B,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1173.32,multi-bole tree,Live,11.8,17.9,NA,NA,NA
+MLBS01389A,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1173.32,multi-bole tree,Standing dead,10.2,10.7,NA,NA,NA
+MLBS01398,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1173.32,multi-bole tree,Standing dead,24.2,16.4,NA,NA,NA
+MLBS01378,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1173.32,multi-bole tree,Live,42,20.5,NA,NA,NA
+MLBS01397A,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1173.32,multi-bole tree,Live,28.5,18.4,NA,NA,NA
+MLBS01374,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1173.32,multi-bole tree,Live,33.5,19.7,NA,NA,NA
+MLBS01282,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1171.54,single bole tree,Live,26.2,15.1,NA,NA,NA
+MLBS01326,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1169.25,single bole tree,Live,23.3,10.6,NA,NA,NA
+MLBS01351A,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1173.32,multi-bole tree,Live,20.1,18.5,NA,NA,NA
+MLBS01350,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1173.32,multi-bole tree,Live,25.2,17.9,NA,NA,NA
+MLBS01222,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1167.78,multi-bole tree,Live,33.4,21.1,NA,NA,NA
+MLBS01172,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1167.78,single bole tree,Live,38.5,16.9,NA,NA,NA
+MLBS01297,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1169.25,single bole tree,Live,14.5,13.1,NA,NA,NA
+MLBS01268,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1171.54,single bole tree,Live,26.5,17.8,NA,NA,NA
+MLBS01147,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1167.78,single bole tree,Live,15.3,15.2,NA,NA,NA
+MLBS01271,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1171.54,single bole tree,Live,22.4,7.9,NA,NA,NA
+MLBS01250,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1166.12,single bole tree,Live,19.9,15.6,NA,NA,NA
+MLBS01160,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1167.78,multi-bole tree,Live,21.9,16.9,NA,NA,NA
+MLBS01260A,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1166.12,multi-bole tree,Live,24.2,17.6,NA,NA,NA
+MLBS01223,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1167.78,multi-bole tree,Live,19.8,17,NA,NA,NA
+MLBS01226,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1166.12,single bole tree,Live,12.8,13,NA,NA,NA
+MLBS01258,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1166.12,single bole tree,Live,45.1,18.9,NA,NA,NA
+MLBS01252,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1166.12,single bole tree,Live,35.6,15.6,NA,NA,NA
+MLBS01208,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1167.78,multi-bole tree,Live,24.9,18.5,NA,NA,NA
+MLBS01362,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1173.32,single bole tree,Live,33.5,17.4,NA,NA,NA
+MLBS01370,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1173.32,single bole tree,Live,22.1,16.3,NA,NA,NA
+MLBS01363,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1173.32,single bole tree,Live,52.8,18.5,NA,NA,NA
+MLBS01256,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1166.12,single bole tree,Live,16.2,15.5,NA,NA,NA
+MLBS01267,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1171.54,single bole tree,Live,42.9,20,NA,NA,NA
+MLBS01330,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1169.25,single bole tree,Live,29.9,16.7,NA,NA,NA
+MLBS01291,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1169.25,single bole tree,Live,30.1,17.7,NA,NA,NA
+MLBS01344,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1173.32,single bole tree,Live,22.6,16.8,NA,NA,NA
+MLBS01269,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1171.54,single bole tree,Live,34.3,20.8,NA,NA,NA
+MLBS01202B,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1167.74,multi-bole tree,Live,34.9,18.4,NA,NA,NA
+MLBS00733B,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1174.17,multi-bole tree,Live,38.5,20,NA,NA,NA
+MLBS01568,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1241.81,single bole tree,"Live, insect damaged",41,12.1,7.7,7.4,Full sun
+MLBS01534A,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1179.85,multi-bole tree,Standing dead,7.2,10.8,5.7,4.5,Mostly shaded
+MLBS01525,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1179.85,single bole tree,Standing dead,14.3,12.2,4,3.5,Mostly shaded
+MLBS01546,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1221.21,multi-bole tree,Live,22.4,12.6,10.3,8.2,Mostly shaded
+MLBS01704A,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1267.66,multi-bole tree,Live,11.7,7.4,5.5,5.4,Mostly shaded
+MLBS01711,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1267.66,single bole tree,Live,13,13,7.6,6.2,Partially shaded
+MLBS01642,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1310.19,single bole tree,Live,12.5,7.9,8.7,5.7,Mostly shaded
+MLBS01661,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1310.19,single bole tree,No longer qualifies,22.7,11.9,7.7,6.4,Partially shaded
+MLBS01661,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1310.19,single bole tree,Live,22.7,11.9,7.7,6.4,Partially shaded
+MLBS01742,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,897.62,single bole tree,Live,16.9,17.4,8.8,8.2,Mostly shaded
+MLBS01822,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,813.35,single bole tree,Live,17.9,19.4,7.9,6.6,Mostly shaded
+MLBS01879,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,777.71,single bole tree,"Live, disease damaged",12.1,11.3,6.8,5.5,Mostly shaded
+MLBS02083A,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1319.11,multi-bole tree,Live,15.3,8.9,5.3,4.3,Partially shaded
+MLBS02082,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1319.11,multi-bole tree,Live,13.4,9,4,3.7,Partially shaded
+MLBS02114,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1319.11,multi-bole tree,Live,11.1,7,5.1,4.3,Partially shaded
+MLBS02043,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1288.96,single bole tree,Live,10.3,7.5,3.9,3.3,Partially shaded
+MLBS02100,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1319.11,single bole tree,Live,14.4,7.4,5.2,3.3,Full sun
+MLBS01977A,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1285.2,multi-bole tree,Live,6,7.7,7.4,7.1,Mostly shaded
+MLBS01959,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1285.2,single bole tree,Live,18.2,11.9,7.1,6.8,Partially shaded
+MLBS01996,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1285.2,single bole tree,Live,13.2,10.2,7.8,5.6,Mostly shaded
+MLBS02031,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1288.96,single bole tree,Live,16.7,10.7,5.2,4.7,Partially shaded
+MLBS02006,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1288.96,single bole tree,Live,17.8,10.2,5.9,4.1,Partially shaded
+MLBS02081,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,1319.11,single bole tree,Live,11.4,8.2,3.4,3.1,Partially shaded
+MLBS02178,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,978.65,single bole tree,Live,17.8,16.7,8.9,6.9,Mostly shaded
+MLBS02166,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,978.65,single bole tree,"Live, disease damaged",19.9,17.8,7.2,4.3,Mostly shaded
+MLBS02158,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,978.65,single bole tree,Live,33.9,24.1,5.2,5,Partially shaded
+MLBS02281,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,819.79,single bole tree,Live,10.5,14.1,5.6,4,Mostly shaded
+MLBS02270,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,819.79,multi-bole tree,Live,23.8,17.5,10.6,6.1,Mostly shaded
+MLBS02230,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,819.79,multi-bole tree,Live,16.5,16.3,6.5,5.9,Mostly shaded
+MLBS02265,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,819.79,single bole tree,Live,24.2,19.5,7.6,6.9,Partially shaded
+MLBS02297,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,819.79,single bole tree,Live,24,10.5,7.8,7.1,Partially shaded
+MLBS02423,MLBS,ACRU,Acer rubrum L.,species,17N,deciduousForest,791.31,single bole tree,Live,24.8,19.9,9,7.9,Partially shaded
+OSBS01038,OSBS,ACRU,Acer rubrum L.,species,17N,woodyWetlands,31.45,single bole tree,No longer qualifies,12.7,3.5,NA,NA,NA
+OSBS00941,OSBS,ACRU,Acer rubrum L.,species,17N,woodyWetlands,31.45,single bole tree,Live,53.8,19.8,10.1,8.3,NA
+OSBS00945,OSBS,ACRU,Acer rubrum L.,species,17N,woodyWetlands,31.45,single bole tree,Live,16.8,6.9,6.7,5.2,NA
+OSBS00953,OSBS,ACRU,Acer rubrum L.,species,17N,woodyWetlands,31.45,single bole tree,Live,39.3,17.4,16.4,12,Full sun
+MLBS02171,MLBS,ACSA3,Acer saccharum Marshall,species,17N,deciduousForest,978.65,single bole tree,Live,16.8,15.2,8.3,6.9,Mostly shaded
+MLBS00170A,MLBS,AMLA,Amelanchier laevis Wiegand,species,17N,deciduousForest,1175.1,multi-bole tree,Live,25.6,13.6,NA,NA,NA
+MLBS00283A,MLBS,AMLA,Amelanchier laevis Wiegand,species,17N,deciduousForest,1178.17,multi-bole tree,Live,23,15.7,NA,NA,NA
+MLBS00282,MLBS,AMLA,Amelanchier laevis Wiegand,species,17N,deciduousForest,1178.17,single bole tree,Live,22.5,18.9,NA,NA,NA
+MLBS00155,MLBS,AMLA,Amelanchier laevis Wiegand,species,17N,deciduousForest,1175.1,single bole tree,Live,13.1,11.5,NA,NA,NA
+MLBS00133,MLBS,AMLA,Amelanchier laevis Wiegand,species,17N,deciduousForest,1175.1,single bole tree,Live,33.9,15.8,NA,NA,NA
+MLBS00514,MLBS,AMLA,Amelanchier laevis Wiegand,species,17N,deciduousForest,1169.65,single bole tree,Live,15,13.3,NA,NA,NA
+MLBS00538,MLBS,AMLA,Amelanchier laevis Wiegand,species,17N,deciduousForest,1169.01,single bole tree,Live,27.6,17.5,NA,NA,NA
+MLBS00568,MLBS,AMLA,Amelanchier laevis Wiegand,species,17N,deciduousForest,1175.83,single bole tree,Live,15.2,12.6,NA,NA,NA
+MLBS00392,MLBS,AMLA,Amelanchier laevis Wiegand,species,17N,deciduousForest,1175.68,single bole tree,Live,23.4,19.8,NA,NA,NA
+MLBS00449,MLBS,AMLA,Amelanchier laevis Wiegand,species,17N,deciduousForest,1175.68,single bole tree,Live,18.9,14.8,NA,NA,NA
+MLBS00412,MLBS,AMLA,Amelanchier laevis Wiegand,species,17N,deciduousForest,1175.68,single bole tree,Live,14.1,11.3,NA,NA,NA
+MLBS00403,MLBS,AMLA,Amelanchier laevis Wiegand,species,17N,deciduousForest,1175.68,single bole tree,Live,13.6,13.7,NA,NA,NA
+MLBS00398,MLBS,AMLA,Amelanchier laevis Wiegand,species,17N,deciduousForest,1175.68,single bole tree,Live,12.8,14.1,NA,NA,NA
+MLBS00497,MLBS,AMLA,Amelanchier laevis Wiegand,species,17N,deciduousForest,1169.65,single bole tree,Live,24.6,17.4,NA,NA,NA
+MLBS00584,MLBS,AMLA,Amelanchier laevis Wiegand,species,17N,deciduousForest,1175.83,single bole tree,Live,30.8,17.4,NA,NA,NA
+MLBS00521,MLBS,AMLA,Amelanchier laevis Wiegand,species,17N,deciduousForest,1169.01,single bole tree,Live,26.8,25.2,NA,NA,NA
+MLBS00520,MLBS,AMLA,Amelanchier laevis Wiegand,species,17N,deciduousForest,1169.01,single bole tree,Live,33.5,16.4,NA,NA,NA
+MLBS00532,MLBS,AMLA,Amelanchier laevis Wiegand,species,17N,deciduousForest,1169.01,single bole tree,Live,31.8,17.5,NA,NA,NA
+MLBS00656,MLBS,AMLA,Amelanchier laevis Wiegand,species,17N,deciduousForest,1170.24,single bole tree,Live,31,17.7,NA,NA,NA
+MLBS00840,MLBS,AMLA,Amelanchier laevis Wiegand,species,17N,deciduousForest,1172.84,single bole tree,Live,12.2,10.6,NA,NA,NA
+MLBS00820,MLBS,AMLA,Amelanchier laevis Wiegand,species,17N,deciduousForest,1172.84,single bole tree,Live,38.7,18.4,NA,NA,NA
+MLBS00712,MLBS,AMLA,Amelanchier laevis Wiegand,species,17N,deciduousForest,1173.13,single bole tree,Live,11.6,10,NA,NA,NA
+MLBS00764,MLBS,AMLA,Amelanchier laevis Wiegand,species,17N,deciduousForest,1172.84,single bole tree,Live,43.6,19.5,NA,NA,NA
+MLBS00859,MLBS,AMLA,Amelanchier laevis Wiegand,species,17N,deciduousForest,1172.84,single bole tree,Live,13.8,13.3,NA,NA,NA
+MLBS00826,MLBS,AMLA,Amelanchier laevis Wiegand,species,17N,deciduousForest,1172.84,single bole tree,Live,10.9,9.7,NA,NA,NA
+MLBS00667,MLBS,AMLA,Amelanchier laevis Wiegand,species,17N,deciduousForest,1170.24,single bole tree,Standing dead,35.9,12.8,NA,NA,NA
+MLBS01243,MLBS,AMLA,Amelanchier laevis Wiegand,species,17N,deciduousForest,1166.12,single bole tree,Live,19.7,16.1,NA,NA,NA
+MLBS01298,MLBS,AMLA,Amelanchier laevis Wiegand,species,17N,deciduousForest,1169.25,multi-bole tree,Live,31.1,13.9,NA,NA,NA
+MLBS01329,MLBS,AMLA,Amelanchier laevis Wiegand,species,17N,deciduousForest,1169.25,single bole tree,Standing dead,18,10,NA,NA,NA
+MLBS01156A,MLBS,AMLA,Amelanchier laevis Wiegand,species,17N,deciduousForest,1167.78,multi-bole tree,Live,28,18.5,NA,NA,NA
+MLBS01187A,MLBS,AMLA,Amelanchier laevis Wiegand,species,17N,deciduousForest,1167.78,multi-bole tree,Live,28.9,18.1,NA,NA,NA
+MLBS01287,MLBS,AMLA,Amelanchier laevis Wiegand,species,17N,deciduousForest,1171.54,single bole tree,Live,16.6,14,NA,NA,NA
+MLBS01306A,MLBS,AMLA,Amelanchier laevis Wiegand,species,17N,deciduousForest,1169.25,multi-bole tree,Live,24.8,16.7,NA,NA,NA
+MLBS01175,MLBS,AMLA,Amelanchier laevis Wiegand,species,17N,deciduousForest,1167.78,NA,No longer qualifies,14.9,16.7,NA,NA,NA
+MLBS01175,MLBS,AMLA,Amelanchier laevis Wiegand,species,17N,deciduousForest,1167.78,single bole tree,Live,14.9,16.7,NA,NA,NA
+MLBS01139,MLBS,AMLA,Amelanchier laevis Wiegand,species,17N,deciduousForest,1167.78,single bole tree,Live,30.4,17.8,NA,NA,NA
+MLBS01263,MLBS,AMLA,Amelanchier laevis Wiegand,species,17N,deciduousForest,1166.12,single bole tree,Standing dead,31.9,11.7,NA,NA,NA
+MLBS01311A,MLBS,AMLA,Amelanchier laevis Wiegand,species,17N,deciduousForest,1169.25,multi-bole tree,Standing dead,12.8,12.6,NA,NA,NA
+MLBS01506,MLBS,AMLA,Amelanchier laevis Wiegand,species,17N,deciduousForest,1179.85,single bole tree,Live,14.3,11,5.7,5,Mostly shaded
+MLBS01681,MLBS,AMLA,Amelanchier laevis Wiegand,species,17N,deciduousForest,1310.19,single bole tree,Live,15.4,7.8,3.3,2.7,Partially shaded
+MLBS01706,MLBS,AMLA,Amelanchier laevis Wiegand,species,17N,deciduousForest,1267.66,single bole tree,Live,12.2,8.5,5.6,5,Mostly shaded
+MLBS01769,MLBS,AMLA,Amelanchier laevis Wiegand,species,17N,deciduousForest,897.62,single bole tree,Live,14.6,14,7.8,6.9,Mostly shaded
+MLBS02046,MLBS,AMLA,Amelanchier laevis Wiegand,species,17N,deciduousForest,1288.96,single bole tree,Live,10.2,7.1,4.4,2.3,Partially shaded
+MLBS02205,MLBS,AMLA,Amelanchier laevis Wiegand,species,17N,deciduousForest,792.64,single bole tree,Live,22.8,18.5,9.2,7.2,Mostly shaded
+MLBS01175,MLBS,AMLA,Amelanchier laevis Wiegand,species,17N,deciduousForest,1167.78,NA,No longer qualifies,14.9,16.7,NA,NA,NA
+MLBS01175,MLBS,AMLA,Amelanchier laevis Wiegand,species,17N,deciduousForest,1167.78,single bole tree,Live,14.9,16.7,NA,NA,NA
+MLBS01495,MLBS,BETUL,Betula sp.,genus,17N,deciduousForest,1179.33,single bole tree,Live,10.7,10,7.1,6.1,Partially shaded
+MLBS01493,MLBS,BETUL,Betula sp.,genus,17N,deciduousForest,1179.33,single bole tree,Live,38.9,16,11.1,7.6,Full sun
+MLBS01538,MLBS,BETUL,Betula sp.,genus,17N,deciduousForest,1179.85,single bole tree,Live,16,14.8,9.6,9.1,Mostly shaded
+MLBS01640,MLBS,BETUL,Betula sp.,genus,17N,deciduousForest,1310.19,single bole tree,Live,17.4,8.8,9.1,6.9,Mostly shaded
+MLBS02112,MLBS,BETUL,Betula sp.,genus,17N,deciduousForest,1319.11,single bole tree,Standing dead,10.6,6.1,1.4,0.9,Mostly shaded
+MLBS02108,MLBS,BETUL,Betula sp.,genus,17N,deciduousForest,1319.11,single bole tree,Live,21.2,9.5,6.9,5.7,Partially shaded
+MLBS01557,MLBS,CAGL8,Carya glabra (Mill.) Sweet,species,17N,deciduousForest,1221.21,multi-bole tree,Live,19.1,20.3,6.5,4.4,Partially shaded
+MLBS01765,MLBS,CAGL8,Carya glabra (Mill.) Sweet,species,17N,deciduousForest,897.62,single bole tree,Live,20.3,16.8,5.7,4.7,Mostly shaded
+MLBS02348,MLBS,CAGL8,Carya glabra (Mill.) Sweet,species,17N,deciduousForest,784.88,single bole tree,Live,57.1,31,13.9,13.4,Full sun
+MLBS01779,MLBS,CATO6,Carya tomentosa (Lam.) Nutt.,species,17N,deciduousForest,943.47,single bole tree,Live,63.2,35.7,17.7,12.5,Partially shaded
+MLBS02078,MLBS,FAGR,Fagus grandifolia Ehrh.,species,17N,deciduousForest,1319.11,multi-bole tree,Live,11.9,7.8,4.3,3.9,Partially shaded
+MLBS02087,MLBS,FAGR,Fagus grandifolia Ehrh.,species,17N,deciduousForest,1319.11,single bole tree,Live,10.1,5.8,2.2,2.1,Partially shaded
+MLBS02146,MLBS,FAGR,Fagus grandifolia Ehrh.,species,17N,deciduousForest,1319.11,single bole tree,Live,10.1,7.4,4.5,3.4,Partially shaded
+MLBS02076,MLBS,FAGR,Fagus grandifolia Ehrh.,species,17N,deciduousForest,1319.11,single bole tree,Live,13.5,7.6,4.1,2.5,Partially shaded
+MLBS02077,MLBS,FAGR,Fagus grandifolia Ehrh.,species,17N,deciduousForest,1319.11,single bole tree,Live,11.4,7.9,1.6,1.5,Partially shaded
+MLBS02073A,MLBS,FAGR,Fagus grandifolia Ehrh.,species,17N,deciduousForest,1319.11,multi-bole tree,Live,7.2,6.9,6.6,3.8,Mostly shaded
+OSBS01037,OSBS,GOLA,Gordonia lasianthus (L.) Ellis,species,17N,woodyWetlands,27.8,single bole tree,Live,23.5,13.9,NA,NA,NA
+MLBS01789,MLBS,LITU,Liriodendron tulipifera L.,species,17N,deciduousForest,943.47,single bole tree,Live,54.4,36.3,9.8,7.8,Partially shaded
+MLBS01785,MLBS,LITU,Liriodendron tulipifera L.,species,17N,deciduousForest,943.47,multi-bole tree,Live,46.2,34.4,11.6,10.8,Partially shaded
+MLBS01798,MLBS,LITU,Liriodendron tulipifera L.,species,17N,deciduousForest,943.47,single bole tree,Live,66.9,39.3,17.1,14.7,Full sun
+MLBS01802,MLBS,LITU,Liriodendron tulipifera L.,species,17N,deciduousForest,943.47,single bole tree,Live,26.6,26.6,9.6,7.6,Mostly shaded
+MLBS01806,MLBS,LITU,Liriodendron tulipifera L.,species,17N,deciduousForest,943.47,multi-bole tree,Live,52.3,38,11.4,8.4,Partially shaded
+MLBS01777,MLBS,LITU,Liriodendron tulipifera L.,species,17N,deciduousForest,943.47,single bole tree,Live,47.2,38.2,7.3,6.9,Partially shaded
+MLBS01781,MLBS,LITU,Liriodendron tulipifera L.,species,17N,deciduousForest,943.47,single bole tree,Live,44.7,37.8,9.3,6,Partially shaded
+MLBS01805,MLBS,LITU,Liriodendron tulipifera L.,species,17N,deciduousForest,943.47,single bole tree,Live,44.5,36.6,7.7,6.1,Partially shaded
+MLBS01809,MLBS,LITU,Liriodendron tulipifera L.,species,17N,deciduousForest,943.47,single bole tree,Live,55.9,38.6,12.9,8.3,Partially shaded
+MLBS01793,MLBS,LITU,Liriodendron tulipifera L.,species,17N,deciduousForest,943.47,single bole tree,Live,27.2,31.2,8.9,6.2,Partially shaded
+MLBS01808,MLBS,LITU,Liriodendron tulipifera L.,species,17N,deciduousForest,943.47,single bole tree,Live,52.1,38.3,10.6,7,Partially shaded
+MLBS01776,MLBS,LITU,Liriodendron tulipifera L.,species,17N,deciduousForest,943.47,single bole tree,"Live, disease damaged",32.8,37.3,3.5,2.5,Partially shaded
+MLBS02419,MLBS,LITU,Liriodendron tulipifera L.,species,17N,deciduousForest,791.31,single bole tree,Live,46.3,30.7,10.2,5.6,Full sun
+MLBS02358,MLBS,LITU,Liriodendron tulipifera L.,species,17N,deciduousForest,784.88,single bole tree,Live,36.2,27.8,6.3,5.8,Full sun
+MLBS02367,MLBS,LITU,Liriodendron tulipifera L.,species,17N,deciduousForest,784.88,single bole tree,Live,42.2,28.5,9,7.5,Full sun
+MLBS02359,MLBS,LITU,Liriodendron tulipifera L.,species,17N,deciduousForest,784.88,single bole tree,Live,39.5,28.7,7.1,3.8,Full sun
+MLBS02405,MLBS,LITU,Liriodendron tulipifera L.,species,17N,deciduousForest,791.31,single bole tree,Live,36.6,28.7,6.4,5.8,Partially shaded
+OSBS06152,OSBS,LYLU3,Lyonia lucida (Lam.) K. Koch,species,17N,woodyWetlands,31.45,single shrub,Live,3.9,2.4,2.6,1.2,NA
+MLBS00177,MLBS,MAGNO,Magnolia sp.,genus,17N,deciduousForest,1175.1,single bole tree,Live,28.2,18.2,NA,NA,NA
+MLBS00096,MLBS,MAGNO,Magnolia sp.,genus,17N,deciduousForest,1180.77,multi-bole tree,Live,35.4,19.7,NA,NA,NA
+MLBS00144,MLBS,MAGNO,Magnolia sp.,genus,17N,deciduousForest,1175.1,single bole tree,Live,34.7,18.8,NA,NA,NA
+MLBS00186,MLBS,MAGNO,Magnolia sp.,genus,17N,deciduousForest,1175.1,single bole tree,Standing dead,29,18.6,NA,NA,NA
+MLBS00175,MLBS,MAGNO,Magnolia sp.,genus,17N,deciduousForest,1175.1,single bole tree,Live,19.1,14.5,NA,NA,NA
+MLBS00146,MLBS,MAGNO,Magnolia sp.,genus,17N,deciduousForest,1175.1,single bole tree,Live,19,15.8,NA,NA,NA
+MLBS00781,MLBS,MAGNO,Magnolia sp.,genus,17N,deciduousForest,1172.84,multi-bole tree,Live,56,22.6,NA,NA,NA
+MLBS01150,MLBS,MAGNO,Magnolia sp.,genus,17N,deciduousForest,1167.78,single bole tree,Live,47.2,24.1,NA,NA,NA
+MLBS01757,MLBS,MAGNO,Magnolia sp.,genus,17N,deciduousForest,897.62,single bole tree,Live,20.8,15.6,6.9,6.4,Full sun
+MLBS01731,MLBS,MAGNO,Magnolia sp.,genus,17N,deciduousForest,897.62,single bole tree,Live,16.5,16,8.5,7.4,Mostly shaded
+MLBS01778,MLBS,MAGNO,Magnolia sp.,genus,17N,deciduousForest,943.47,single bole tree,Live,17,19.2,8.9,7.6,Mostly shaded
+MLBS01740,MLBS,MAGNO,Magnolia sp.,genus,17N,deciduousForest,897.62,single bole tree,Live,14.4,16.8,6.1,5.5,Mostly shaded
+MLBS02167,MLBS,MAGNO,Magnolia sp.,genus,17N,deciduousForest,978.65,single bole tree,Live,36.9,22.6,8.9,7.1,Partially shaded
+MLBS02346,MLBS,MAGNO,Magnolia sp.,genus,17N,deciduousForest,784.88,single bole tree,Live,10.7,12.6,3.7,3.5,Mostly shaded
+MLBS02381,MLBS,MAGNO,Magnolia sp.,genus,17N,deciduousForest,791.31,single bole tree,Live,20.5,23.2,3.7,2.9,Mostly shaded
+OSBS06162,OSBS,NYBI,Nyssa biflora Walter,species,17N,woodyWetlands,31.45,single bole tree,Live,30.8,19.8,7.3,4.8,Full sun
+OSBS06161,OSBS,NYBI,Nyssa biflora Walter,species,17N,woodyWetlands,29.34,single bole tree,Live,54.8,23.2,12.3,8,NA
+MLBS00194,MLBS,NYSY,Nyssa sylvatica Marshall,species,17N,deciduousForest,1175.1,single bole tree,Live,24.3,16.9,NA,NA,NA
+MLBS00287,MLBS,NYSY,Nyssa sylvatica Marshall,species,17N,deciduousForest,1178.17,single bole tree,Live,16.9,13.2,NA,NA,NA
+MLBS00216,MLBS,NYSY,Nyssa sylvatica Marshall,species,17N,deciduousForest,1173.12,single bole tree,Live,12.4,12.5,NA,NA,NA
+MLBS00279,MLBS,NYSY,Nyssa sylvatica Marshall,species,17N,deciduousForest,1178.17,single bole tree,Live,18.4,15.3,NA,NA,NA
+MLBS00103,MLBS,NYSY,Nyssa sylvatica Marshall,species,17N,deciduousForest,1175.1,single bole tree,Live,16.8,10,NA,NA,NA
+MLBS00173,MLBS,NYSY,Nyssa sylvatica Marshall,species,17N,deciduousForest,1175.1,single bole tree,Live,17.7,9.7,NA,NA,NA
+MLBS00337,MLBS,NYSY,Nyssa sylvatica Marshall,species,17N,deciduousForest,1173.46,single bole tree,Live,10,9.1,NA,NA,NA
+MLBS00289,MLBS,NYSY,Nyssa sylvatica Marshall,species,17N,deciduousForest,1178.17,single bole tree,Live,12.4,10.2,NA,NA,NA
+MLBS00113,MLBS,NYSY,Nyssa sylvatica Marshall,species,17N,deciduousForest,1175.1,single bole tree,Live,12.2,10.8,NA,NA,NA
+MLBS00082,MLBS,NYSY,Nyssa sylvatica Marshall,species,17N,deciduousForest,1180.77,single bole tree,Live,11.7,11.3,NA,NA,NA
+MLBS00329,MLBS,NYSY,Nyssa sylvatica Marshall,species,17N,deciduousForest,1178.17,single bole tree,Live,13.5,11.8,NA,NA,NA
+MLBS00204,MLBS,NYSY,Nyssa sylvatica Marshall,species,17N,deciduousForest,1173.12,single bole tree,Live,16,12.1,NA,NA,NA
+MLBS00171,MLBS,NYSY,Nyssa sylvatica Marshall,species,17N,deciduousForest,1175.1,single bole tree,Live,15.8,11.3,NA,NA,NA
+MLBS00154,MLBS,NYSY,Nyssa sylvatica Marshall,species,17N,deciduousForest,1175.1,single bole tree,Live,25.4,17.2,NA,NA,NA
+MLBS00143,MLBS,NYSY,Nyssa sylvatica Marshall,species,17N,deciduousForest,1175.1,multi-bole tree,Live,16.4,11.2,NA,NA,NA
+MLBS00201,MLBS,NYSY,Nyssa sylvatica Marshall,species,17N,deciduousForest,1173.12,single bole tree,Live,17.8,13.4,NA,NA,NA
+MLBS00215,MLBS,NYSY,Nyssa sylvatica Marshall,species,17N,deciduousForest,1173.12,single bole tree,Live,14.4,13.6,NA,NA,NA
+MLBS00307,MLBS,NYSY,Nyssa sylvatica Marshall,species,17N,deciduousForest,1172,single bole tree,Live,10.3,7.6,NA,NA,NA
+MLBS00328,MLBS,NYSY,Nyssa sylvatica Marshall,species,17N,deciduousForest,1178.17,single bole tree,Standing dead,10.5,11.6,NA,NA,NA
+MLBS00311,MLBS,NYSY,Nyssa sylvatica Marshall,species,17N,deciduousForest,1178.17,single bole tree,Live,15.3,9.6,NA,NA,NA
+MLBS00657,MLBS,NYSY,Nyssa sylvatica Marshall,species,17N,deciduousForest,1170.24,single bole tree,Live,11.9,5.5,NA,NA,NA
+MLBS00651,MLBS,NYSY,Nyssa sylvatica Marshall,species,17N,deciduousForest,1170.24,single bole tree,Live,25.8,16.8,NA,NA,NA
+MLBS00692,MLBS,NYSY,Nyssa sylvatica Marshall,species,17N,deciduousForest,1173.13,single bole tree,Live,19.5,16.1,NA,NA,NA
+MLBS00731,MLBS,NYSY,Nyssa sylvatica Marshall,species,17N,deciduousForest,1173.13,single bole tree,Live,23.1,13.7,NA,NA,NA
+MLBS00747,MLBS,NYSY,Nyssa sylvatica Marshall,species,17N,deciduousForest,1173.13,single bole tree,Live,20.5,19,NA,NA,NA
+MLBS00736,MLBS,NYSY,Nyssa sylvatica Marshall,species,17N,deciduousForest,1173.13,small tree,Live,9.8,7.8,NA,NA,NA
+MLBS00738,MLBS,NYSY,Nyssa sylvatica Marshall,species,17N,deciduousForest,1173.13,single bole tree,Standing dead,16.8,11.2,NA,NA,NA
+MLBS00604,MLBS,NYSY,Nyssa sylvatica Marshall,species,17N,deciduousForest,1170.24,multi-bole tree,Live,14.3,10.1,NA,NA,NA
+MLBS00654,MLBS,NYSY,Nyssa sylvatica Marshall,species,17N,deciduousForest,1170.24,single bole tree,Live,33.1,17.4,NA,NA,NA
+MLBS00675,MLBS,NYSY,Nyssa sylvatica Marshall,species,17N,deciduousForest,1170.24,single bole tree,Live,20,13.7,NA,NA,NA
+MLBS01113,MLBS,NYSY,Nyssa sylvatica Marshall,species,17N,deciduousForest,1174.15,single bole tree,Live,40.9,19.1,NA,NA,NA
+MLBS00766,MLBS,NYSY,Nyssa sylvatica Marshall,species,17N,deciduousForest,1172.84,single bole tree,Live,23.9,14.6,NA,NA,NA
+MLBS00854,MLBS,NYSY,Nyssa sylvatica Marshall,species,17N,deciduousForest,1172.84,single bole tree,Live,55.6,22.2,NA,NA,NA
+MLBS01121,MLBS,NYSY,Nyssa sylvatica Marshall,species,17N,deciduousForest,1174.15,multi-bole tree,Live,40.2,17.1,NA,NA,NA
+MLBS00703,MLBS,NYSY,Nyssa sylvatica Marshall,species,17N,deciduousForest,1173.13,single bole tree,Live,15.1,15,NA,NA,NA
+MLBS00718,MLBS,NYSY,Nyssa sylvatica Marshall,species,17N,deciduousForest,1173.13,multi-bole tree,Live,17.3,14.9,NA,NA,NA
+MLBS00743,MLBS,NYSY,Nyssa sylvatica Marshall,species,17N,deciduousForest,1173.13,single bole tree,Live,28.9,12.7,NA,NA,NA
+MLBS01358,MLBS,NYSY,Nyssa sylvatica Marshall,species,17N,deciduousForest,1173.32,single bole tree,Live,11.3,7.9,NA,NA,NA
+MLBS01393,MLBS,NYSY,Nyssa sylvatica Marshall,species,17N,deciduousForest,1173.32,single bole tree,Live,14.9,11.7,NA,NA,NA
+MLBS01242,MLBS,NYSY,Nyssa sylvatica Marshall,species,17N,deciduousForest,1166.12,single bole tree,Live,13.4,8.8,NA,NA,NA
+MLBS01315,MLBS,NYSY,Nyssa sylvatica Marshall,species,17N,deciduousForest,1169.25,single bole tree,Live,16,14.5,NA,NA,NA
+MLBS01300,MLBS,NYSY,Nyssa sylvatica Marshall,species,17N,deciduousForest,1169.25,single bole tree,Live,19.5,11.7,NA,NA,NA
+MLBS01303,MLBS,NYSY,Nyssa sylvatica Marshall,species,17N,deciduousForest,1169.25,single bole tree,Live,21.2,11.9,NA,NA,NA
+MLBS00718A,MLBS,NYSY,Nyssa sylvatica Marshall,species,17N,deciduousForest,1173.57,multi-bole tree,"Dead, broken bole",6.4,14.9,NA,NA,NA
+MLBS02183,MLBS,NYSY,Nyssa sylvatica Marshall,species,17N,deciduousForest,978.65,single bole tree,Live,48.9,27.2,10.4,7,Partially shaded
+MLBS01835,MLBS,OXYDE,Oxydendrum sp.,genus,17N,deciduousForest,810.15,single bole tree,Live,17,18.9,8.4,7.3,Mostly shaded
+MLBS01851,MLBS,OXYDE,Oxydendrum sp.,genus,17N,deciduousForest,807.66,single bole tree,Live,14.5,18.6,9.9,3.7,Mostly shaded
+MLBS01821,MLBS,OXYDE,Oxydendrum sp.,genus,17N,deciduousForest,813.35,single bole tree,Live,32.9,22.1,9.5,7,Partially shaded
+MLBS01819,MLBS,OXYDE,Oxydendrum sp.,genus,17N,deciduousForest,813.35,single bole tree,Live,23.6,21.8,8.4,6.8,Partially shaded
+MLBS01864,MLBS,OXYDE,Oxydendrum sp.,genus,17N,deciduousForest,807.66,single bole tree,Live,21.4,19.3,6.7,6.3,Mostly shaded
+MLBS01902,MLBS,OXYDE,Oxydendrum sp.,genus,17N,deciduousForest,794.5,single bole tree,"Live, insect damaged",12.3,12.2,5.7,5.2,Partially shaded
+MLBS02169,MLBS,OXYDE,Oxydendrum sp.,genus,17N,deciduousForest,978.65,single bole tree,Live,18.3,16.2,8.7,4.6,Mostly shaded
+MLBS02300,MLBS,OXYDE,Oxydendrum sp.,genus,17N,deciduousForest,819.79,single bole tree,Live,11.3,13,7.6,6.5,Mostly shaded
+MLBS02242,MLBS,OXYDE,Oxydendrum sp.,genus,17N,deciduousForest,819.79,single bole tree,Live,11.6,12.5,5.4,4,Mostly shaded
+MLBS02377,MLBS,OXYDE,Oxydendrum sp.,genus,17N,deciduousForest,784.88,single bole tree,Live,11.3,13.2,5.7,5.4,Mostly shaded
+MLBS02376,MLBS,OXYDE,Oxydendrum sp.,genus,17N,deciduousForest,784.88,single bole tree,Live,21.5,13.6,6.7,6.6,Mostly shaded
+OSBS01041,OSBS,PEPA37,Persea palustris (Raf.) Sarg.,species,17N,woodyWetlands,27.8,small tree,Live,2.4,2.9,NA,NA,NA
+OSBS06151,OSBS,PEPA37,Persea palustris (Raf.) Sarg.,species,17N,woodyWetlands,27.8,small tree,Live,5.7,5.6,4.1,2.6,NA
+OSBS01036,OSBS,PIEL,Pinus elliottii Engelm.,species,17N,woodyWetlands,27.8,single bole tree,No longer qualifies,55.4,31.3,NA,NA,NA
+OSBS01075,OSBS,PIEL,Pinus elliottii Engelm.,species,17N,evergreenForest,29.21,single bole tree,Live,14.8,12.9,4.4,2.6,Partially shaded
+OSBS00991,OSBS,PIEL,Pinus elliottii Engelm.,species,17N,evergreenForest,27.17,single bole tree,Live,17,13.7,4.5,2.5,Partially shaded
+OSBS01202,OSBS,PIEL,Pinus elliottii Engelm.,species,17N,evergreenForest,27.17,single bole tree,Live,44.8,18.8,10.8,9.8,Full sun
+OSBS01057,OSBS,PIEL,Pinus elliottii Engelm.,species,17N,evergreenForest,27.17,single bole tree,Live,16.6,14.2,3.3,2.5,Partially shaded
+OSBS00994,OSBS,PIEL,Pinus elliottii Engelm.,species,17N,evergreenForest,27.17,single bole tree,"Live, disease damaged",22.3,14.9,4.7,2.4,Full sun
+OSBS00115,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,44.22,single bole tree,"Live, disease damaged",10.5,13.4,NA,NA,NA
+OSBS00119,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,44.22,single bole tree,"Live, disease damaged",11.3,10,NA,NA,NA
+OSBS00116,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,44.22,single bole tree,"Live, disease damaged",10.7,10,NA,NA,NA
+OSBS00111,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,44.22,single bole tree,Live,15.7,13.9,NA,NA,NA
+OSBS00095,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.72,single bole tree,"Live, broken bole",34.5,18.4,NA,NA,NA
+OSBS00094,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.72,single bole tree,"Live, disease damaged",46.2,18.4,NA,NA,NA
+OSBS00093,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.72,single bole tree,"Live, disease damaged",40.9,17.1,NA,NA,NA
+OSBS00122,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,44.22,single bole tree,Live,22.4,14.9,NA,NA,NA
+OSBS00100,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.72,single bole tree,"Live, disease damaged",35.7,16.6,NA,NA,NA
+OSBS00123,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,44.22,single bole tree,Live,25.9,14.5,NA,NA,NA
+OSBS00121,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,44.22,small tree,Live,5.4,5.6,NA,NA,NA
+OSBS00098,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.72,single bole tree,"Live, insect damaged",26.6,18.7,NA,NA,NA
+OSBS00099,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.72,single bole tree,"Live, disease damaged",32.6,17.5,NA,NA,NA
+OSBS00669,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,37.32,single bole tree,"Live, insect damaged",11.6,9,NA,NA,NA
+OSBS00817,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,38.95,single bole tree,Live,27.6,15.8,NA,NA,NA
+OSBS00661,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,37.32,single bole tree,Live,16.6,14.8,NA,NA,NA
+OSBS00806,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,39.2,single bole tree,Live,23.7,12.3,NA,NA,NA
+OSBS00643,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,36.61,single bole tree,Standing dead,17.7,16.6,NA,NA,NA
+OSBS00819,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,36.61,small tree,Live,8.4,10.5,NA,NA,NA
+OSBS00816,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,36.61,single bole tree,Live,16.3,14.1,NA,NA,NA
+OSBS00662,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,31.95,single bole tree,Live,17.9,9.8,NA,NA,NA
+OSBS00674,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,34.59,single bole tree,Live,15.3,11.5,NA,NA,NA
+OSBS00666,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,37.32,single bole tree,Live,22.7,17,NA,NA,NA
+OSBS00803,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,36.61,single bole tree,Live,21.5,17.9,NA,NA,NA
+OSBS00801,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,36.61,single bole tree,"Live, insect damaged",13.6,13,NA,NA,NA
+OSBS00820,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,36.61,single bole tree,"Live, physically damaged",12.6,11.8,NA,NA,NA
+OSBS00865,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,33.02,single bole tree,Live,34.4,17.9,10.1,6.8,Full sun
+OSBS00807,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,36.61,small tree,Live,9.4,10.4,NA,NA,NA
+OSBS00802,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,36.61,single bole tree,"Live,  other damage",13.4,11.1,NA,NA,NA
+OSBS00802,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,36.61,single bole tree,Live,18.5,16.5,NA,NA,NA
+OSBS00656,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,36.61,single bole tree,Live,17.5,9,NA,NA,NA
+OSBS00866,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,33.02,single bole tree,Live,22.9,13.3,5.5,3.2,Full sun
+OSBS00811,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,36.61,single bole tree,"Live, disease damaged",22.2,16.2,NA,NA,NA
+OSBS00849,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,33.02,single bole tree,"Live, disease damaged",36.1,15.9,9.2,9,Full sun
+OSBS00671,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,34.59,single bole tree,Live,19.8,17,NA,NA,NA
+OSBS00864,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,33.02,single bole tree,"Live, disease damaged",34.6,15.7,10.6,9.1,Full sun
+OSBS00683,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,31.95,single bole tree,Live,13.2,12.9,NA,NA,NA
+OSBS00810,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,36.61,single bole tree,Live,19.7,16.1,NA,NA,NA
+OSBS00823,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,36.61,single bole tree,"Live, disease damaged",12.1,14.8,NA,NA,NA
+OSBS00657,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,36.61,single bole tree,Live,18.3,11.6,NA,NA,NA
+OSBS00824,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,36.61,small tree,Live,5.5,7,NA,NA,NA
+OSBS00898,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,32.76,single bole tree,Live,32.3,16.8,8.8,7.9,Full sun
+OSBS00910,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,33.02,single bole tree,Live,35.3,12.3,9.2,9.1,Full sun
+OSBS00677,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,37.32,single bole tree,Live,19.4,17.1,NA,NA,NA
+OSBS00809,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,36.61,single bole tree,"Live, disease damaged",20.7,17.6,NA,NA,NA
+OSBS00805,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,36.61,single bole tree,Live,19.1,14.8,NA,NA,NA
+OSBS00815,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,36.61,single bole tree,"Live,  other damage",13,12.3,NA,NA,NA
+OSBS00848,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,33.02,single bole tree,Live,31.3,18.2,11.5,7.3,Full sun
+OSBS00822,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,35.76,single bole tree,Live,11.7,12.9,NA,NA,NA
+OSBS00695,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,31.95,small tree,Live,5.8,6.2,NA,NA,NA
+OSBS00678,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,37.32,single bole tree,Live,22.7,16.3,NA,NA,NA
+OSBS00812,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,35.76,single bole tree,Live,16,15.6,NA,NA,NA
+OSBS00655,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,36.61,single bole tree,Live,16.7,12.3,NA,NA,NA
+OSBS00808,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,39.2,single bole tree,Live,19.5,15.1,NA,NA,NA
+OSBS00821,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,36.61,single bole tree,NA,42.1,20.3,NA,NA,NA
+OSBS00673,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,34.59,single bole tree,Live,17.8,13.8,NA,NA,NA
+OSBS00664,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,37.32,single bole tree,Live,19.4,14.1,NA,NA,NA
+OSBS00814,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,36.61,single bole tree,Live,22.8,19,NA,NA,NA
+OSBS00697,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,37.32,single bole tree,Live,24.9,15.5,NA,NA,NA
+OSBS00676,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,34.59,single bole tree,Live,15.3,12.8,NA,NA,NA
+OSBS00881,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,33.02,single bole tree,Live,37.7,17,11.9,9.2,Full sun
+OSBS01022,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,32.31,single bole tree,"Live,  other damage",16,13.1,5.4,3.5,Full sun
+OSBS01013,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,31.51,single bole tree,Live,10.1,13.2,3.7,3.2,Partially shaded
+OSBS01015,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,31.51,single bole tree,Live,11,13.3,3.6,3.2,Full sun
+OSBS01011,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,31.51,small tree,"Live, disease damaged",9.2,9.6,5.9,2.4,NA
+OSBS01023,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,31.51,single bole tree,Live,44.6,18.4,14.5,12.8,Full sun
+OSBS01024,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,31.51,single bole tree,"Live, disease damaged",26.5,16.3,10.2,8,Partially shaded
+OSBS01025,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,31.51,single bole tree,Live,42,20.1,14.7,11.9,Full sun
+OSBS01021,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,32.31,small tree,"Live,  other damage",9.6,11.9,4,1.3,NA
+OSBS00781,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,45.2,single bole tree,Live,11.5,11.4,3.6,3.4,Full sun
+OSBS01002,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,45.2,small tree,Live,7.8,7.9,NA,NA,NA
+OSBS01003,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,45.2,small tree,Live,8.6,8.9,NA,NA,NA
+OSBS00771,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,45.2,single bole tree,Live,26.5,17.6,8.6,7.2,Open grown
+OSBS00788,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,45.2,single bole tree,"Live, physically damaged",10.3,10.4,3.5,2,Full sun
+OSBS00785,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,45.2,single bole tree,Live,37.5,15.6,10.6,10.4,Full sun
+OSBS00791,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,45.2,single bole tree,Live,10.7,11,2.9,2.4,Full sun
+OSBS00778,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,45.2,single bole tree,Live,17,13,6.1,4.4,Full sun
+OSBS00774,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,45.2,single bole tree,Live,10.5,12.9,3.6,3.4,Full sun
+OSBS00782,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,45.24,small tree,Live,9.5,6.6,NA,NA,NA
+OSBS01007,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,31.51,single bole tree,Live,12.5,12.7,5.6,3.4,Full sun
+OSBS01006,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,31.65,single bole tree,Live,14.2,15.6,4.7,3.4,Full sun
+OSBS01010,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,31.51,single bole tree,Live,15.2,13.8,6.8,5.6,Full sun
+OSBS00786,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,45.2,single bole tree,"Live, physically damaged",28.2,14.3,9.2,5.3,Full sun
+OSBS00789,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,45.2,single bole tree,Live,30,16.8,7.6,7.1,Full sun
+OSBS00157,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,31.94,single bole tree,Live,33.8,17.1,9.9,7.8,NA
+OSBS01365,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,36.84,single bole tree,Live,13.3,13.7,2.3,1,Partially shaded
+OSBS01305,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,42.59,single bole tree,Live,20.9,16.2,4.3,4.1,Full sun
+OSBS01305,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,42.59,single bole tree,Live,20.9,16.2,4.3,4.1,Full sun
+OSBS01308,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,42.25,single bole tree,Live,17.8,14.8,5.1,3,Full sun
+OSBS01308,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,42.25,single bole tree,Live,17.8,14.8,5.1,3,Full sun
+OSBS01363,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,36.84,single bole tree,Live,20.8,16,4.7,3.7,Full sun
+OSBS01298,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,42.25,single bole tree,Live,12.4,13.2,3.7,1.4,Open grown
+OSBS01298,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,42.25,single bole tree,Live,12.4,13.2,3.7,1.4,Open grown
+OSBS01373,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,36.84,single bole tree,Live,15.3,15,3.5,2.3,Full sun
+OSBS01371,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,36.84,single bole tree,Live,14.5,15.6,3.6,1.5,Partially shaded
+OSBS01369,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,36.84,single bole tree,Live,13,14.2,2.3,1.6,Partially shaded
+OSBS01507,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,36.84,single bole tree,Live,23,15.9,6.3,5,Full sun
+OSBS01508,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,36.84,single bole tree,Live,27.7,16.6,7.6,4.9,Full sun
+OSBS01340,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,36.84,single bole tree,Live,19.5,18.1,4.5,2.5,Full sun
+OSBS01342,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,36.84,single bole tree,Live,22.3,13.7,4.8,3.9,NA
+OSBS01331,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,36.84,single bole tree,Live,20.6,17.9,5.2,2.7,Full sun
+OSBS01268,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,42.25,single bole tree,Live,10.4,13.1,3.1,2.2,Full sun
+OSBS01268,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,42.25,single bole tree,Live,10.4,13.1,3.1,2.2,Full sun
+OSBS01364,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,36.84,single bole tree,Live,16,12.8,3.5,3,Partially shaded
+OSBS01345,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,36.84,single bole tree,Live,23.2,16.3,4.4,4,Full sun
+OSBS01358,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,38.56,single bole tree,Live,22.5,14.2,4.2,4.1,Full sun
+OSBS01343,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,36.84,single bole tree,Live,11.5,13.4,1.9,1.3,Full sun
+OSBS01515,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,34.62,single bole tree,Live,21.4,19.6,3.7,2.3,Full sun
+OSBS01531,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,34.62,single bole tree,Live,42,22.4,9.8,8.8,Full sun
+OSBS01543,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,34.62,single bole tree,Live,51.4,20.9,12.1,10.9,Full sun
+OSBS01554,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,34.62,single bole tree,Live,43.5,21.5,11.4,8.7,Full sun
+OSBS01587,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,34.31,single bole tree,Live,10.2,12.4,2.2,1.3,Full sun
+OSBS01512,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,34.62,single bole tree,Live,22.3,20.1,6,4.5,Full sun
+OSBS01593,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,32.48,single bole tree,Live,13.1,12.9,2.7,2.2,NA
+OSBS01589,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,32.48,single bole tree,Live,13,11.9,2.8,1.7,Full sun
+OSBS01524,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,34.62,single bole tree,Live,10.8,9.5,1.6,1.4,Partially shaded
+OSBS01566,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,34.31,single bole tree,Live,40.9,18.8,10.7,9.9,Full sun
+OSBS01840,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,31.94,single bole tree,"Live,  other damage",66.5,18.5,14.5,12.1,Full sun
+OSBS03379,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,49.21,single bole tree,"Live, disease damaged",17.3,14.5,NA,NA,NA
+OSBS03379,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,49.21,single bole tree,"Live, disease damaged",17.3,14.5,NA,NA,NA
+OSBS02146,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,44.63,single bole tree,Live,20.7,12.9,NA,NA,NA
+OSBS02143,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,44.63,single bole tree,Live,18.4,12.2,NA,NA,NA
+OSBS02722,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,46.36,single bole tree,"Live, disease damaged",27.9,13.9,NA,NA,NA
+OSBS02718,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,46.1,single bole tree,"Live, disease damaged",16.1,11.1,NA,NA,NA
+OSBS02710,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,46.1,single bole tree,"Live, disease damaged",28.2,14.9,NA,NA,NA
+OSBS02711,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,46.1,single bole tree,"Live, disease damaged",12.8,13.2,NA,NA,NA
+OSBS02726,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,46.1,single bole tree,"Live, disease damaged",20.6,12.6,NA,NA,NA
+OSBS02701,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,46.36,single bole tree,Live,18.3,13.7,NA,NA,NA
+OSBS02708,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,46.1,single bole tree,"Live, disease damaged",19.5,13.6,NA,NA,NA
+OSBS02704,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,47.33,single bole tree,"Live, insect damaged",27.7,13.1,NA,NA,NA
+OSBS02712,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,46.1,single bole tree,Live,17.9,12.8,NA,NA,NA
+OSBS02723,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,46.36,single bole tree,"Live, disease damaged",25.9,12.9,NA,NA,NA
+OSBS02713,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,46.1,single bole tree,"Live, disease damaged",22.9,12.8,NA,NA,NA
+OSBS02714,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,46.1,single bole tree,"Live, disease damaged",24.9,11.6,NA,NA,NA
+OSBS02709,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,46.1,single bole tree,"Live, disease damaged",18.3,12.8,NA,NA,NA
+OSBS02220,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,42.96,single bole tree,Live,22.9,16.6,NA,NA,NA
+OSBS02229,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,42.96,single bole tree,Live,42.9,18.8,NA,NA,NA
+OSBS03078,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,45.49,single bole tree,Live,19.4,13.7,NA,NA,NA
+OSBS03005,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,45.05,single bole tree,Live,13.8,12.6,NA,NA,NA
+OSBS03003,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,45.05,single bole tree,"Live, disease damaged",19.8,13.2,NA,NA,NA
+OSBS02970,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,42.15,single bole tree,"Live, disease damaged",11.7,11.8,NA,NA,NA
+OSBS02970,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,42.15,single bole tree,"Live, disease damaged",11.7,11.8,NA,NA,NA
+OSBS02962,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,42.15,single bole tree,"Live, disease damaged",23,17,NA,NA,NA
+OSBS02962,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,42.15,single bole tree,"Live, disease damaged",23,17,NA,NA,NA
+OSBS02963,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,42.15,single bole tree,"Live, disease damaged",19.1,12,NA,NA,NA
+OSBS02963,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,42.15,single bole tree,"Live, disease damaged",19.1,12,NA,NA,NA
+OSBS02230,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,42.96,single bole tree,Live,12.3,11.5,NA,NA,NA
+OSBS02189,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,42.96,single bole tree,Live,35.8,18.2,NA,NA,NA
+OSBS03077,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,45.49,single bole tree,Live,11.9,11.9,NA,NA,NA
+OSBS02959,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,42.15,single bole tree,"Live, disease damaged",44.1,21.4,NA,NA,NA
+OSBS02959,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,42.15,single bole tree,"Live, disease damaged",44.1,21.4,NA,NA,NA
+OSBS02964,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,42.15,single bole tree,"Live, disease damaged",46.5,18.2,NA,NA,NA
+OSBS02964,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,42.15,single bole tree,"Live, disease damaged",46.5,18.2,NA,NA,NA
+OSBS03074,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,45.49,single bole tree,Live,10.9,11,NA,NA,NA
+OSBS03063,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,46.03,single bole tree,Live,12.6,12,NA,NA,NA
+OSBS03064,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,46.03,single bole tree,"Live, disease damaged",16.8,13.3,NA,NA,NA
+OSBS03081,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,46.03,single bole tree,Live,21.8,14.7,NA,NA,NA
+OSBS03071,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,46.03,single bole tree,Live,16.3,13.9,NA,NA,NA
+OSBS03001,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,45.05,single bole tree,Live,24.4,18.1,NA,NA,NA
+OSBS03013,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,45.05,single bole tree,"Live, disease damaged",13.4,11.8,NA,NA,NA
+OSBS02307,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,41.36,single bole tree,"Live, disease damaged",13.2,15.8,NA,NA,NA
+OSBS02307,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,41.36,single bole tree,"Live, disease damaged",13.2,15.8,NA,NA,NA
+OSBS02308,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,41.36,single bole tree,"Live, disease damaged",11,15.4,NA,NA,NA
+OSBS02308,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,41.36,single bole tree,"Live, disease damaged",11,15.4,NA,NA,NA
+OSBS02310,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,41.36,single bole tree,"Live, disease damaged",10.3,11.8,NA,NA,NA
+OSBS02310,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,41.36,single bole tree,"Live, disease damaged",10.3,11.8,NA,NA,NA
+OSBS03061,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,46.03,single bole tree,Live,11.6,10.5,NA,NA,NA
+OSBS03017,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,45.05,single bole tree,Live,17.4,13.5,NA,NA,NA
+OSBS03067,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,46.03,single bole tree,"Live, disease damaged",10.6,11.6,NA,NA,NA
+OSBS03073,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,45.05,single bole tree,Live,13.6,12.9,NA,NA,NA
+OSBS03082,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,46.03,single bole tree,Live,18.5,12.4,NA,NA,NA
+OSBS03095,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,45.05,small tree,Live,8.8,9.6,NA,NA,NA
+OSBS02982,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,41.36,single bole tree,Live,12.9,14.2,NA,NA,NA
+OSBS02982,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,41.36,single bole tree,Live,12.9,14.2,NA,NA,NA
+OSBS03015,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,45.05,single bole tree,"Live,  other damage",14.3,9.4,NA,NA,NA
+OSBS02981,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,41.36,single bole tree,"Live, disease damaged",23,18,NA,NA,NA
+OSBS02981,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,41.36,single bole tree,"Live, disease damaged",23,18,NA,NA,NA
+OSBS02306,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,41.36,single bole tree,"Live, disease damaged",13.8,15.2,NA,NA,NA
+OSBS02306,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,41.36,single bole tree,"Live, disease damaged",13.8,15.2,NA,NA,NA
+OSBS03062,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,46.03,single bole tree,Live,11.5,10.2,NA,NA,NA
+OSBS03065,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,46.03,single bole tree,"Live, disease damaged",12.3,13.2,NA,NA,NA
+OSBS03025,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,45.05,single bole tree,Live,14.9,13.4,NA,NA,NA
+OSBS03066,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,46.03,small tree,Live,9.9,9.2,NA,NA,NA
+OSBS03019,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,45.05,single bole tree,Live,10.4,12.6,NA,NA,NA
+OSBS03002,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,45.05,single bole tree,Live,16.1,12.9,NA,NA,NA
+OSBS03016,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,45.05,single bole tree,"Live, disease damaged",15.8,12.8,NA,NA,NA
+OSBS03021,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,45.05,single bole tree,Live,14.7,12.6,NA,NA,NA
+OSBS03012,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,45.05,single bole tree,Live,22.4,14.9,NA,NA,NA
+OSBS03098,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,45.05,small tree,"Live, disease damaged",8,7.4,NA,NA,NA
+OSBS03069,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,46.03,single bole tree,Live,11.3,11.6,NA,NA,NA
+OSBS03076,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,45.49,single bole tree,Live,17.9,14.5,NA,NA,NA
+OSBS03070,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,46.03,single bole tree,"Live, disease damaged",14.5,12.2,NA,NA,NA
+OSBS03020,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,45.05,single bole tree,Live,13.6,13.3,NA,NA,NA
+OSBS02309,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,41.36,single bole tree,Live,22.4,17,NA,NA,NA
+OSBS02309,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,41.36,single bole tree,Live,22.4,17,NA,NA,NA
+OSBS03068,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,45.49,single bole tree,Live,18.2,12.6,NA,NA,NA
+OSBS02960,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,42.15,single bole tree,"Live, disease damaged",39.4,21.5,NA,NA,NA
+OSBS02960,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,42.15,single bole tree,"Live, disease damaged",39.4,21.5,NA,NA,NA
+OSBS03010,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,45.05,single bole tree,Live,19,15.7,NA,NA,NA
+OSBS02221,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,42.96,single bole tree,Live,17.7,16.1,NA,NA,NA
+OSBS02961,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,42.15,single bole tree,"Live, disease damaged",39.8,20.6,NA,NA,NA
+OSBS02961,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,42.15,single bole tree,"Live, disease damaged",39.8,20.6,NA,NA,NA
+OSBS02968,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,42.15,single bole tree,"Live, disease damaged",13.7,13.7,NA,NA,NA
+OSBS02968,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,42.15,single bole tree,"Live, disease damaged",13.7,13.7,NA,NA,NA
+OSBS03008,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,45.05,single bole tree,Live,15,12.6,NA,NA,NA
+OSBS03218,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.51,single bole tree,Live,16,12.3,NA,NA,NA
+OSBS03222,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.51,single bole tree,Live,17.6,15.6,NA,NA,NA
+OSBS03223,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.51,single bole tree,Live,15.4,15.6,NA,NA,NA
+OSBS03221,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.51,single bole tree,Live,15.6,13,NA,NA,NA
+OSBS03254,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,44.19,single bole tree,Live,10.6,10,NA,NA,NA
+OSBS03216,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.51,single bole tree,Live,14.2,12.6,NA,NA,NA
+OSBS03227,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.51,single bole tree,Live,16.6,14.2,NA,NA,NA
+OSBS03220,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.51,single bole tree,Live,13.8,13.5,NA,NA,NA
+OSBS03217,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.51,single bole tree,Live,14.8,12.1,NA,NA,NA
+OSBS03210,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.51,single bole tree,"Live, disease damaged",27.5,17,NA,NA,NA
+OSBS03225,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.51,single bole tree,"Live, disease damaged",18.9,15.6,NA,NA,NA
+OSBS03256,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,44.19,single bole tree,"Live, disease damaged",10.8,11.3,NA,NA,NA
+OSBS03215,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.51,single bole tree,Live,16.5,15.4,NA,NA,NA
+OSBS03143,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,46.74,single bole tree,Live,15.9,13.1,NA,NA,NA
+OSBS03140,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,46.74,single bole tree,Live,14.3,13.7,NA,NA,NA
+OSBS03153,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,46.74,small tree,Live,10.9,12,NA,NA,NA
+OSBS03164,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,46.74,small tree,Live,10.9,11,NA,NA,NA
+OSBS03152,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,46.74,single bole tree,Live,12.2,12.1,NA,NA,NA
+OSBS03149,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,46.74,single bole tree,Live,34.7,15,NA,NA,NA
+OSBS03163,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,46.1,single bole tree,Live,10.5,10,NA,NA,NA
+OSBS03144,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,46.74,single bole tree,Live,12.3,10.6,NA,NA,NA
+OSBS03142,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,46.74,single bole tree,Live,15.1,14.6,NA,NA,NA
+OSBS03139,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,46.74,single bole tree,Live,17.1,13.6,NA,NA,NA
+OSBS03181,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,47.93,single bole tree,Live,10.1,9,NA,NA,NA
+OSBS03145,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,46.74,single bole tree,Live,18.1,13.1,NA,NA,NA
+OSBS03138,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,46.74,single bole tree,Live,14.7,13.5,NA,NA,NA
+OSBS03146,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,46.74,single bole tree,Live,12.1,10,NA,NA,NA
+OSBS03131,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,46.74,single bole tree,Live,14.4,11.6,NA,NA,NA
+OSBS03147,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,46.74,single bole tree,Live,11.3,9.7,NA,NA,NA
+OSBS03329,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,44.78,single bole tree,Live,27,14,NA,NA,NA
+OSBS03326,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,44.78,single bole tree,Live,27.3,15.9,NA,NA,NA
+OSBS03327,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,44.78,single bole tree,Live,27.3,15.5,NA,NA,NA
+OSBS03330,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,44.78,single bole tree,Live,33.8,18.3,NA,NA,NA
+OSBS03420,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,44.22,single bole tree,"Live, disease damaged",13.8,13.9,NA,NA,NA
+OSBS03420,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,44.22,single bole tree,"Live, disease damaged",13.8,13.9,NA,NA,NA
+OSBS03380,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,44.22,single bole tree,"Live, disease damaged",15.5,14.3,NA,NA,NA
+OSBS03380,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,44.22,single bole tree,"Live, disease damaged",15.5,14.3,NA,NA,NA
+OSBS03396,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,49.21,single bole tree,"Live, disease damaged",43.7,20.5,NA,NA,NA
+OSBS03396,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,49.21,single bole tree,"Live, disease damaged",43.7,20.5,NA,NA,NA
+OSBS03386,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,44.22,single bole tree,"Live, disease damaged",12.4,8.5,NA,NA,NA
+OSBS03386,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,44.22,single bole tree,"Live, disease damaged",12.4,8.5,NA,NA,NA
+OSBS03378,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,44.22,single bole tree,"Live, disease damaged",10.9,12.2,NA,NA,NA
+OSBS03378,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,44.22,single bole tree,"Live, disease damaged",10.9,12.2,NA,NA,NA
+OSBS03394,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,44.22,single bole tree,"Live, disease damaged",35.8,20,NA,NA,NA
+OSBS03394,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,44.22,single bole tree,"Live, disease damaged",35.8,20,NA,NA,NA
+OSBS03415,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,49.21,single bole tree,"Live, disease damaged",22.3,16.8,NA,NA,NA
+OSBS03415,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,49.21,single bole tree,"Live, disease damaged",22.3,16.8,NA,NA,NA
+OSBS03426,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,44.22,single bole tree,"Live, disease damaged",21.2,14.7,NA,NA,NA
+OSBS03426,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,44.22,single bole tree,"Live, disease damaged",21.2,14.7,NA,NA,NA
+OSBS03417,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,49.21,single bole tree,Live,24.9,17.9,NA,NA,NA
+OSBS03417,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,49.21,single bole tree,Live,24.9,17.9,NA,NA,NA
+OSBS03416,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,49.21,single bole tree,"Live, disease damaged",16.2,14.4,NA,NA,NA
+OSBS03416,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,49.21,single bole tree,"Live, disease damaged",16.2,14.4,NA,NA,NA
+OSBS03517,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,46.23,single bole tree,Live,14.9,14.1,NA,NA,NA
+OSBS03591,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,46.23,single bole tree,Live,14.3,12.4,NA,NA,NA
+OSBS03500,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,46.23,single bole tree,Live,20.5,14,NA,NA,NA
+OSBS03480,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,46.27,single bole tree,Live,13.5,13.5,NA,NA,NA
+OSBS03501,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,45.88,single bole tree,Live,29.7,16,NA,NA,NA
+OSBS03475,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,45.88,single bole tree,Live,13.8,13,NA,NA,NA
+OSBS03725,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,42.47,single bole tree,"Live, disease damaged",13.2,14.9,NA,NA,NA
+OSBS03724,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,42.47,single bole tree,"Live, disease damaged",27.3,17.4,NA,NA,NA
+OSBS03721,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,42.47,single bole tree,Live,13.8,12.3,NA,NA,NA
+OSBS03709,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,42.47,single bole tree,"Live, disease damaged",15.9,15.5,NA,NA,NA
+OSBS03722,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,42.47,single bole tree,Live,21.1,17.5,NA,NA,NA
+OSBS03708,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,42.47,single bole tree,"Live, disease damaged",18.8,15.2,NA,NA,NA
+OSBS03703,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,42.47,single bole tree,"Live, disease damaged",26.8,14.5,NA,NA,NA
+OSBS03744,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.71,single bole tree,"Live, disease damaged",23.9,15.8,NA,NA,NA
+OSBS03743,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.71,single bole tree,Live,21.8,16.5,NA,NA,NA
+OSBS03720,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,42.47,single bole tree,"Live, disease damaged",11.5,12.9,NA,NA,NA
+OSBS03710,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,42.47,single bole tree,Live,19.7,14.8,NA,NA,NA
+OSBS03752,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.71,single bole tree,"Live, disease damaged",20.2,15.7,NA,NA,NA
+OSBS03749,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.71,single bole tree,"Live, disease damaged",26,17.3,NA,NA,NA
+OSBS03750,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.71,single bole tree,"Live, disease damaged",20.5,15.1,NA,NA,NA
+OSBS03757,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,44.16,single bole tree,Live,11.6,11.8,NA,NA,NA
+OSBS03838,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.68,single bole tree,"Live, disease damaged",16.3,14.6,NA,NA,NA
+OSBS03838,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.68,single bole tree,"Live, disease damaged",16.3,14.6,NA,NA,NA
+OSBS03834,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.68,single bole tree,Live,13.2,13.1,NA,NA,NA
+OSBS03834,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.68,single bole tree,Live,13.2,13.1,NA,NA,NA
+OSBS03837,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.68,small tree,Live,10.3,11,NA,NA,NA
+OSBS03837,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.68,small tree,Live,10.3,11,NA,NA,NA
+OSBS03844,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.68,single bole tree,"Live, disease damaged",13.6,15.2,NA,NA,NA
+OSBS03844,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.68,single bole tree,"Live, disease damaged",13.6,15.2,NA,NA,NA
+OSBS03847,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.68,single bole tree,Live,18.1,16,NA,NA,NA
+OSBS03847,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.68,single bole tree,Live,18.1,16,NA,NA,NA
+OSBS03848,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.68,single bole tree,Live,19.3,16.2,NA,NA,NA
+OSBS03848,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.68,single bole tree,Live,19.3,16.2,NA,NA,NA
+OSBS03849,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.68,single bole tree,Live,20,14.1,NA,NA,NA
+OSBS03849,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.68,single bole tree,Live,20,14.1,NA,NA,NA
+OSBS06075,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.68,single bole tree,"Live, disease damaged",14.2,11.8,NA,NA,NA
+OSBS06075,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.68,single bole tree,"Live, disease damaged",14.2,11.8,NA,NA,NA
+OSBS03842,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.68,single bole tree,"Live, disease damaged",16.5,14.7,NA,NA,NA
+OSBS03842,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.68,single bole tree,"Live, disease damaged",16.5,14.7,NA,NA,NA
+OSBS03836,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.68,single bole tree,"Live, disease damaged",47.3,17.7,NA,NA,NA
+OSBS03836,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.68,single bole tree,"Live, disease damaged",47.3,17.7,NA,NA,NA
+OSBS03831,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,42.41,single bole tree,Standing dead,26.6,11.9,NA,NA,NA
+OSBS03831,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,42.41,single bole tree,Standing dead,26.6,11.9,NA,NA,NA
+OSBS03839,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.68,single bole tree,Live,21.3,13.2,NA,NA,NA
+OSBS03839,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.68,single bole tree,Live,21.3,13.2,NA,NA,NA
+OSBS03852,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.68,single bole tree,"Live, disease damaged",15,11.4,NA,NA,NA
+OSBS03852,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.68,single bole tree,"Live, disease damaged",15,11.4,NA,NA,NA
+OSBS03858,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,46.99,single bole tree,Live,17.1,12.7,NA,NA,NA
+OSBS03858,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,46.99,single bole tree,Live,17.1,12.7,NA,NA,NA
+OSBS03853,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.68,single bole tree,Live,13.1,15.1,NA,NA,NA
+OSBS03853,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.68,single bole tree,Live,13.1,15.1,NA,NA,NA
+OSBS03851,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.68,single bole tree,"Live, disease damaged",15,12.4,NA,NA,NA
+OSBS03851,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.68,single bole tree,"Live, disease damaged",15,12.4,NA,NA,NA
+OSBS03860,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.68,single bole tree,Live,14.7,14.6,NA,NA,NA
+OSBS03860,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.68,single bole tree,Live,14.7,14.6,NA,NA,NA
+OSBS03833,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.68,single bole tree,"Live, disease damaged",11.3,12.6,NA,NA,NA
+OSBS03833,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.68,single bole tree,"Live, disease damaged",11.3,12.6,NA,NA,NA
+OSBS03855,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.68,single bole tree,Live,37.5,18.5,NA,NA,NA
+OSBS03855,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.68,single bole tree,Live,37.5,18.5,NA,NA,NA
+OSBS02550,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,44.22,single bole tree,Live,10.5,9.7,NA,NA,NA
+OSBS03835,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.68,single bole tree,"Live, disease damaged",19.1,14.6,NA,NA,NA
+OSBS03835,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.68,single bole tree,"Live, disease damaged",19.1,14.6,NA,NA,NA
+OSBS03832,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,42.41,single bole tree,"Live, disease damaged",20.7,14.6,NA,NA,NA
+OSBS03832,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,42.41,single bole tree,"Live, disease damaged",20.7,14.6,NA,NA,NA
+OSBS03830,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,42.41,single bole tree,Live,12,10.1,NA,NA,NA
+OSBS03830,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,42.41,single bole tree,Live,12,10.1,NA,NA,NA
+OSBS03828,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.68,single bole tree,Live,13.5,10,NA,NA,NA
+OSBS03828,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.68,single bole tree,Live,13.5,10,NA,NA,NA
+OSBS01611,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,42.96,small tree,Live,5.3,4.8,NA,NA,NA
+OSBS06088,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,44.22,single bole tree,Live,20,15.3,NA,NA,NA
+OSBS06088,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,44.22,single bole tree,Live,20,15.3,NA,NA,NA
+OSBS00029,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.51,single bole tree,Live,11.1,10.6,NA,NA,NA
+OSBS03748,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,44.16,single bole tree,Live,14.8,13.5,NA,NA,NA
+OSBS00086,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,45.54,single bole tree,Live,38,17.6,NA,NA,NA
+OSBS00651,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,36.61,single bole tree,Live,21.2,16,NA,NA,NA
+OSBS02995,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,41.36,single bole tree,Live,17.5,16.5,NA,NA,NA
+OSBS02995,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,41.36,single bole tree,Live,17.5,16.5,NA,NA,NA
+OSBS02999,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,41.36,single bole tree,Live,16.9,14,NA,NA,NA
+OSBS02999,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,41.36,single bole tree,Live,16.9,14,NA,NA,NA
+OSBS02998,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,41.36,single bole tree,Live,13.1,15.2,NA,NA,NA
+OSBS02998,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,41.36,single bole tree,Live,13.1,15.2,NA,NA,NA
+OSBS02997,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,41.36,single bole tree,"Live, disease damaged",11.7,15.6,NA,NA,NA
+OSBS02997,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,41.36,single bole tree,"Live, disease damaged",11.7,15.6,NA,NA,NA
+OSBS02996,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,42.25,single bole tree,"Live, disease damaged",22.5,15.8,NA,NA,NA
+OSBS02996,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,42.25,single bole tree,"Live, disease damaged",22.5,15.8,NA,NA,NA
+OSBS07797,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,44.9,small tree,Live,8,7.8,NA,NA,NA
+OSBS07797,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,44.9,small tree,Live,8,7.8,NA,NA,NA
+OSBS07796,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,44.22,small tree,"Live, disease damaged",5.8,7.3,NA,NA,NA
+OSBS07796,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,44.22,small tree,"Live, disease damaged",5.8,7.3,NA,NA,NA
+OSBS06016,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,45.88,single bole tree,Live,15.3,14.6,NA,NA,NA
+OSBS07992,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.68,single bole tree,"Live, disease damaged",16.8,16,NA,NA,NA
+OSBS07992,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,43.68,single bole tree,"Live, disease damaged",16.8,16,NA,NA,NA
+OSBS07986,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,44.67,single bole tree,Live,24.5,15.2,NA,NA,NA
+OSBS07986,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,44.67,single bole tree,Live,24.5,15.2,NA,NA,NA
+OSBS07977,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,33.02,single bole tree,Live,35.2,13.1,11.9,9.7,Full sun
+OSBS07452,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,36.61,small tree,Live,6.4,12.3,NA,NA,NA
+OSBS08092,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,45.16,single bole tree,"Live, disease damaged",10.1,10.8,NA,NA,NA
+OSBS08092,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,45.16,single bole tree,"Live, disease damaged",10.1,10.8,NA,NA,NA
+OSBS02146,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,44.63,single bole tree,Live,20.7,12.9,NA,NA,NA
+OSBS02141,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,44.84,single bole tree,Live,16.3,10.4,NA,NA,NA
+OSBS02143,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,44.63,single bole tree,Live,18.4,12.2,NA,NA,NA
+OSBS02189,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,42.6,single bole tree,Live,35.8,18.2,NA,NA,NA
+OSBS02221,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,42.6,single bole tree,Live,17.7,16.1,NA,NA,NA
+OSBS02230,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,42.6,single bole tree,Live,12.3,11.5,NA,NA,NA
+OSBS02229,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,42.6,single bole tree,Live,42.9,18.8,NA,NA,NA
+OSBS02220,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,42.6,single bole tree,Live,22.9,16.6,NA,NA,NA
+OSBS02529,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,44.9,single bole tree,Live,15.9,10.6,NA,NA,NA
+OSBS00585,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,44.9,single bole tree,Live,11.4,8.9,NA,NA,NA
+OSBS00583,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,44.9,single bole tree,Live,11.4,9.9,NA,NA,NA
+OSBS02550,OSBS,PIPA2,Pinus palustris Mill.,species,17N,evergreenForest,44.9,single bole tree,Live,10.5,9.7,NA,NA,NA
+MLBS00060,MLBS,PINUS,Pinus sp.,genus,17N,deciduousForest,1180.77,single bole tree,Standing dead,25.4,13.8,NA,NA,NA
+MLBS01335,MLBS,PINUS,Pinus sp.,genus,17N,deciduousForest,1173.32,single bole tree,Live,73.1,29.4,NA,NA,NA
+MLBS01939,MLBS,PINUS,Pinus sp.,genus,17N,deciduousForest,794.5,single bole tree,Live,17.7,12.1,6.3,6.2,Mostly shaded
+MLBS02296,MLBS,PINUS,Pinus sp.,genus,17N,deciduousForest,819.79,single bole tree,Live,13.8,10.5,5.8,5.7,Mostly shaded
+MLBS02209,MLBS,PINUS,Pinus sp.,genus,17N,deciduousForest,792.64,single bole tree,Live,46,26.7,10,8.8,Partially shaded
+MLBS02209,MLBS,PINUS,Pinus sp.,genus,17N,deciduousForest,792.64,single bole tree,No longer qualifies,46,26.7,10,8.8,Partially shaded
+MLBS02213,MLBS,PINUS,Pinus sp.,genus,17N,deciduousForest,792.64,single bole tree,Live,59.8,25.1,13.7,13.3,Partially shaded
+MLBS02210,MLBS,PINUS,Pinus sp.,genus,17N,deciduousForest,792.64,single bole tree,Live,28.9,22.9,8.5,5.9,Partially shaded
+MLBS02210,MLBS,PINUS,Pinus sp.,genus,17N,deciduousForest,792.64,single bole tree,No longer qualifies,28.9,22.9,8.5,5.9,Partially shaded
+MLBS01881,MLBS,PITA,Pinus taeda L.,species,17N,deciduousForest,777.71,single bole tree,Live,42.2,23.3,13.1,8.3,Full sun
+MLBS01890,MLBS,PITA,Pinus taeda L.,species,17N,deciduousForest,780.17,single bole tree,Live,57.2,22.8,14.5,12.7,Full sun
+MLBS01886,MLBS,PITA,Pinus taeda L.,species,17N,deciduousForest,778.47,single bole tree,Live,55,26.4,13.2,9.6,Full sun
+MLBS01883,MLBS,PITA,Pinus taeda L.,species,17N,deciduousForest,777.71,single bole tree,Live,44.8,24,11.3,9.7,Full sun
+MLBS01383,MLBS,PRSE2,Prunus serotina Ehrh.,species,17N,deciduousForest,1173.32,single bole tree,Live,21.4,17.3,NA,NA,NA
+MLBS01236,MLBS,PRSE2,Prunus serotina Ehrh.,species,17N,deciduousForest,1166.12,single bole tree,Live,12.1,12.1,NA,NA,NA
+MLBS01228,MLBS,PRSE2,Prunus serotina Ehrh.,species,17N,deciduousForest,1166.12,single bole tree,Live,16,12.2,NA,NA,NA
+MLBS01345,MLBS,PRSE2,Prunus serotina Ehrh.,species,17N,deciduousForest,1173.32,single bole tree,Live,25.4,17.3,NA,NA,NA
+MLBS01880,MLBS,PRSE2,Prunus serotina Ehrh.,species,17N,deciduousForest,777.71,multi-bole tree,"Live,  other damage",31.4,21.1,8.7,5,Partially shaded
+MLBS01983,MLBS,PRSE2,Prunus serotina Ehrh.,species,17N,deciduousForest,1285.2,single bole tree,Standing dead,20.2,12.4,4.2,2,Mostly shaded
+MLBS01955,MLBS,PRSE2,Prunus serotina Ehrh.,species,17N,deciduousForest,1285.2,single bole tree,Live,14.1,9.1,3,2.5,Mostly shaded
+MLBS00147A,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1175.1,multi-bole tree,Live,19.7,15,NA,NA,NA
+MLBS00087,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1180.77,single bole tree,"Live, insect damaged",17.7,17.1,NA,NA,NA
+MLBS00168A,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1175.1,multi-bole tree,"Live, insect damaged",19.6,15.1,NA,NA,NA
+MLBS00077,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1180.77,single bole tree,"Live, insect damaged",30.3,19.2,NA,NA,NA
+MLBS00323,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1178.17,single bole tree,Live,26,18.3,NA,NA,NA
+MLBS00197,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1175.1,multi-bole tree,Live,28.9,16.9,NA,NA,NA
+MLBS00137,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1175.1,single bole tree,Standing dead,16.1,9.3,NA,NA,NA
+MLBS00081,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1180.77,single bole tree,"Live, insect damaged",21.9,18.3,NA,NA,NA
+MLBS00192,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1175.1,single bole tree,Live,15.2,14.4,NA,NA,NA
+MLBS00107,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1175.1,single bole tree,Live,17,12.5,NA,NA,NA
+MLBS00117,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1175.1,single bole tree,Live,19.8,14.9,NA,NA,NA
+MLBS00078,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1180.77,multi-bole tree,"Live, insect damaged",20.9,16.1,NA,NA,NA
+MLBS00136,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1175.1,single bole tree,Live,20,10.4,NA,NA,NA
+MLBS00187,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1175.1,single bole tree,Live,23,16.3,NA,NA,NA
+MLBS00297,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1178.17,single bole tree,Live,21.9,17.3,NA,NA,NA
+MLBS00559,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1169.01,single bole tree,Live,44.3,17.5,NA,NA,NA
+MLBS00562,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1175.83,single bole tree,Live,35.1,17,NA,NA,NA
+MLBS00454,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1169.65,single bole tree,"Live, insect damaged",33,18.1,NA,NA,NA
+MLBS00457,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1169.65,single bole tree,Live,39.8,18.9,NA,NA,NA
+MLBS00399,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1175.68,single bole tree,"Live, insect damaged",14.6,13.7,NA,NA,NA
+MLBS00474,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1169.65,single bole tree,Live,44.5,15.5,NA,NA,NA
+MLBS00480,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1169.65,single bole tree,Live,34.8,19.4,NA,NA,NA
+MLBS00344,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1175.68,single bole tree,"Live, insect damaged",33.8,18.4,NA,NA,NA
+MLBS00476,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1169.65,single bole tree,"Live, broken bole",24.3,6.8,NA,NA,NA
+MLBS00482,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1169.65,single bole tree,Live,22.9,19.6,NA,NA,NA
+MLBS00479,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1169.65,single bole tree,Live,32.6,19.8,NA,NA,NA
+MLBS00534,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1169.01,single bole tree,Live,24.2,17.3,NA,NA,NA
+MLBS00422,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1175.68,single bole tree,Live,54.9,20.1,NA,NA,NA
+MLBS00456,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1169.65,single bole tree,Live,24.7,16.9,NA,NA,NA
+MLBS00646,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1170.24,single bole tree,"Live, insect damaged",25.7,20.6,NA,NA,NA
+MLBS00744,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1173.13,single bole tree,"Live, insect damaged",29.3,17.9,NA,NA,NA
+MLBS00671,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1170.24,single bole tree,"Live, insect damaged",25,18.9,NA,NA,NA
+MLBS00647,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1170.24,single bole tree,"Live, insect damaged",44.1,22.1,NA,NA,NA
+MLBS00827,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1172.84,single bole tree,"Live, insect damaged",36.3,23.1,NA,NA,NA
+MLBS00772,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1172.84,single bole tree,"Live, insect damaged",30.4,19,NA,NA,NA
+MLBS00687,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1173.13,single bole tree,"Live, insect damaged",43.1,20.3,NA,NA,NA
+MLBS00819,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1172.84,single bole tree,"Live, insect damaged",62.8,21.1,NA,NA,NA
+MLBS00716,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1173.13,single bole tree,"Live, insect damaged",37,18.1,NA,NA,NA
+MLBS00833,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1172.84,single bole tree,"Live, insect damaged",72.2,23.9,NA,NA,NA
+MLBS01361,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1173.32,single bole tree,Live,32.7,19.5,NA,NA,NA
+MLBS01274,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1171.54,single bole tree,Live,51.8,18.9,NA,NA,NA
+MLBS01238,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1166.12,single bole tree,Live,45.2,18.9,NA,NA,NA
+MLBS01292,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1169.25,single bole tree,Live,23.9,14.1,NA,NA,NA
+MLBS01247,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1166.12,single bole tree,Live,28.2,17.7,NA,NA,NA
+MLBS01356,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1173.32,multi-bole tree,Live,22,14.3,NA,NA,NA
+MLBS01213,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1167.78,single bole tree,"Live, insect damaged",21.4,18.2,NA,NA,NA
+MLBS01251,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1166.12,single bole tree,Standing dead,37.9,12.8,NA,NA,NA
+MLBS01210,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1167.78,single bole tree,Live,19.4,16,NA,NA,NA
+MLBS01199,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1167.78,single bole tree,Live,19.6,17.6,NA,NA,NA
+MLBS01191,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1167.78,single bole tree,Live,26.1,18.4,NA,NA,NA
+MLBS01206,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1167.78,single bole tree,Live,20.1,16.8,NA,NA,NA
+MLBS01367,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1173.32,single bole tree,Live,26.2,19.1,NA,NA,NA
+MLBS01312,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1169.25,single bole tree,Live,28.6,19.6,NA,NA,NA
+MLBS01323,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1169.25,single bole tree,Live,37.9,21.8,NA,NA,NA
+MLBS01301,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1169.25,single bole tree,Live,32.3,12.7,NA,NA,NA
+MLBS01316,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1169.25,single bole tree,Live,34.9,20.1,NA,NA,NA
+MLBS01596,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1241.81,single bole tree,"Live, insect damaged",50.4,15.5,11.2,8.6,Full sun
+MLBS01528,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1179.85,single bole tree,Live,44.9,17.7,8.8,7.7,Full sun
+MLBS01722,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1267.66,single bole tree,Standing dead,15.2,13.7,0.6,0.4,Partially shaded
+MLBS01720,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1267.66,single bole tree,"Live, insect damaged",19.2,14.1,4.2,3,Partially shaded
+MLBS01718,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1267.66,single bole tree,"Live, insect damaged",22.3,16.1,5.3,3.5,Partially shaded
+MLBS01833,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,810.15,single bole tree,Live,52,26.1,15.9,15.8,Full sun
+MLBS01850,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,807.66,single bole tree,Live,19.2,22,8.5,4.7,Mostly shaded
+MLBS01849,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,807.66,single bole tree,Live,17,18.1,8.7,3,Mostly shaded
+MLBS01770,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,897.62,single bole tree,Live,33.2,26.6,11.2,10.5,Partially shaded
+MLBS01759,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,897.62,single bole tree,Live,42.2,28.3,14.9,9.6,Full sun
+MLBS01847,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,807.66,single bole tree,Live,36.3,26.8,11.3,10.2,Partially shaded
+MLBS01848,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,807.66,single bole tree,Live,39.5,27,10.3,10,Partially shaded
+MLBS01772,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,897.62,single bole tree,Live,36.5,26.4,14.7,9.3,Full sun
+MLBS01889,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,780.97,single bole tree,Live,23.8,20.5,7.7,6.9,Partially shaded
+MLBS01887,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,780.97,single bole tree,Live,31,23,10.8,5.5,Partially shaded
+MLBS01891,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,780.17,single bole tree,Live,29.6,21.5,11.6,9.7,Partially shaded
+MLBS01892,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,780.17,single bole tree,"Live, physically damaged",25.7,21.6,8.9,5,Partially shaded
+MLBS01884,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,778.47,single bole tree,Live,30.8,23.2,11.2,10.8,Partially shaded
+MLBS01888,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,780.97,single bole tree,Live,34.9,21.8,11.4,8.8,Partially shaded
+MLBS01908,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,794.5,single bole tree,"Live, insect damaged",26.5,21.5,7.6,7.4,Full sun
+MLBS01912,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,794.5,single bole tree,"Live, insect damaged",26.7,23.8,9.2,7.1,Full sun
+MLBS01919,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,794.5,single bole tree,"Live, insect damaged",31,23.4,9.5,9,Full sun
+MLBS01926,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,794.5,single bole tree,"Live, insect damaged",33.5,23.8,10.5,8.8,Full sun
+MLBS01928,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,794.5,single bole tree,"Live, insect damaged",21.8,20,6.3,5,Full sun
+MLBS01923,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,794.5,single bole tree,"Live, insect damaged",26.3,21.6,8,6.4,Partially shaded
+MLBS01932,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,794.5,single bole tree,"Live, insect damaged",35.5,23.6,12.5,9.6,Full sun
+MLBS01913,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,794.5,single bole tree,"Live, insect damaged",26.4,22.6,4.4,4.2,Partially shaded
+MLBS01907,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,794.5,single bole tree,"Live, insect damaged",21,21.3,5.5,4.9,Full sun
+MLBS01898,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,794.5,single bole tree,"Live, insect damaged",26.5,23.6,6.8,6.1,Full sun
+MLBS01924,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,794.5,single bole tree,"Live, insect damaged",25,20.7,7.1,6.6,Partially shaded
+MLBS01905,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,794.5,single bole tree,Live,33.7,23,9.5,5.3,Full sun
+MLBS01943,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1285.2,multi-bole tree,"Live, insect damaged",33.4,14,5.6,5.2,Partially shaded
+MLBS02028,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1288.96,multi-bole tree,Live,20.9,9.2,4.9,4.9,Partially shaded
+MLBS02038,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1288.96,single bole tree,"Live, insect damaged",17.7,8.7,5.6,3.3,Partially shaded
+MLBS01982,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1285.2,single bole tree,"Live, disease damaged",45.2,12,6.3,6,Partially shaded
+MLBS01963,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1285.2,single bole tree,"Live, insect damaged",35.3,13.5,6.5,4.3,Partially shaded
+MLBS01944,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,1285.2,single bole tree,"Live, insect damaged",27.8,10.5,5.1,5.1,Mostly shaded
+MLBS02261,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,819.79,single bole tree,Live,23.6,22.4,10,9.6,Partially shaded
+MLBS02243,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,819.79,multi-bole tree,Standing dead,11.5,14.3,7.5,1.4,Mostly shaded
+MLBS02203,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,792.64,single bole tree,Live,30.5,21.7,9.1,8.7,Partially shaded
+MLBS02206,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,792.64,single bole tree,Live,33,24.6,15.5,10.3,Partially shaded
+MLBS02208,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,792.64,single bole tree,Live,33.1,26,10.7,9.1,Partially shaded
+MLBS02271,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,819.79,single bole tree,Live,20.7,17.1,6.4,4.6,Partially shaded
+MLBS02366,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,784.88,single bole tree,Live,56.4,28.5,12.8,11.7,Full sun
+MLBS02417,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,791.31,single bole tree,Live,42.9,30.7,11.2,10,Full sun
+MLBS02412,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,791.31,single bole tree,Live,44.8,29.5,13.9,7.1,Partially shaded
+MLBS02415,MLBS,QUAL,Quercus alba L.,species,17N,deciduousForest,791.31,single bole tree,Live,24.7,21.7,5,4.9,Partially shaded
+MLBS00295,MLBS,QUCO2,Quercus coccinea,species,17N,deciduousForest,1178.17,single bole tree,Live,23.1,18,NA,NA,NA
+MLBS00139,MLBS,QUCO2,Quercus coccinea,species,17N,deciduousForest,1175.1,single bole tree,Live,34.9,15.5,NA,NA,NA
+MLBS00198B,MLBS,QUCO2,Quercus coccinea,species,17N,deciduousForest,1175.1,multi-bole tree,Standing dead,12.6,17.2,NA,NA,NA
+MLBS00285,MLBS,QUCO2,Quercus coccinea,species,17N,deciduousForest,1178.17,multi-bole tree,Live,31.1,17.7,NA,NA,NA
+MLBS00544,MLBS,QUCO2,Quercus coccinea,species,17N,deciduousForest,1169.01,single bole tree,Live,31.8,18.4,NA,NA,NA
+MLBS00491,MLBS,QUCO2,Quercus coccinea,species,17N,deciduousForest,1169.65,single bole tree,"Live,  other damage",40.7,20.6,NA,NA,NA
+MLBS00432,MLBS,QUCO2,Quercus coccinea,species,17N,deciduousForest,1175.68,single bole tree,Standing dead,19.9,15.9,NA,NA,NA
+MLBS00433,MLBS,QUCO2,Quercus coccinea,species,17N,deciduousForest,1175.68,single bole tree,"Live, insect damaged",27.6,20.9,NA,NA,NA
+MLBS00426,MLBS,QUCO2,Quercus coccinea,species,17N,deciduousForest,1175.68,single bole tree,"Live, insect damaged",35.7,21.2,NA,NA,NA
+MLBS00484,MLBS,QUCO2,Quercus coccinea,species,17N,deciduousForest,1169.65,multi-bole tree,"Dead, broken bole",22.8,14.3,NA,NA,NA
+MLBS00496,MLBS,QUCO2,Quercus coccinea,species,17N,deciduousForest,1169.65,single bole tree,Live,32.9,20.8,NA,NA,NA
+MLBS00483,MLBS,QUCO2,Quercus coccinea,species,17N,deciduousForest,1169.65,single bole tree,Live,32.1,21,NA,NA,NA
+MLBS00446,MLBS,QUCO2,Quercus coccinea,species,17N,deciduousForest,1175.68,single bole tree,"Live, insect damaged",41.6,22.1,NA,NA,NA
+MLBS00670,MLBS,QUCO2,Quercus coccinea,species,17N,deciduousForest,1170.24,single bole tree,"Live, insect damaged",48.9,21.5,NA,NA,NA
+MLBS00732,MLBS,QUCO2,Quercus coccinea,species,17N,deciduousForest,1173.13,single bole tree,"Live, insect damaged",43.1,19.6,NA,NA,NA
+MLBS00798,MLBS,QUCO2,Quercus coccinea,species,17N,deciduousForest,1172.84,single bole tree,Live,48.2,21.8,NA,NA,NA
+MLBS00847,MLBS,QUCO2,Quercus coccinea,species,17N,deciduousForest,1172.84,single bole tree,"Live, insect damaged",31.9,21.6,NA,NA,NA
+MLBS00780,MLBS,QUCO2,Quercus coccinea,species,17N,deciduousForest,1172.84,single bole tree,"Live, insect damaged",46.9,21.7,NA,NA,NA
+MLBS01100,MLBS,QUCO2,Quercus coccinea,species,17N,deciduousForest,1174.15,single bole tree,Live,31.5,22.2,NA,NA,NA
+MLBS01116,MLBS,QUCO2,Quercus coccinea,species,17N,deciduousForest,1174.15,single bole tree,"Live, insect damaged",19.7,19.2,NA,NA,NA
+MLBS01082,MLBS,QUCO2,Quercus coccinea,species,17N,deciduousForest,1174.15,single bole tree,Live,26.1,22.1,NA,NA,NA
+MLBS01074,MLBS,QUCO2,Quercus coccinea,species,17N,deciduousForest,1174.15,single bole tree,Live,35.3,22.7,NA,NA,NA
+MLBS01098,MLBS,QUCO2,Quercus coccinea,species,17N,deciduousForest,1174.15,single bole tree,Live,28.9,19,NA,NA,NA
+MLBS01075,MLBS,QUCO2,Quercus coccinea,species,17N,deciduousForest,1174.15,single bole tree,"Live, insect damaged",18.9,16.1,NA,NA,NA
+MLBS01080,MLBS,QUCO2,Quercus coccinea,species,17N,deciduousForest,1174.15,single bole tree,"Live, insect damaged",54.5,22.8,NA,NA,NA
+MLBS01103,MLBS,QUCO2,Quercus coccinea,species,17N,deciduousForest,1174.15,single bole tree,Live,54.2,23.2,NA,NA,NA
+MLBS01264,MLBS,QUCO2,Quercus coccinea,species,17N,deciduousForest,1166.12,single bole tree,Live,18.1,15,NA,NA,NA
+MLBS01141,MLBS,QUCO2,Quercus coccinea,species,17N,deciduousForest,1167.78,single bole tree,Live,44.1,22.1,NA,NA,NA
+MLBS01364,MLBS,QUCO2,Quercus coccinea,species,17N,deciduousForest,1173.32,single bole tree,Live,34,19.7,NA,NA,NA
+MLBS01304,MLBS,QUCO2,Quercus coccinea,species,17N,deciduousForest,1169.25,single bole tree,Live,37.6,21.7,NA,NA,NA
+MLBS01281,MLBS,QUCO2,Quercus coccinea,species,17N,deciduousForest,1171.54,single bole tree,Live,47.8,21.6,NA,NA,NA
+MLBS01317A,MLBS,QUCO2,Quercus coccinea,species,17N,deciduousForest,1169.25,multi-bole tree,Live,25.5,22.8,NA,NA,NA
+MLBS01372,MLBS,QUCO2,Quercus coccinea,species,17N,deciduousForest,1173.32,single bole tree,"Live, insect damaged",40.1,19,NA,NA,NA
+MLBS01294,MLBS,QUCO2,Quercus coccinea,species,17N,deciduousForest,1169.25,single bole tree,Live,34.6,17.1,NA,NA,NA
+MLBS01308,MLBS,QUCO2,Quercus coccinea,species,17N,deciduousForest,1169.25,single bole tree,Live,24,15.2,NA,NA,NA
+MLBS01165,MLBS,QUCO2,Quercus coccinea,species,17N,deciduousForest,1167.78,single bole tree,Live,47.6,20.6,NA,NA,NA
+MLBS01133,MLBS,QUCO2,Quercus coccinea,species,17N,deciduousForest,1167.78,single bole tree,Live,31.3,19.8,NA,NA,NA
+MLBS01154,MLBS,QUCO2,Quercus coccinea,species,17N,deciduousForest,1167.78,single bole tree,Live,42.6,19.1,NA,NA,NA
+MLBS01219,MLBS,QUCO2,Quercus coccinea,species,17N,deciduousForest,1167.78,multi-bole tree,Live,34.5,20.3,NA,NA,NA
+MLBS01402,MLBS,QUCO2,Quercus coccinea,species,17N,deciduousForest,1173.32,single bole tree,"Live, insect damaged",50.4,17.7,NA,NA,NA
+MLBS01352,MLBS,QUCO2,Quercus coccinea,species,17N,deciduousForest,1173.32,single bole tree,"Live, insect damaged",33.3,18.4,NA,NA,NA
+MLBS01382,MLBS,QUCO2,Quercus coccinea,species,17N,deciduousForest,1173.32,single bole tree,"Live, insect damaged",28.9,15.7,NA,NA,NA
+MLBS01377,MLBS,QUCO2,Quercus coccinea,species,17N,deciduousForest,1173.32,single bole tree,Live,25.3,17.1,NA,NA,NA
+MLBS01353,MLBS,QUCO2,Quercus coccinea,species,17N,deciduousForest,1173.32,single bole tree,"Live, insect damaged",31.7,18.8,NA,NA,NA
+MLBS01318,MLBS,QUCO2,Quercus coccinea,species,17N,deciduousForest,1169.25,single bole tree,Live,41.6,16,NA,NA,NA
+MLBS01219A,MLBS,QUCO2,Quercus coccinea,species,17N,deciduousForest,1168.65,multi-bole tree,Live,30.3,20.3,NA,NA,NA
+MLBS02232,MLBS,QUCO2,Quercus coccinea,species,17N,deciduousForest,819.79,single bole tree,Live,36,21.5,14.4,10.4,Partially shaded
+MLBS02245A,MLBS,QUCO2,Quercus coccinea,species,17N,deciduousForest,819.79,multi-bole tree,Live,29.8,25,11.8,11.6,Full sun
+MLBS02241B,MLBS,QUCO2,Quercus coccinea,species,17N,deciduousForest,819.79,multi-bole tree,Standing dead,14.2,25,12,11.4,Partially shaded
+MLBS02235,MLBS,QUCO2,Quercus coccinea,species,17N,deciduousForest,819.79,single bole tree,Live,20.5,20.4,8.5,6.3,Partially shaded
+MLBS02217,MLBS,QUCO2,Quercus coccinea,species,17N,deciduousForest,819.79,single bole tree,Live,34.8,24.4,11.1,7.5,Partially shaded
+MLBS01170,MLBS,QUCO2,Quercus coccinea,species,17N,deciduousForest,1167.78,single bole tree,Live,31.2,21.6,NA,NA,NA
+MLBS01170,MLBS,QUCO2,Quercus coccinea,species,17N,deciduousForest,1167.78,single bole tree,No longer qualifies,31.2,18.6,NA,NA,NA
+OSBS06243,OSBS,QUGE2,Quercus geminata Small,species,17N,evergreenForest,28,single bole tree,Live,36.3,9.5,11.5,11.4,Full sun
+OSBS01352,OSBS,QUGE2,Quercus geminata Small,species,17N,evergreenForest,38.56,single bole tree,Live,15.1,7.2,5.2,4,Full sun
+OSBS01909,OSBS,QUGE2,Quercus geminata Small,species,17N,evergreenForest,34.31,single bole tree,Live,19,13.3,3.4,2.2,NA
+OSBS01558,OSBS,QUGE2,Quercus geminata Small,species,17N,evergreenForest,34.31,single bole tree,Live,24.3,13,6.4,3.5,Full sun
+OSBS01556,OSBS,QUGE2,Quercus geminata Small,species,17N,evergreenForest,34.31,single bole tree,Live,25,14.1,4.4,3.6,Full sun
+OSBS01912,OSBS,QUGE2,Quercus geminata Small,species,17N,evergreenForest,34.31,single bole tree,"Dead, broken bole",13.7,6.3,NA,NA,NA
+OSBS01910,OSBS,QUGE2,Quercus geminata Small,species,17N,evergreenForest,34.31,single bole tree,Live,24,13.2,6.1,3.1,NA
+OSBS01568,OSBS,QUGE2,Quercus geminata Small,species,17N,evergreenForest,34.31,single bole tree,Live,21.7,13.9,5,1.7,Full sun
+OSBS01570,OSBS,QUGE2,Quercus geminata Small,species,17N,evergreenForest,34.31,single bole tree,Live,19.8,13.3,2.2,1.5,Full sun
+OSBS01536,OSBS,QUGE2,Quercus geminata Small,species,17N,evergreenForest,36.39,single bole tree,Live,10.1,5.8,3.9,3.1,Partially shaded
+OSBS01574,OSBS,QUGE2,Quercus geminata Small,species,17N,evergreenForest,34.31,single bole tree,Live,20.7,12,5.7,2.8,Full sun
+OSBS01906,OSBS,QUGE2,Quercus geminata Small,species,17N,evergreenForest,34.31,single bole tree,Live,22.6,13.7,4.3,4.2,NA
+OSBS01571,OSBS,QUGE2,Quercus geminata Small,species,17N,evergreenForest,34.31,single bole tree,Live,18.6,11.9,3.9,2.6,Full sun
+OSBS01855,OSBS,QUGE2,Quercus geminata Small,species,17N,evergreenForest,31.99,single bole tree,Live,13.5,5.6,7.5,4.1,Partially shaded
+OSBS01854,OSBS,QUGE2,Quercus geminata Small,species,17N,evergreenForest,31.99,single bole tree,"Live, physically damaged",21,8.8,8.6,7.2,Partially shaded
+OSBS03754,OSBS,QUGE2,Quercus geminata Small,species,17N,evergreenForest,43.71,single bole tree,"Live,  other damage",21.3,12.5,NA,NA,NA
+OSBS03753,OSBS,QUGE2,Quercus geminata Small,species,17N,evergreenForest,43.71,single bole tree,"Live,  other damage",22.2,12.8,NA,NA,NA
+OSBS03755,OSBS,QUGE2,Quercus geminata Small,species,17N,evergreenForest,43.71,single bole tree,Live,21.9,13.7,NA,NA,NA
+OSBS00188,OSBS,QUHE2,Quercus hemisphaerica W. Bartram ex Willd.,species,17N,evergreenForest,33.52,small tree,Live,2.5,3.7,NA,NA,NA
+OSBS00191,OSBS,QUHE2,Quercus hemisphaerica W. Bartram ex Willd.,species,17N,evergreenForest,32.67,multi-bole tree,Live,16.5,7.7,5.6,4.4,NA
+OSBS06242,OSBS,QUHE2,Quercus hemisphaerica W. Bartram ex Willd.,species,17N,evergreenForest,28,single bole tree,Live,28.4,29,7.5,6.7,Full sun
+OSBS01519,OSBS,QUHE2,Quercus hemisphaerica W. Bartram ex Willd.,species,17N,evergreenForest,35.87,single bole tree,Live,12.3,7.8,4.7,3.6,Partially shaded
+OSBS01551,OSBS,QUHE2,Quercus hemisphaerica W. Bartram ex Willd.,species,17N,evergreenForest,34.62,single bole tree,Live,43.5,13.5,12.8,11,Full sun
+OSBS00114,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,44.22,single bole tree,"Live,  other damage",33.1,13.8,NA,NA,NA
+OSBS00120,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,44.22,single bole tree,"Live,  other damage",30.7,15.2,NA,NA,NA
+OSBS00825,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,38.95,single bole tree,"Live,  other damage",10.5,7.4,NA,NA,NA
+OSBS00784,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,45.2,single bole tree,Live,23,9.7,8.8,6,Full sun
+OSBS00022,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,45.64,single bole tree,Standing dead,12.3,6.9,NA,NA,NA
+OSBS01921,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,34.31,single bole tree,Live,17,13.4,2.3,2.3,NA
+OSBS01911,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,34.31,single bole tree,Live,10,5.2,2.1,2,NA
+OSBS01925,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,34.31,single bole tree,Live,18.3,10.9,4.2,2.2,NA
+OSBS02136,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,44.63,single bole tree,Live,24.4,12.1,NA,NA,NA
+OSBS02151,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,44.63,single bole tree,"Live,  other damage",20.7,9.1,NA,NA,NA
+OSBS02150,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,44.63,single bole tree,Live,25.3,10.4,NA,NA,NA
+OSBS02069,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,44.26,small tree,Live,6.1,5,NA,NA,NA
+OSBS02147,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,44.63,single bole tree,"Live, physically damaged",13.9,6.9,NA,NA,NA
+OSBS02152,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,44.26,single bole tree,Live,12.6,8.1,NA,NA,NA
+OSBS02148,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,44.63,single bole tree,Live,18.6,8.4,NA,NA,NA
+OSBS02056,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,44.26,small tree,"Live,  other damage",9.5,6.3,NA,NA,NA
+OSBS02055,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,44.63,single bole tree,Live,10.2,8,NA,NA,NA
+OSBS02059,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,44.63,small tree,"Live,  other damage",9.7,6.5,NA,NA,NA
+OSBS02149,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,44.63,single bole tree,"Live,  other damage",21,11,NA,NA,NA
+OSBS02060,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,44.26,small tree,"Live,  other damage",3.3,6.8,NA,NA,NA
+OSBS02060,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,44.26,small tree,"Live,  other damage",9.9,6.8,NA,NA,NA
+OSBS02140,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,44.29,single bole tree,Live,19.9,9.3,NA,NA,NA
+OSBS02703,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,46.36,single bole tree,Live,16.8,8.8,NA,NA,NA
+OSBS02702,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,46.36,single bole tree,Live,23.6,7.4,NA,NA,NA
+OSBS03009,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,45.05,single bole tree,"Live,  other damage",27.3,11.1,NA,NA,NA
+OSBS02969,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,42.15,single bole tree,Standing dead,21.7,9.9,NA,NA,NA
+OSBS02969,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,42.15,single bole tree,Standing dead,21.7,9.9,NA,NA,NA
+OSBS03094,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,45.05,small tree,Live,8.5,7.2,NA,NA,NA
+OSBS02980,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,41.36,single bole tree,Standing dead,19,7,NA,NA,NA
+OSBS02980,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,41.36,single bole tree,Standing dead,19,7,NA,NA,NA
+OSBS02312,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,42.25,single bole tree,Standing dead,17.4,11.8,NA,NA,NA
+OSBS02312,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,42.25,single bole tree,Standing dead,17.4,11.8,NA,NA,NA
+OSBS03060,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,46.03,single bole tree,Live,12.7,9,NA,NA,NA
+OSBS02984,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,41.36,single bole tree,Standing dead,17.5,12,NA,NA,NA
+OSBS02984,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,41.36,single bole tree,Standing dead,17.5,12,NA,NA,NA
+OSBS03072,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,45.49,single bole tree,Live,15.2,10.7,NA,NA,NA
+OSBS02223,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,42.96,single bole tree,Live,26.2,12.1,NA,NA,NA
+OSBS03427,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,44.22,single bole tree,Live,19.3,8.7,NA,NA,NA
+OSBS03427,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,44.22,single bole tree,Live,19.3,8.7,NA,NA,NA
+OSBS03428,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,44.22,single bole tree,Live,11.6,4.5,NA,NA,NA
+OSBS03428,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,44.22,single bole tree,Live,11.6,4.5,NA,NA,NA
+OSBS03397,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,45.22,single bole tree,"Live, physically damaged",26.2,12.3,NA,NA,NA
+OSBS03397,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,45.22,single bole tree,"Live, physically damaged",26.2,12.3,NA,NA,NA
+OSBS03387,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,44.22,single bole tree,Live,15.5,10.1,NA,NA,NA
+OSBS03387,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,44.22,single bole tree,Live,15.5,10.1,NA,NA,NA
+OSBS03382,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,44.22,single bole tree,Live,12.3,8.6,NA,NA,NA
+OSBS03382,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,44.22,single bole tree,Live,12.3,8.6,NA,NA,NA
+OSBS03389,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,45.22,single bole tree,Live,13.8,10.7,NA,NA,NA
+OSBS03389,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,45.22,single bole tree,Live,13.8,10.7,NA,NA,NA
+OSBS03384,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,44.22,single bole tree,"Live, physically damaged",30.8,12.2,NA,NA,NA
+OSBS03384,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,44.22,single bole tree,"Live, physically damaged",30.8,12.2,NA,NA,NA
+OSBS03425,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,44.22,single bole tree,Live,19.3,12.8,NA,NA,NA
+OSBS03425,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,44.22,single bole tree,Live,19.3,12.8,NA,NA,NA
+OSBS03377,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,49.21,single bole tree,"Live, broken bole",29.9,6.4,NA,NA,NA
+OSBS03377,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,49.21,single bole tree,"Live, broken bole",29.9,6.4,NA,NA,NA
+OSBS06013,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,46.23,single bole tree,Live,14.7,6.9,NA,NA,NA
+OSBS03479,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,45.88,single bole tree,Live,11.7,7.7,NA,NA,NA
+OSBS03592,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,46.23,single bole tree,Live,18.4,9.5,NA,NA,NA
+OSBS03509,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,46.23,single bole tree,Live,15.8,9.4,NA,NA,NA
+OSBS03520,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,46.23,single bole tree,Live,22,9.4,NA,NA,NA
+OSBS03522,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,45.88,single bole tree,Live,11.1,6.1,NA,NA,NA
+OSBS03510,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,46.23,single bole tree,Live,28,12.7,NA,NA,NA
+OSBS03482,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,45.88,single bole tree,Live,21.1,9.4,NA,NA,NA
+OSBS03513,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,46.23,single bole tree,Live,12.8,8,NA,NA,NA
+OSBS03485,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,45.88,single bole tree,"Live, broken bole",13.6,7.6,NA,NA,NA
+OSBS03478,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,45.88,single bole tree,Live,18.1,10,NA,NA,NA
+OSBS03502,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,45.88,single bole tree,Live,17,6,NA,NA,NA
+OSBS03476,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,45.88,single bole tree,Live,20,8.6,NA,NA,NA
+OSBS03707,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,44.13,single bole tree,Live,16.4,9.8,NA,NA,NA
+OSBS03705,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,42.47,single bole tree,Live,17.7,8.3,NA,NA,NA
+OSBS03706,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,42.47,single bole tree,"Live,  other damage",19.9,10.3,NA,NA,NA
+OSBS03742,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,43.71,single bole tree,Live,12.7,10.9,NA,NA,NA
+OSBS03746,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,43.71,single bole tree,Live,23.7,9.2,NA,NA,NA
+OSBS03826,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,43.68,single bole tree,Standing dead,23,9.7,NA,NA,NA
+OSBS03826,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,43.68,single bole tree,Standing dead,23,9.7,NA,NA,NA
+OSBS03827,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,42.41,single bole tree,"Dead, broken bole",18,6.6,NA,NA,NA
+OSBS03827,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,42.41,single bole tree,"Dead, broken bole",18,6.6,NA,NA,NA
+OSBS00251,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,45.64,single bole tree,Live,11,7.5,NA,NA,NA
+OSBS00249,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,45.64,small tree,"Live,  other damage",9.9,6.1,NA,NA,NA
+OSBS00085,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,45.54,single bole tree,Live,11.4,8.2,NA,NA,NA
+OSBS00024,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,45.64,single bole tree,Live,12.5,7.5,NA,NA,NA
+OSBS00250,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,45.64,single bole tree,Live,13.8,7.9,NA,NA,NA
+OSBS00253,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,45.64,small tree,Live,11.3,7.5,NA,NA,NA
+OSBS00252,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,45.64,single bole tree,Standing dead,12.9,7.9,NA,NA,NA
+OSBS00023,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,45.64,multi-bole tree,"Live, physically damaged",17.6,8.2,NA,NA,NA
+OSBS00023,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,45.64,multi-bole tree,"Live, physically damaged",5.8,8.2,NA,NA,NA
+OSBS07795,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,44.9,small tree,Live,8.7,6,NA,NA,NA
+OSBS07795,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,44.9,small tree,Live,8.7,6,NA,NA,NA
+OSBS03582,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,45.9,single bole tree,Live,10.5,7.6,NA,NA,NA
+OSBS02149,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,44.63,single bole tree,"Live,  other damage",21,11,NA,NA,NA
+OSBS02150,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,44.26,single bole tree,Live,25.3,10.4,NA,NA,NA
+OSBS02151,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,44.63,single bole tree,"Live,  other damage",20.7,9.1,NA,NA,NA
+OSBS02148,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,44.63,single bole tree,Live,18.6,8.4,NA,NA,NA
+OSBS02136,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,44.26,single bole tree,Live,24.4,12.1,NA,NA,NA
+OSBS02055,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,44.63,single bole tree,Live,10.2,8,NA,NA,NA
+OSBS02147,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,44.63,single bole tree,"Live, physically damaged",13.9,6.9,NA,NA,NA
+OSBS02223,OSBS,QULA2,Quercus laevis Walter,species,17N,evergreenForest,42.6,single bole tree,Live,26.2,12.1,NA,NA,NA
+OSBS01915,OSBS,QULA3,Quercus laurifolia Michx.,species,17N,evergreenForest,34.31,single bole tree,Live,16.1,12.7,2.9,2,NA
+MLBS00589,MLBS,QUMO4,Quercus montana Willd.,species,17N,deciduousForest,1175.83,single bole tree,Live,45.4,18.2,NA,NA,NA
+MLBS00597,MLBS,QUMO4,Quercus montana Willd.,species,17N,deciduousForest,1175.83,single bole tree,Live,33.5,16.5,NA,NA,NA
+MLBS00579,MLBS,QUMO4,Quercus montana Willd.,species,17N,deciduousForest,1175.83,single bole tree,Live,34.2,18.5,NA,NA,NA
+MLBS01738,MLBS,QUMO4,Quercus montana Willd.,species,17N,deciduousForest,897.62,single bole tree,Live,59.8,29.1,16.5,14.6,Full sun
+MLBS02153,MLBS,QUMO4,Quercus montana Willd.,species,17N,deciduousForest,978.65,single bole tree,"Live, disease damaged",30.4,21.8,4.4,4,Partially shaded
+MLBS02174,MLBS,QUMO4,Quercus montana Willd.,species,17N,deciduousForest,978.65,single bole tree,Live,35.5,26.3,9.6,9.3,Partially shaded
+MLBS02156,MLBS,QUMO4,Quercus montana Willd.,species,17N,deciduousForest,978.65,single bole tree,Live,31.6,26.9,8.1,3.8,Partially shaded
+MLBS02154,MLBS,QUMO4,Quercus montana Willd.,species,17N,deciduousForest,978.65,single bole tree,Live,23.2,24.2,5.4,3.5,Partially shaded
+MLBS02162,MLBS,QUMO4,Quercus montana Willd.,species,17N,deciduousForest,978.65,single bole tree,Live,36,24.1,7.7,7.4,Partially shaded
+MLBS02181,MLBS,QUMO4,Quercus montana Willd.,species,17N,deciduousForest,978.65,single bole tree,Live,29.9,23.9,7.7,5.5,Partially shaded
+MLBS02427,MLBS,QUMO4,Quercus montana Willd.,species,17N,deciduousForest,791.31,single bole tree,Live,30.7,26.9,8.4,6.7,Partially shaded
+MLBS02421,MLBS,QUMO4,Quercus montana Willd.,species,17N,deciduousForest,791.31,single bole tree,Live,24.3,18,8.9,8.3,Partially shaded
+OSBS00193,OSBS,QUNI,Quercus nigra L.,species,17N,evergreenForest,31.94,small tree,Live,9.7,4.8,NA,NA,NA
+OSBS00190,OSBS,QUNI,Quercus nigra L.,species,17N,evergreenForest,32.67,single bole tree,Live,21.1,10.2,9.7,7.2,NA
+OSBS01853,OSBS,QUNI,Quercus nigra L.,species,17N,evergreenForest,31.99,single bole tree,Live,18,8.1,6.6,5.9,Partially shaded
+MLBS00086,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1180.77,single bole tree,"Live, insect damaged",32.7,19.2,NA,NA,NA
+MLBS00073,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1180.77,multi-bole tree,"Live, insect damaged",28,16.3,NA,NA,NA
+MLBS00114,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1175.1,multi-bole tree,Live,32,16.2,NA,NA,NA
+MLBS00255,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1173.12,single bole tree,Live,23.7,16.8,NA,NA,NA
+MLBS00227,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1173.12,single bole tree,Live,25.9,15,NA,NA,NA
+MLBS00193,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1175.1,single bole tree,Live,25.7,16.9,NA,NA,NA
+MLBS00181,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1175.1,multi-bole tree,Live,25.8,18.4,NA,NA,NA
+MLBS00135,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1175.1,single bole tree,Live,44.5,17.1,NA,NA,NA
+MLBS00233,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1173.12,single bole tree,Live,35.1,17.8,NA,NA,NA
+MLBS00075,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1180.77,single bole tree,"Live, insect damaged",19.2,14.2,NA,NA,NA
+MLBS00318,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1178.17,single bole tree,Live,31.8,18.8,NA,NA,NA
+MLBS00061,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1180.77,single bole tree,"Live, insect damaged",29.7,16.9,NA,NA,NA
+MLBS00079,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1180.77,multi-bole tree,"Live, insect damaged",21.3,16.6,NA,NA,NA
+MLBS00095,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1180.77,single bole tree,"Live, insect damaged",16.7,15.9,NA,NA,NA
+MLBS00074,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1180.77,single bole tree,"Live, insect damaged",21.2,17.6,NA,NA,NA
+MLBS00162,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1175.1,single bole tree,Live,38.5,17.3,NA,NA,NA
+MLBS00302,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1178.17,single bole tree,Live,35.6,17.3,NA,NA,NA
+MLBS00229,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1173.12,single bole tree,Live,26.8,14.6,NA,NA,NA
+MLBS00335,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1178.17,single bole tree,Live,46.1,19.9,NA,NA,NA
+MLBS00488,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1169.65,single bole tree,Live,17.9,15.3,NA,NA,NA
+MLBS00498,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1169.65,single bole tree,Live,42.8,22.3,NA,NA,NA
+MLBS00469,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1169.65,single bole tree,Live,35.7,22.2,NA,NA,NA
+MLBS00424,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1175.68,single bole tree,Live,34.8,20.9,NA,NA,NA
+MLBS00400,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1175.68,single bole tree,"Live, insect damaged",22.9,18.2,NA,NA,NA
+MLBS00425,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1175.68,single bole tree,"Live, insect damaged",38.3,22.2,NA,NA,NA
+MLBS00395,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1175.68,single bole tree,Live,29.5,20.2,NA,NA,NA
+MLBS00417,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1175.68,single bole tree,"Live, insect damaged",30.2,20,NA,NA,NA
+MLBS00388,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1175.68,single bole tree,"Live, insect damaged",12.8,12.5,NA,NA,NA
+MLBS00420,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1175.68,single bole tree,"Live, insect damaged",12.9,13.3,NA,NA,NA
+MLBS00397,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1175.68,single bole tree,Live,33.4,20.4,NA,NA,NA
+MLBS00410,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1175.68,single bole tree,"Live, insect damaged",23.8,21.1,NA,NA,NA
+MLBS00464,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1169.65,single bole tree,Live,36.8,22,NA,NA,NA
+MLBS00460,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1169.65,multi-bole tree,Live,39,20,NA,NA,NA
+MLBS00503,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1169.65,single bole tree,Live,36.2,19.9,NA,NA,NA
+MLBS00467,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1169.65,single bole tree,Live,21.9,17,NA,NA,NA
+MLBS00415,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1175.68,single bole tree,"Live, insect damaged",25.4,19.7,NA,NA,NA
+MLBS00359,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1175.68,single bole tree,"Live, insect damaged",31.8,22.4,NA,NA,NA
+MLBS00408,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1175.68,single bole tree,"Live, insect damaged",23.5,22.4,NA,NA,NA
+MLBS00437,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1175.68,single bole tree,Live,38.9,20.7,NA,NA,NA
+MLBS00381,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1175.68,single bole tree,"Live, insect damaged",36.3,18.5,NA,NA,NA
+MLBS00429,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1175.68,single bole tree,"Live, insect damaged",22.7,20.2,NA,NA,NA
+MLBS00345,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1175.68,single bole tree,Live,37.6,21.8,NA,NA,NA
+MLBS00637,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1170.24,single bole tree,Live,35.4,21.1,NA,NA,NA
+MLBS00634A,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1170.24,multi-bole tree,"Live, insect damaged",33.4,20,NA,NA,NA
+MLBS00696,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1173.13,single bole tree,"Live, insect damaged",29.9,20.2,NA,NA,NA
+MLBS00613,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1170.24,single bole tree,"Live, insect damaged",34.4,20.7,NA,NA,NA
+MLBS00621,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1170.24,single bole tree,"Live, insect damaged",60.4,19.8,NA,NA,NA
+MLBS00708,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1173.13,single bole tree,"Live, insect damaged",39,21.5,NA,NA,NA
+MLBS00788,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1172.84,single bole tree,"Live, insect damaged",38.8,20.8,NA,NA,NA
+MLBS00842,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1172.84,single bole tree,"Live, insect damaged",43.3,21.8,NA,NA,NA
+MLBS01088A,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1174.15,multi-bole tree,Live,36.4,23,NA,NA,NA
+MLBS00838,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1172.84,single bole tree,"Live, insect damaged",25.7,20.8,NA,NA,NA
+MLBS01096,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1170.49,single bole tree,Live,40.1,21,NA,NA,NA
+MLBS01069,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1174.15,single bole tree,"Live, insect damaged",40.4,23.7,NA,NA,NA
+MLBS01128,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1174.15,single bole tree,Live,28.2,15.8,NA,NA,NA
+MLBS01130,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1174.15,single bole tree,Live,44.2,21.5,NA,NA,NA
+MLBS00773,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1172.84,single bole tree,"Live, insect damaged",45.5,21.7,NA,NA,NA
+MLBS01192,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1167.78,multi-bole tree,Live,28.5,19,NA,NA,NA
+MLBS01273,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1171.54,single bole tree,Live,51.7,14.9,NA,NA,NA
+MLBS01167,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1167.78,single bole tree,Live,24.4,19.4,NA,NA,NA
+MLBS01375,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1173.32,single bole tree,Live,13,12.9,NA,NA,NA
+MLBS01366,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1173.32,single bole tree,Live,44.3,22.7,NA,NA,NA
+MLBS01277,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1171.54,single bole tree,Live,38.2,20.9,NA,NA,NA
+MLBS01313,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1169.25,multi-bole tree,Live,33.2,20.6,NA,NA,NA
+MLBS01622,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1241.81,single bole tree,"Live, insect damaged",18,12.2,6.2,4,Full sun
+MLBS01578,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1241.81,single bole tree,Standing dead,21.6,9.8,5.8,1.3,Partially shaded
+MLBS01614,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1241.81,single bole tree,"Live, insect damaged",26.5,13.4,6.8,6.5,Full sun
+MLBS01544,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1221.21,single bole tree,No longer qualifies,27.5,18.7,10,9.9,Full sun
+MLBS01544,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1221.21,single bole tree,Live,27.5,18.7,10,9.9,Full sun
+MLBS01575,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1241.81,single bole tree,Standing dead,18.9,12.9,5.1,4.7,Full sun
+MLBS01556A,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1221.21,multi-bole tree,Standing dead,16.1,19.3,11.3,9.3,Full sun
+MLBS01549,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1221.21,single bole tree,Live,28,17.4,10.1,7.7,Partially shaded
+MLBS01584,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1241.81,single bole tree,"Live, insect damaged",27.9,13.2,6.9,6.4,Full sun
+MLBS01626,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1241.81,multi-bole tree,"Live, insect damaged",23.9,16.1,7.3,5.6,Full sun
+MLBS01589,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1241.81,single bole tree,"Live, insect damaged",24.4,14.4,5.3,4.9,Full sun
+MLBS01591,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1241.81,single bole tree,Standing dead,23.1,14,5.6,3.8,Partially shaded
+MLBS01577,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1241.81,single bole tree,Live,38.9,15.1,10.3,9.3,Full sun
+MLBS01605,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1241.81,single bole tree,"Live, insect damaged",30,14.3,8,6.6,Full sun
+MLBS01569,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1241.81,single bole tree,"Live, physically damaged",36.9,13.8,7.2,4.6,Full sun
+MLBS01566,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1221.21,single bole tree,Live,31.5,19.3,10,5.2,Full sun
+MLBS01541,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1221.21,single bole tree,Live,27.2,20,8,5,Full sun
+MLBS01515,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1179.85,single bole tree,"Live, insect damaged",29.3,17.3,7.4,7,Partially shaded
+MLBS01511,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1179.85,single bole tree,Live,20.1,15.2,7.3,2.5,Mostly shaded
+MLBS01516,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1179.85,single bole tree,"Live, insect damaged",16.5,12.6,3.7,3.6,Mostly shaded
+MLBS01509,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1179.85,single bole tree,"Live, insect damaged",35.3,17.9,8.2,6.4,Partially shaded
+MLBS01531,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1179.85,single bole tree,Standing dead,30.3,17.9,8,4.2,Partially shaded
+MLBS01523,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1179.85,single bole tree,"Live, insect damaged",19.8,15.5,6.9,5.6,Mostly shaded
+MLBS01545,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1221.21,single bole tree,Live,47.9,19.9,11.6,11.1,Full sun
+MLBS01536,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1179.85,single bole tree,"Live, insect damaged",22.7,17.3,6.8,5.4,Partially shaded
+MLBS01618,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1241.81,single bole tree,"Live, insect damaged",20.3,12.9,6.2,4.1,Full sun
+MLBS01572,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1241.81,single bole tree,"Live, insect damaged",28.6,13.6,11,7.3,Full sun
+MLBS01555,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1221.21,single bole tree,"Live, insect damaged",36.8,19.4,8.9,6.9,Full sun
+MLBS01553,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1221.21,single bole tree,Live,32.7,19.9,5.8,4.6,Full sun
+MLBS01548,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1221.21,single bole tree,Live,42.6,18.9,10.1,9.4,Full sun
+MLBS01518,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1179.85,single bole tree,"Live,  other damage",29.8,18,7.4,4.5,Partially shaded
+MLBS01678,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1310.19,single bole tree,Live,27,11.8,7.2,6.5,Partially shaded
+MLBS01660,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1310.19,single bole tree,No longer qualifies,13.9,9,3.9,2.9,Mostly shaded
+MLBS01660,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1310.19,single bole tree,Live,13.9,9,3.9,2.9,Mostly shaded
+MLBS01666A,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1310.19,multi-bole tree,Standing dead,24.9,11.1,8.8,5.7,Partially shaded
+MLBS01647,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1310.19,single bole tree,Live,33.5,12,10,7.6,Partially shaded
+MLBS01685A,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1267.66,multi-bole tree,Live,32.1,13.5,12.8,8.1,Full sun
+MLBS01710,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1267.66,multi-bole tree,Live,29.3,17.3,9,6.3,Full sun
+MLBS01645,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1310.19,single bole tree,"Live, insect damaged",35.9,11.8,9.1,5.5,Partially shaded
+MLBS01696,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1267.66,single bole tree,No longer qualifies,44.2,17.2,10.6,9.3,Full sun
+MLBS01696,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1267.66,single bole tree,Live,44.2,17.2,10.6,9.3,Full sun
+MLBS01714,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1267.66,single bole tree,Live,39.8,15.1,10.8,6.6,Partially shaded
+MLBS01684,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1267.66,single bole tree,Live,35.8,16.5,5.9,5.2,Full sun
+MLBS01689,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1267.66,single bole tree,Live,21.5,15.8,5.8,4,Partially shaded
+MLBS01651,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1310.19,single bole tree,"Live, insect damaged",24.9,10.7,7.5,5.2,Partially shaded
+MLBS01636,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1310.19,single bole tree,"Live, insect damaged",28.5,12.5,8,3.7,Partially shaded
+MLBS01679,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1310.19,single bole tree,Standing dead,30,12.1,5.9,4.6,Partially shaded
+MLBS01723,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1267.66,single bole tree,Live,34.6,16.6,13.3,8.8,Full sun
+MLBS01692,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1267.66,single bole tree,"Live, insect damaged",21.7,12.5,6.3,4.4,Full sun
+MLBS01637,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1310.19,single bole tree,"Live, insect damaged",25.6,13.5,6.9,5.3,Partially shaded
+MLBS01648,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1310.19,single bole tree,Live,24.7,12,7.5,4.1,Partially shaded
+MLBS01641,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1310.19,single bole tree,Live,40.3,12.5,10.2,9.9,Full sun
+MLBS01702,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1267.66,single bole tree,Live,30.4,16.1,7,6,Full sun
+MLBS01674,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1310.19,single bole tree,"Live, insect damaged",20.2,10.8,3.5,3,Partially shaded
+MLBS01846,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,807.66,single bole tree,Live,31.9,23.3,15.5,11.6,Partially shaded
+MLBS01866,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,812.6,single bole tree,Live,39.1,26.9,12.3,9.9,Full sun
+MLBS01730,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,897.62,single bole tree,Live,41.6,22.8,13,11.7,Partially shaded
+MLBS01820,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,812.6,single bole tree,Live,27,20.9,10,7.2,Mostly shaded
+MLBS01867,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,812.6,single bole tree,Live,40.8,28,12.7,9.7,Partially shaded
+MLBS01862,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,807.66,single bole tree,Live,46.3,26.8,13.7,8.8,Partially shaded
+MLBS02135,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1319.11,single bole tree,"Live, insect damaged",13.9,8.3,2.6,1.5,Partially shaded
+MLBS02144A,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1319.11,multi-bole tree,Standing dead,10.3,5.2,1.8,1.2,Mostly shaded
+MLBS02128,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1319.11,single bole tree,"Live, insect damaged",32.3,7.7,6.8,3.6,Partially shaded
+MLBS02110A,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1319.11,multi-bole tree,"Live, insect damaged",18.1,9.2,6.1,4,Partially shaded
+MLBS02149,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1319.11,single bole tree,"Live, insect damaged",27.5,8.9,7.8,7.6,Full sun
+MLBS02109A,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1319.11,multi-bole tree,Standing dead,12.3,8.6,5.5,3.8,Partially shaded
+MLBS02001,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1285.2,single bole tree,"Live, insect damaged",11.8,10.1,7.4,3.8,Mostly shaded
+MLBS01961,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1285.2,single bole tree,Live,16.3,7.4,5.9,3.3,Mostly shaded
+MLBS01965,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1285.2,single bole tree,"Live, insect damaged",27.5,13.9,8.6,6,Partially shaded
+MLBS02019A,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1288.96,multi-bole tree,Standing dead,12.3,10.6,5.8,2.3,Partially shaded
+MLBS02016,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1288.96,multi-bole tree,"Live, insect damaged",19.1,9.3,4.5,2.7,Partially shaded
+MLBS02020,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1288.96,multi-bole tree,Live,36.8,11.3,14.1,13.3,Full sun
+MLBS02011A,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1288.96,multi-bole tree,"Live, insect damaged",18.1,7.5,6.7,6,Partially shaded
+MLBS02047A,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1288.96,multi-bole tree,"Live, insect damaged",16,7.2,6.7,3.4,Partially shaded
+MLBS02030B,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1288.96,multi-bole tree,"Live, insect damaged",20.3,9.5,9.8,8.6,Partially shaded
+MLBS02107,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1319.11,single bole tree,"Live, insect damaged",25.4,8.6,5.5,4.5,Partially shaded
+MLBS02113,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1319.11,multi-bole tree,"Live, insect damaged",31.4,8.7,7.7,6.4,Partially shaded
+MLBS02096,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1319.11,single bole tree,"Live, insect damaged",17.9,8.4,2.9,1.9,Partially shaded
+MLBS02084,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1319.11,multi-bole tree,Live,23,6.6,5.5,3.6,Partially shaded
+MLBS01975,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1285.2,single bole tree,"Live,  other damage",23.4,12.7,6.4,4.3,Partially shaded
+MLBS02093,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1319.11,single bole tree,"Live, insect damaged",21.3,8.2,6.3,4.4,Full sun
+MLBS01987,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1285.2,single bole tree,"Live, insect damaged",18.3,12.9,6.9,2.8,Partially shaded
+MLBS02150,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1319.11,single bole tree,"Live, insect damaged",14,8.5,2.9,2.8,Partially shaded
+MLBS02000,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1285.2,single bole tree,"Live, insect damaged",42.6,13.2,9.2,9.1,Partially shaded
+MLBS01974,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1285.2,multi-bole tree,"Live, insect damaged",32.1,14.3,8.3,7.3,Partially shaded
+MLBS01967,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1285.2,single bole tree,Live,22,12.1,4.3,3.3,Partially shaded
+MLBS01953,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1285.2,single bole tree,"Live, insect damaged",36.7,12.7,8.1,7.9,Partially shaded
+MLBS01954,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1285.2,single bole tree,"Live, insect damaged",41.1,11.1,8.7,6,Partially shaded
+MLBS02009,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1288.96,single bole tree,"Live, insect damaged",45.9,8.5,9.6,6.7,Partially shaded
+MLBS02147,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1319.11,single bole tree,"Live, insect damaged",20.7,7.5,6.5,4.1,Partially shaded
+MLBS02085,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1319.11,single bole tree,Live,14.5,7.2,2.8,1.6,Partially shaded
+MLBS01992,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1285.2,single bole tree,"Live, insect damaged",31.2,14.2,8,7.3,Full sun
+MLBS01971,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,1285.2,single bole tree,Live,25,14.2,6.8,6.8,Partially shaded
+MLBS02187,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,978.65,single bole tree,Live,31,24.1,8.1,6.2,Partially shaded
+MLBS02199,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,978.65,single bole tree,Live,33.7,23.9,8.4,7.5,Partially shaded
+MLBS02151,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,978.65,single bole tree,Live,31.8,26.4,7.5,7.1,Partially shaded
+MLBS02191,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,978.65,single bole tree,Standing dead,12,13.8,0.7,0.4,Mostly shaded
+MLBS02159,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,978.65,single bole tree,Live,38.9,25.5,7.7,6.9,Partially shaded
+MLBS02244,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,819.79,single bole tree,Live,15.8,15.5,5.2,4.6,Mostly shaded
+MLBS02200,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,792.64,single bole tree,Live,34.8,24.4,11.6,11.4,Partially shaded
+MLBS02201,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,792.64,single bole tree,Live,44.7,25.8,17.8,13.9,Partially shaded
+MLBS02227,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,819.79,multi-bole tree,Live,18.8,19.7,6.3,4.2,Partially shaded
+MLBS02410,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,791.31,single bole tree,Standing dead,41.3,24,6.3,3.9,Partially shaded
+MLBS02398,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,791.31,single bole tree,Live,43,28.7,9.1,7,Full sun
+MLBS02389,MLBS,QURU,Quercus rubra L.,species,17N,deciduousForest,791.31,single bole tree,Live,53.2,30.8,11.4,11.4,Full sun
+MLBS00172,MLBS,QUERC,Quercus sp.,genus,17N,deciduousForest,1175.1,single bole tree,Standing dead,14.3,6.9,NA,NA,NA
+MLBS00461,MLBS,ROPS,Robinia pseudoacacia L.,species,17N,deciduousForest,1169.65,single bole tree,Live,36.1,19.9,NA,NA,NA
+MLBS01290,MLBS,ROPS,Robinia pseudoacacia L.,species,17N,deciduousForest,1169.25,single bole tree,Live,37.9,20.9,NA,NA,NA
+MLBS01395,MLBS,TSCA,Tsuga canadensis (L.) Carriere,species,17N,deciduousForest,1173.32,single bole tree,Live,27.4,11.6,NA,NA,NA
+MLBS01324,MLBS,TSCA,Tsuga canadensis (L.) Carriere,species,17N,deciduousForest,1169.25,single bole tree,Live,23,11.1,NA,NA,NA
+MLBS01927,MLBS,TSCA,Tsuga canadensis (L.) Carriere,species,17N,deciduousForest,794.5,multi-bole tree,"Live, insect damaged",19.1,12.3,9.7,8.4,Mostly shaded
+MLBS02402,MLBS,TSCA,Tsuga canadensis (L.) Carriere,species,17N,deciduousForest,791.31,single bole tree,"Live, insect damaged",38.4,26.7,8.5,5.4,Mostly shaded

@@ -1,0 +1,16 @@
+fieldName,description,dataType,units
+individualID,Domain-level unique identifier for an individual: NEON.MOD.D##.######,string,NA
+siteID,NEON site code,string,NA
+taxonID,"Species code, based on one or more sources",string,NA
+scientificName,"Scientific name, associated with the taxonID. This is the name of the lowest level taxonomic rank that can be determined",string,NA
+taxonRank,The lowest level taxonomic rank that can be determined for the individual or specimen,string,NA
+utmZone,UTM zone,string,NA
+nlcdClass,National Land Cover Database Vegetation Type Name,string,NA
+elevation,Elevation (in meters) above sea level,real,meter
+growthForm,The growth form classification,string,NA
+plantStatus,"Physical status of individual: live, dead, lost",string,NA
+stemDiameter,Cross-sectional stem diameter,real,centimeter
+height,Highest point of an individual or average height of a patch,real,meter
+maxCrownDiameter,Maximum crown diameter of the individual or patch,real,meter
+ninetyCrownDiameter,Crown diameter perpendicular to maxDiameter,real,meter
+canopyPosition,Vertical status of an individual relative to its neighbors,string,NA

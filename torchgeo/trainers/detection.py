@@ -33,6 +33,10 @@ class ObjectDetectionTask(LightningModule):
                 backbone = resnet_fpn_backbone(
                     self.hyperparams["backbone"], pretrained=True, trainable_layers=3
                 )
+            else:
+                raise ValueError(
+                    f"Backbone type '{self.hyperparams['backbone']}' is not valid."
+                )
 
             # TODO: Make anchor sizes and feat_maps configurable
             anchor_generator = AnchorGenerator(
