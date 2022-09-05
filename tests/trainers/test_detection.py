@@ -8,18 +8,16 @@ import pytest
 from omegaconf import OmegaConf
 from pytorch_lightning import LightningDataModule, Trainer
 
-from torchgeo.datamodules import NASAMarineDebrisDataModule
+from torchgeo.datamodules import IDTReeSDataModule, NASAMarineDebrisDataModule
 from torchgeo.trainers import ObjectDetectionTask
-
-# TODO: IDTrees needs a minimal train_data.csv and itc_rsFile to work
 
 
 class TestObjectDetectionTask:
     @pytest.mark.parametrize(
         "name,classname",
         [
-            #            ("idtrees", IDTReeSDataModule),
-            ("nasa_marine_debris", NASAMarineDebrisDataModule)
+            ("idtrees", IDTReeSDataModule),
+            ("nasa_marine_debris", NASAMarineDebrisDataModule),
         ],
     )
     def test_trainer(self, name: str, classname: Type[LightningDataModule]) -> None:
