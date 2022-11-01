@@ -104,7 +104,7 @@ from .utils import (
     unbind_samples,
 )
 from .vaihingen import Vaihingen2D
-from .xview import XView2
+from .xview import XView, XView2
 from .zuericrop import ZueriCrop
 
 __all__ = (
@@ -190,6 +190,7 @@ __all__ = (
     "USAVars",
     "Vaihingen2D",
     "VHR10",
+    "XView",
     "XView2",
     "ZueriCrop",
     # Base classes
