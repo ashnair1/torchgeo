@@ -257,9 +257,7 @@ class VHR10(NonGeoDataset):
             del sample["label"]
 
         if self.transforms is not None:
-            import pdb; pdb.set_trace()
             sample = self.transforms(sample)
-            import pdb; pdb.set_trace()
 
         return sample
 

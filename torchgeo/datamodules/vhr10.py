@@ -60,6 +60,7 @@ class VHR10DataModule(NonGeoDataModule):
             data_keys=None,
             keepdim=True,
         )
+        self.train_aug.keepdim = True
 
         self.aug = K.AugmentationSequential(
             K.Normalize(mean=self.mean, std=self.std),
@@ -67,6 +68,7 @@ class VHR10DataModule(NonGeoDataModule):
             data_keys=None,
             keepdim=True,
         )
+        self.aug.keepdim = True
 
     def setup(self, stage: str) -> None:
         """Set up datasets.
@@ -77,6 +79,7 @@ class VHR10DataModule(NonGeoDataModule):
         self.kwargs["transforms"] = K.AugmentationSequential(
             K.Resize(self.patch_size), data_keys=None, same_on_batch=True, keepdim=True
         )
+        self.kwargs["transforms"].keepdim = True
         self.dataset = VHR10(**self.kwargs)
         self.train_dataset, self.val_dataset, self.test_dataset = dataset_split(
             self.dataset, self.val_split_pct, self.test_split_pct
