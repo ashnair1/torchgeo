@@ -88,17 +88,17 @@ def collate_fn_detection(batch: list[dict[str, Tensor]]) -> dict[str, Any]:
     .. versionadded:: 0.6
     """
     output: dict[str, Any] = {}
-    output["image"] = [sample["image"] for sample in batch]
-    output["boxes"] = [sample["boxes"].float() for sample in batch]
-    if "labels" in batch[0]:
-        output["labels"] = [sample["labels"] for sample in batch]
+    output["image"] = torch.stack([sample["image"] for sample in batch])
+    output["bbox_xyxy"] = [sample["bbox_xyxy"].float() for sample in batch]
+    if "class" in batch[0]:
+        output["class"] = [sample["class"] for sample in batch]
     else:
-        output["labels"] = [
-            torch.tensor([1] * len(sample["boxes"])) for sample in batch
+        output["class"] = [
+            torch.tensor([1] * len(sample["bbox_xyxy"])) for sample in batch
         ]
 
-    if "masks" in batch[0]:
-        output["masks"] = [sample["masks"] for sample in batch]
+    if "mask" in batch[0]:
+        output["mask"] = [sample["mask"] for sample in batch]
     return output
 
 

@@ -251,13 +251,15 @@ class VHR10(NonGeoDataset):
 
         if sample["label"]["annotations"]:
             sample = self.coco_convert(sample)
-            sample["labels"] = sample["label"]["labels"]
-            sample["boxes"] = sample["label"]["boxes"]
-            sample["masks"] = sample["label"]["masks"]
+            sample["class"] = sample["label"]["labels"]
+            sample["bbox_xyxy"] = sample["label"]["boxes"]
+            sample["mask"] = sample["label"]["masks"].float()
             del sample["label"]
 
         if self.transforms is not None:
+            import pdb; pdb.set_trace()
             sample = self.transforms(sample)
+            import pdb; pdb.set_trace()
 
         return sample
 
@@ -408,10 +410,10 @@ class VHR10(NonGeoDataset):
                 )
 
         image = sample["image"].permute(1, 2, 0).numpy()
-        boxes = sample["boxes"].cpu().numpy()
-        labels = sample["labels"].cpu().numpy()
-        if "masks" in sample:
-            masks = [mask.squeeze().cpu().numpy() for mask in sample["masks"]]
+        boxes = sample["bbox_xyxy"].cpu().numpy()
+        labels = sample["class"].cpu().numpy()
+        if "mask" in sample:
+            masks = [mask.squeeze().cpu().numpy() for mask in sample["mask"]]
 
         n_gt = len(boxes)
 

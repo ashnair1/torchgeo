@@ -51,24 +51,21 @@ class VHR10DataModule(NonGeoDataModule):
 
         self.collate_fn = collate_fn_detection
 
-        self.train_aug = AugPipe(
-            AugmentationSequential(
-                K.Normalize(mean=self.mean, std=self.std),
-                K.Resize(self.patch_size),
-                K.RandomHorizontalFlip(),
-                K.ColorJiggle(0.1, 0.1, 0.1, 0.1, p=0.7),
-                K.RandomVerticalFlip(),
-                data_keys=["image", "boxes", "masks"],
-            ),
-            batch_size,
+        self.train_aug = K.AugmentationSequential(
+            K.Normalize(mean=self.mean, std=self.std),
+            #K.Resize(self.patch_size),
+            K.RandomHorizontalFlip(),
+            K.ColorJiggle(0.1, 0.1, 0.1, 0.1, p=0.7),
+            K.RandomVerticalFlip(),
+            data_keys=None,
+            keepdim=True,
         )
-        self.aug = AugPipe(
-            AugmentationSequential(
-                K.Normalize(mean=self.mean, std=self.std),
-                K.Resize(self.patch_size),
-                data_keys=["image", "boxes", "masks"],
-            ),
-            batch_size,
+
+        self.aug = K.AugmentationSequential(
+            K.Normalize(mean=self.mean, std=self.std),
+            #K.Resize(self.patch_size),
+            data_keys=None,
+            keepdim=True,
         )
 
     def setup(self, stage: str) -> None:
@@ -77,6 +74,9 @@ class VHR10DataModule(NonGeoDataModule):
         Args:
             stage: Either 'fit', 'validate', 'test', or 'predict'.
         """
+        self.kwargs["transforms"] = K.AugmentationSequential(
+            K.Resize(self.patch_size), data_keys=None, same_on_batch=True, keepdim=True
+        )
         self.dataset = VHR10(**self.kwargs)
         self.train_dataset, self.val_dataset, self.test_dataset = dataset_split(
             self.dataset, self.val_split_pct, self.test_split_pct
