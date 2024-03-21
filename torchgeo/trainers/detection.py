@@ -22,6 +22,8 @@ from torchvision.ops import MultiScaleRoIAlign, feature_pyramid_network, misc
 from ..datasets.utils import RGBBandsMissingError, unbind_samples
 from .base import BaseTask
 
+plt.switch_backend("agg")
+
 BACKBONE_LAT_DIM_MAP = {
     "resnet18": 512,
     "resnet34": 512,
@@ -262,8 +264,12 @@ class ObjectDetectionTask(BaseTask):
         """
         x = batch["image"]
         batch_size = x.shape[0]
+        # Get bbox key as it can be one of {"bbox", "bbox_xyxy", "bbox_xywh"}
+        for key in batch.keys():
+            if key in {"bbox", "bbox_xyxy", "bbox_xywh"}:
+                bbox_key = key
         y = [
-            {"boxes": batch["bbox_xyxy"][i], "labels": batch["class"][i]}
+            {"boxes": batch[bbox_key][i], "labels": batch["class"][i]}
             for i in range(batch_size)
         ]
         y_hat = self(x)
@@ -316,8 +322,12 @@ class ObjectDetectionTask(BaseTask):
         """
         x = batch["image"]
         batch_size = x.shape[0]
+        # Get bbox key as it can be one of {"bbox", "bbox_xyxy", "bbox_xywh"}
+        for key in batch.keys():
+            if key in {"bbox", "bbox_xyxy", "bbox_xywh"}:
+                bbox_key = key
         y = [
-            {"boxes": batch["boxes"][i], "labels": batch["labels"][i]}
+            {"boxes": batch[bbox_key][i], "labels": batch["class"][i]}
             for i in range(batch_size)
         ]
         y_hat = self(x)
