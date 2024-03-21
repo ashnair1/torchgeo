@@ -52,22 +52,22 @@ class VHR10DataModule(NonGeoDataModule):
 
         self.train_aug = K.AugmentationSequential(
             K.Normalize(mean=self.mean, std=self.std),
-            #K.Resize(self.patch_size),
+            # K.Resize(self.patch_size),
             K.RandomHorizontalFlip(),
             K.ColorJiggle(0.1, 0.1, 0.1, 0.1, p=0.7),
             K.RandomVerticalFlip(),
             data_keys=None,
             keepdim=True,
         )
-        self.train_aug.keepdim = True
+        self.train_aug.keepdim = True  # type: ignore[attr-defined]
 
         self.aug = K.AugmentationSequential(
             K.Normalize(mean=self.mean, std=self.std),
-            #K.Resize(self.patch_size),
+            # K.Resize(self.patch_size),
             data_keys=None,
             keepdim=True,
         )
-        self.aug.keepdim = True
+        self.aug.keepdim = True  # type: ignore[attr-defined]
 
     def setup(self, stage: str) -> None:
         """Set up datasets.
