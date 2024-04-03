@@ -52,7 +52,6 @@ class VHR10DataModule(NonGeoDataModule):
 
         self.train_aug = K.AugmentationSequential(
             K.Normalize(mean=self.mean, std=self.std),
-            # K.Resize(self.patch_size),
             K.RandomHorizontalFlip(),
             K.ColorJiggle(0.1, 0.1, 0.1, 0.1, p=0.7),
             K.RandomVerticalFlip(),
@@ -62,10 +61,7 @@ class VHR10DataModule(NonGeoDataModule):
         self.train_aug.keepdim = True  # type: ignore[attr-defined]
 
         self.aug = K.AugmentationSequential(
-            K.Normalize(mean=self.mean, std=self.std),
-            # K.Resize(self.patch_size),
-            data_keys=None,
-            keepdim=True,
+            K.Normalize(mean=self.mean, std=self.std), data_keys=None, keepdim=True
         )
         self.aug.keepdim = True  # type: ignore[attr-defined]
 
@@ -76,7 +72,7 @@ class VHR10DataModule(NonGeoDataModule):
             stage: Either 'fit', 'validate', 'test', or 'predict'.
         """
         self.kwargs["transforms"] = K.AugmentationSequential(
-            K.Resize(self.patch_size), data_keys=None, same_on_batch=True, keepdim=True
+            K.Resize(self.patch_size), data_keys=None, keepdim=True
         )
         self.kwargs["transforms"].keepdim = True
         self.dataset = VHR10(**self.kwargs)
