@@ -25,7 +25,7 @@ repos:
           - kornia>=0.6.9
           - lightning>=2.0.9
           - matplotlib>=3.8.1
-          - numpy>=1.22
+          - numpy>=1.22,<2
           - pillow>=10.3.0
           - pytest>=6.1.2
           - pyvista>=0.34.2
