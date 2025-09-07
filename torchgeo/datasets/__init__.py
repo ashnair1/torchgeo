@@ -121,6 +121,7 @@ from .nasa_marine_debris import NASAMarineDebris
 from .nccm import NCCM
 from .nlcd import NLCD
 from .openbuildings import OpenBuildings
+from .openstreetmap import OpenStreetMap
 from .oscd import OSCD
 from .pastis import PASTIS
 from .patternnet import PatternNet
@@ -310,6 +311,7 @@ __all__ = (
     'NonGeoClassificationDataset',
     'NonGeoDataset',
     'OpenBuildings',
+    'OpenStreetMap',
     'PatternNet',
     'Potsdam2D',
     'QuakeSet',
