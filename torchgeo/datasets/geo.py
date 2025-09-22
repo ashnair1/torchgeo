@@ -7,12 +7,17 @@ import abc
 import fnmatch
 import functools
 import glob
+import hashlib
+import json
 import os
+import pathlib
 import re
+import time
 import warnings
 from collections.abc import Callable, Iterable, Sequence
 from datetime import datetime
-from typing import Any, ClassVar, Literal
+from typing import Any, ClassVar, Literal, cast
+from urllib.request import Request, urlopen
 
 import fiona
 import fiona.transform
@@ -1069,6 +1074,197 @@ class VectorDataset(GeoDataset):
         if self.label_name:
             return int(feature['properties'][self.label_name])
         return 1
+
+
+class APIVectorDataset(VectorDataset):
+    """Abstract base class for vector datasets that fetch data from APIs.
+
+    This class provides common functionality for datasets that:
+    - Query remote APIs for vector data
+    - Cache data locally for performance
+    - Handle rate limiting and error recovery
+    - Support multiple API endpoints
+
+    Subclasses should implement:
+    - _build_query(): Build API-specific query
+    - _parse_response(): Parse API response to GeoDataFrame
+    """
+
+    # Rate limiting (minimum seconds between requests)
+    _min_request_interval: ClassVar[float] = 1.0
+    _last_request_time: ClassVar[float] = 0.0
+
+    def __init__(
+        self,
+        bbox: tuple[float, float, float, float],
+        paths: Path | Iterable[Path] = 'data',
+        crs: CRS | None = None,
+        res: float | tuple[float, float] = (0.0001, 0.0001),
+        transforms: Callable[[dict[str, Any]], dict[str, Any]] | None = None,
+        api_endpoints: list[str] | None = None,
+        download: bool = False,
+        **kwargs: Any,
+    ) -> None:
+        """Initialize a new APIVectorDataset instance.
+
+        Args:
+            bbox: bounding box for initial data fetch as (minx, miny, maxx, maxy) in EPSG:4326
+            paths: root directory where dataset will be stored
+            crs: coordinate reference system (CRS) to warp to (defaults to EPSG:4326)
+            res: resolution of the dataset in units of CRS
+            transforms: a function/transform that takes input sample and returns
+                a transformed version
+            api_endpoints: list of API endpoints to try (subclass should provide defaults)
+            download: if True, download dataset and store it in the root directory
+            **kwargs: additional arguments passed to subclass
+
+        Raises:
+            DatasetNotFoundError: if dataset is not found and download is False
+        """
+        self.bbox = bbox
+        self.api_endpoints = api_endpoints or []
+
+        # Handle paths parameter
+        if isinstance(paths, str | pathlib.Path):
+            self.root = pathlib.Path(paths)
+        else:
+            # If it's an iterable, take the first one as root
+            paths_iterable = cast(Iterable[Path], paths)
+            self.root = pathlib.Path(next(iter(paths_iterable)))
+
+        # Create data directory
+        self.root.mkdir(parents=True, exist_ok=True)
+
+        # Download data if requested
+        if download:
+            self._download_data()
+
+        # Check that we have the data file
+        if not self._check_integrity():
+            raise DatasetNotFoundError(self)
+
+        # Initialize parent VectorDataset with the downloaded file
+        data_file = self._get_data_filename()
+        super().__init__(paths=data_file, crs=crs, res=res, transforms=transforms)
+
+    def _get_data_filename(self) -> pathlib.Path:
+        """Get the filename for the cached data file.
+
+        Creates a hash-based filename from query parameters.
+        Subclasses can override to customize caching behavior.
+        """
+        # Create a hash of the query parameters for filename
+        cache_key = self._get_cache_key()
+        cache_str = json.dumps(cache_key, sort_keys=True)
+        cache_hash = hashlib.md5(cache_str.encode()).hexdigest()[:16]
+
+        # Use class name as prefix
+        class_name = self.__class__.__name__.lower()
+        return self.root / f'{class_name}_{cache_hash}.geojson'
+
+    def _get_cache_key(self) -> dict[str, Any]:
+        """Get the cache key parameters for this dataset.
+
+        Subclasses should override to include their specific parameters.
+        """
+        return {'bbox': self.bbox}
+
+    def _check_integrity(self) -> bool:
+        """Check if the dataset file exists."""
+        return self._get_data_filename().exists()
+
+    def _rate_limit(self) -> None:
+        """Implement rate limiting for API requests."""
+        current_time = time.time()
+        elapsed = current_time - APIVectorDataset._last_request_time
+        if elapsed < self._min_request_interval:
+            time.sleep(self._min_request_interval - elapsed)
+        APIVectorDataset._last_request_time = time.time()
+
+    def _download_data(self) -> None:
+        """Download vector data from API and cache locally."""
+        data_file = self._get_data_filename()
+
+        # Skip if already exists
+        if data_file.exists():
+            return
+
+        # Build query
+        query = self._build_query()
+
+        # Try each endpoint until one works
+        last_exception = None
+        for endpoint in self.api_endpoints:
+            try:
+                self._rate_limit()
+
+                # Make request
+                response_data = self._make_request(endpoint, query)
+
+                # Parse response
+                gdf = self._parse_response(response_data)
+
+                # Save to file
+                if len(gdf) > 0:
+                    gdf.to_file(data_file, driver='GeoJSON')
+                else:
+                    # Create empty file to indicate we tried
+                    gpd.GeoDataFrame(
+                        columns=['geometry'], geometry='geometry', crs='EPSG:4326'
+                    ).to_file(data_file, driver='GeoJSON')
+
+                return
+
+            except Exception as e:
+                last_exception = e
+                continue
+
+        # If we get here, all endpoints failed
+        raise RuntimeError(
+            f'All API endpoints failed. Last error: {last_exception}'
+        )
+
+    def _make_request(self, endpoint: str, query: str) -> dict[str, Any]:
+        """Make HTTP request to API endpoint.
+
+        Args:
+            endpoint: API endpoint URL
+            query: Query string to send
+
+        Returns:
+            Parsed JSON response
+
+        Raises:
+            Exception: If request fails
+        """
+        req = Request(endpoint, data=query.encode('utf-8'))
+        req.add_header('Content-Type', 'application/x-www-form-urlencoded')
+
+        with urlopen(req, timeout=30) as response:
+            data = response.read()
+
+        return json.loads(data.decode('utf-8'))
+
+    @abc.abstractmethod
+    def _build_query(self) -> str:
+        """Build API-specific query string.
+
+        Returns:
+            Query string to send to API
+        """
+        ...
+
+    @abc.abstractmethod
+    def _parse_response(self, response_data: dict[str, Any]) -> GeoDataFrame:
+        """Parse API response into a GeoDataFrame.
+
+        Args:
+            response_data: JSON response from API
+
+        Returns:
+            GeoDataFrame containing parsed geometries and properties
+        """
+        ...
 
 
 class NonGeoDataset(Dataset[dict[str, Any]], abc.ABC):

@@ -4,13 +4,8 @@
 """OpenStreetMap dataset."""
 
 import contextlib
-import hashlib
-import json
-import pathlib
-import time
 from collections.abc import Callable, Iterable
-from typing import Any, ClassVar, cast
-from urllib.request import Request, urlopen
+from typing import Any, ClassVar
 
 import geopandas as gpd
 import matplotlib.pyplot as plt
@@ -19,12 +14,11 @@ from geopandas import GeoDataFrame
 from matplotlib.figure import Figure
 from pyproj import CRS
 
-from .errors import DatasetNotFoundError
-from .geo import VectorDataset
+from .geo import APIVectorDataset
 from .utils import Path
 
 
-class OpenStreetMap(VectorDataset):
+class OpenStreetMap(APIVectorDataset):
     """OpenStreetMap dataset.
 
     The `OpenStreetMap <https://www.openstreetmap.org/>`__ dataset provides
@@ -51,10 +45,6 @@ class OpenStreetMap(VectorDataset):
         'https://overpass-api.de/api/interpreter',
         'https://overpass.kumi.systems/api/interpreter',
     ]
-
-    # Rate limiting (minimum seconds between requests)
-    _min_request_interval = 1.0
-    _last_request_time = 0.0
 
     def __init__(
         self,
@@ -101,63 +91,29 @@ class OpenStreetMap(VectorDataset):
         if feature_type is not None and custom_query is not None:
             raise ValueError('Cannot specify both feature_type and custom_query')
 
-        self.bbox = bbox
         self.feature_type = feature_type
         self.custom_query = custom_query
 
-        # Handle paths parameter
-        if isinstance(paths, str | pathlib.Path):
-            self.root = pathlib.Path(paths)
-        else:
-            # If it's an iterable, take the first one as root
-            paths_iterable = cast(Iterable[Path], paths)
-            self.root = pathlib.Path(next(iter(paths_iterable)))
+        # Initialize parent APIVectorDataset
+        super().__init__(
+            bbox=bbox,
+            paths=paths,
+            crs=crs,
+            res=res,
+            transforms=transforms,
+            api_endpoints=self._overpass_endpoints,
+            download=download,
+        )
 
-        # Create data directory
-        self.root.mkdir(parents=True, exist_ok=True)
-
-        # Download data if requested
-        if download:
-            self._download_data()
-
-        # Check that we have the data file
-        if not self._check_integrity():
-            raise DatasetNotFoundError(self)
-
-        # Initialize parent VectorDataset with the downloaded file
-        data_file = self._get_data_filename()
-        super().__init__(paths=data_file, crs=crs, res=res, transforms=transforms)
-
-    def _get_data_filename(self) -> pathlib.Path:
-        """Get the filename for the cached data file."""
-        # Create a hash of the query parameters for filename
-        cache_key = {
+    def _get_cache_key(self) -> dict[str, Any]:
+        """Get the cache key parameters for this dataset."""
+        return {
             'bbox': self.bbox,
             'feature_type': self.feature_type,
             'custom_query': self.custom_query,
         }
-        cache_str = json.dumps(cache_key, sort_keys=True)
-        cache_hash = hashlib.md5(cache_str.encode()).hexdigest()[:16]
 
-        # Use 'custom' as prefix when feature_type is None (using custom_query)
-        filename_prefix = (
-            self.feature_type if self.feature_type is not None else 'custom'
-        )
-        return self.root / f'osm_{filename_prefix}_{cache_hash}.geojson'
-
-    def _check_integrity(self) -> bool:
-        """Check if the dataset file exists."""
-        return self._get_data_filename().exists()
-
-    def _rate_limit(self) -> None:
-        """Implement rate limiting for API requests."""
-        current_time = time.time()
-        elapsed = current_time - OpenStreetMap._last_request_time
-        if elapsed < self._min_request_interval:
-            time.sleep(self._min_request_interval - elapsed)
-        OpenStreetMap._last_request_time = time.time()
-
-    def _build_overpass_query(self) -> str:
+    def _build_query(self) -> str:
         """Build an Overpass QL query for the specified bounding box.
 
         Returns:
@@ -214,57 +170,7 @@ class OpenStreetMap(VectorDataset):
 
         return query.strip()
 
-    def _download_data(self) -> None:
-        """Download OSM data from Overpass API."""
-        data_file = self._get_data_filename()
-
-        # Skip if already exists
-        if data_file.exists():
-            return
-
-        # Build query
-        query = self._build_overpass_query()
-
-        # Try each endpoint until one works
-        last_exception = None
-        for endpoint in self._overpass_endpoints:
-            try:
-                self._rate_limit()
-
-                # Make request
-                req = Request(endpoint, data=query.encode('utf-8'))
-                req.add_header('Content-Type', 'application/x-www-form-urlencoded')
-
-                with urlopen(req, timeout=30) as response:
-                    data = response.read()
-
-                # Parse JSON response
-                osm_data = json.loads(data.decode('utf-8'))
-
-                # Convert to GeoDataFrame
-                gdf = self._parse_overpass_response(osm_data)
-
-                # Save to file
-                if len(gdf) > 0:
-                    gdf.to_file(data_file, driver='GeoJSON')
-                else:
-                    # Create empty file to indicate we tried
-                    gpd.GeoDataFrame(
-                        columns=['geometry'], geometry='geometry', crs='EPSG:4326'
-                    ).to_file(data_file, driver='GeoJSON')
-
-                return
-
-            except Exception as e:
-                last_exception = e
-                continue
-
-        # If we get here, all endpoints failed
-        raise RuntimeError(
-            f'All Overpass API endpoints failed. Last error: {last_exception}'
-        )
-
-    def _parse_overpass_response(self, osm_data: dict[str, Any]) -> GeoDataFrame:
+    def _parse_response(self, osm_data: dict[str, Any]) -> GeoDataFrame:
         """Parse Overpass API response into a GeoDataFrame.
 
         Args:

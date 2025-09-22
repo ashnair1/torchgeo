@@ -47,7 +47,7 @@ class TestOpenStreetMap:
         bbox = (2.3520, 48.8565, 2.3525, 48.8570)
 
         with (
-            patch.object(OpenStreetMap, '_download_data'),
+            patch('torchgeo.datasets.geo.APIVectorDataset._download_data'),
             patch.object(OpenStreetMap, '_check_integrity', return_value=True),
         ):
             # Test different feature types
@@ -72,7 +72,7 @@ class TestOpenStreetMap:
         custom_query = '[out:json]; way["building"]({{bbox}}); out geom;'
 
         with (
-            patch.object(OpenStreetMap, '_download_data'),
+            patch('torchgeo.datasets.geo.APIVectorDataset._download_data'),
             patch.object(OpenStreetMap, '_check_integrity', return_value=True),
         ):
             dataset = OpenStreetMap(
@@ -80,16 +80,17 @@ class TestOpenStreetMap:
             )
             assert dataset.custom_query == custom_query
 
-    def test_build_overpass_query(self) -> None:
+    def test_build_query(self) -> None:
         root = os.path.join('tests', 'data', 'openstreetmap')
         bbox = (2.3520, 48.8565, 2.3525, 48.8570)
 
         with (
-            patch.object(OpenStreetMap, '_download_data'),
+            patch('torchgeo.datasets.geo.APIVectorDataset._download_data'),
             patch.object(OpenStreetMap, '_check_integrity', return_value=True),
+            patch('torchgeo.datasets.geo.VectorDataset.__init__', return_value=None),
         ):
             dataset = OpenStreetMap(bbox=bbox, paths=root, feature_type='building')
-            query = dataset._build_overpass_query()
+            query = dataset._build_query()
             assert 'building' in query
             assert (
                 '48.8565,2.352,48.857,2.3525' in query
@@ -100,7 +101,7 @@ class TestOpenStreetMap:
         bbox = (2.3520, 48.8565, 2.3525, 48.8570)
 
         with (
-            patch.object(OpenStreetMap, '_download_data'),
+            patch('torchgeo.datasets.geo.APIVectorDataset._download_data'),
             patch.object(OpenStreetMap, '_check_integrity', return_value=True),
         ):
             dataset = OpenStreetMap(bbox=bbox, paths=root, feature_type='building')
@@ -130,7 +131,7 @@ class TestOpenStreetMap:
         bbox = (2.3520, 48.8565, 2.3525, 48.8570)
 
         with (
-            patch.object(OpenStreetMap, '_download_data'),
+            patch('torchgeo.datasets.geo.APIVectorDataset._download_data'),
             patch.object(OpenStreetMap, '_check_integrity', return_value=True),
             patch('geopandas.read_file') as mock_read_file,
         ):
@@ -149,7 +150,7 @@ class TestOpenStreetMap:
         bbox = (2.3520, 48.8565, 2.3525, 48.8570)
 
         with (
-            patch.object(OpenStreetMap, '_download_data'),
+            patch('torchgeo.datasets.geo.APIVectorDataset._download_data'),
             patch.object(OpenStreetMap, '_check_integrity', return_value=True),
         ):
             # Test paths as iterable (covers line 108)
@@ -176,7 +177,7 @@ class TestOpenStreetMap:
         bbox = (2.3520, 48.8565, 2.3525, 48.8570)
 
         with (
-            patch.object(OpenStreetMap, '_download_data'),
+            patch('torchgeo.datasets.geo.APIVectorDataset._download_data'),
             patch.object(OpenStreetMap, '_check_integrity', return_value=True),
         ):
             # Test custom query with {{bbox}} replacement (covers lines 158-159)
@@ -184,7 +185,7 @@ class TestOpenStreetMap:
             dataset = OpenStreetMap(
                 bbox=bbox, paths=root, feature_type=None, custom_query=custom_query
             )
-            query = dataset._build_overpass_query()
+            query = dataset._build_query()
             assert '48.8565,2.352,48.857,2.3525' in query
             assert '{{bbox}}' not in query
 
@@ -193,12 +194,12 @@ class TestOpenStreetMap:
         bbox = (2.3520, 48.8565, 2.3525, 48.8570)
 
         with (
-            patch.object(OpenStreetMap, '_download_data'),
+            patch('torchgeo.datasets.geo.APIVectorDataset._download_data'),
             patch.object(OpenStreetMap, '_check_integrity', return_value=True),
         ):
             # Test highway query generation (covers lines 175-182)
             dataset = OpenStreetMap(bbox=bbox, paths=root, feature_type='highway')
-            query = dataset._build_overpass_query()
+            query = dataset._build_query()
             assert 'way["highway"]' in query
             assert 'relation["highway"]' not in query  # highway only uses ways
 
@@ -207,12 +208,12 @@ class TestOpenStreetMap:
         bbox = (2.3520, 48.8565, 2.3525, 48.8570)
 
         with (
-            patch.object(OpenStreetMap, '_download_data'),
+            patch('torchgeo.datasets.geo.APIVectorDataset._download_data'),
             patch.object(OpenStreetMap, '_check_integrity', return_value=True),
         ):
             # Test amenity query generation (covers lines 183-192)
             dataset = OpenStreetMap(bbox=bbox, paths=root, feature_type='amenity')
-            query = dataset._build_overpass_query()
+            query = dataset._build_query()
             assert 'node["amenity"]' in query
             assert 'way["amenity"]' in query
             assert 'relation["amenity"]' in query
@@ -222,12 +223,12 @@ class TestOpenStreetMap:
         bbox = (2.3520, 48.8565, 2.3525, 48.8570)
 
         with (
-            patch.object(OpenStreetMap, '_download_data'),
+            patch('torchgeo.datasets.geo.APIVectorDataset._download_data'),
             patch.object(OpenStreetMap, '_check_integrity', return_value=True),
         ):
             # Test generic feature type query generation (covers lines 194-204, specifically line 196)
             dataset = OpenStreetMap(bbox=bbox, paths=root, feature_type='leisure')
-            query = dataset._build_overpass_query()
+            query = dataset._build_query()
             assert 'node["leisure"]' in query
             assert 'way["leisure"]' in query
             assert 'relation["leisure"]' in query
@@ -238,7 +239,7 @@ class TestOpenStreetMap:
         bbox = (2.3520, 48.8565, 2.3525, 48.8570)
 
         with (
-            patch.object(OpenStreetMap, '_download_data'),
+            patch('torchgeo.datasets.geo.APIVectorDataset._download_data'),
             patch.object(OpenStreetMap, '_check_integrity', return_value=True),
             patch('geopandas.read_file') as mock_read_file,
         ):
@@ -256,7 +257,7 @@ class TestOpenStreetMap:
         bbox = (2.3520, 48.8565, 2.3525, 48.8570)
 
         with (
-            patch.object(OpenStreetMap, '_download_data'),
+            patch('torchgeo.datasets.geo.APIVectorDataset._download_data'),
             patch.object(OpenStreetMap, '_check_integrity', return_value=True),
             patch('geopandas.read_file') as mock_read_file,
         ):
@@ -275,7 +276,7 @@ class TestOpenStreetMap:
         bbox = (2.3520, 48.8565, 2.3525, 48.8570)
 
         with (
-            patch.object(OpenStreetMap, '_download_data'),
+            patch('torchgeo.datasets.geo.APIVectorDataset._download_data'),
             patch.object(OpenStreetMap, '_check_integrity', return_value=True),
         ):
             dataset = OpenStreetMap(bbox=bbox, paths=root, download=False)
@@ -291,13 +292,13 @@ class TestOpenStreetMap:
             # Should take at least the minimum interval (with small tolerance for timing)
             assert end_time - start_time >= dataset._min_request_interval * 0.9
 
-    def test_parse_overpass_response(self) -> None:
+    def test_parse_response(self) -> None:
         """Test parsing of Overpass API response."""
         root = os.path.join('tests', 'data', 'openstreetmap')
         bbox = (2.3520, 48.8565, 2.3525, 48.8570)
 
         with (
-            patch.object(OpenStreetMap, '_download_data'),
+            patch('torchgeo.datasets.geo.APIVectorDataset._download_data'),
             patch.object(OpenStreetMap, '_check_integrity', return_value=True),
         ):
             dataset = OpenStreetMap(bbox=bbox, paths=root, download=False)
@@ -325,7 +326,7 @@ class TestOpenStreetMap:
             }
 
             # Test parsing response (covers lines 262-278)
-            gdf = dataset._parse_overpass_response(mock_osm_response)
+            gdf = dataset._parse_response(mock_osm_response)
 
             assert len(gdf) == 2
             assert 'osm_id' in gdf.columns
@@ -334,20 +335,20 @@ class TestOpenStreetMap:
             assert gdf.iloc[0]['osm_type'] == 'node'
             assert gdf.iloc[0]['amenity'] == 'restaurant'
 
-    def test_parse_overpass_response_empty(self) -> None:
+    def test_parse_response_empty(self) -> None:
         """Test parsing empty Overpass API response."""
         root = os.path.join('tests', 'data', 'openstreetmap')
         bbox = (2.3520, 48.8565, 2.3525, 48.8570)
 
         with (
-            patch.object(OpenStreetMap, '_download_data'),
+            patch('torchgeo.datasets.geo.APIVectorDataset._download_data'),
             patch.object(OpenStreetMap, '_check_integrity', return_value=True),
         ):
             dataset = OpenStreetMap(bbox=bbox, paths=root, download=False)
 
             # Empty response
             empty_response: dict[str, Any] = {'elements': []}
-            gdf = dataset._parse_overpass_response(empty_response)
+            gdf = dataset._parse_response(empty_response)
 
             assert len(gdf) == 0
             assert gdf.crs == 'EPSG:4326'
@@ -358,7 +359,7 @@ class TestOpenStreetMap:
         bbox = (2.3520, 48.8565, 2.3525, 48.8570)
 
         with (
-            patch.object(OpenStreetMap, '_download_data'),
+            patch('torchgeo.datasets.geo.APIVectorDataset._download_data'),
             patch.object(OpenStreetMap, '_check_integrity', return_value=True),
         ):
             dataset = OpenStreetMap(bbox=bbox, paths=root, download=False)
@@ -378,7 +379,7 @@ class TestOpenStreetMap:
         bbox = (2.3520, 48.8565, 2.3525, 48.8570)
 
         with (
-            patch.object(OpenStreetMap, '_download_data'),
+            patch('torchgeo.datasets.geo.APIVectorDataset._download_data'),
             patch.object(OpenStreetMap, '_check_integrity', return_value=True),
         ):
             dataset = OpenStreetMap(bbox=bbox, paths=root, download=False)
@@ -402,7 +403,7 @@ class TestOpenStreetMap:
         bbox = (2.3520, 48.8565, 2.3525, 48.8570)
 
         with (
-            patch.object(OpenStreetMap, '_download_data'),
+            patch('torchgeo.datasets.geo.APIVectorDataset._download_data'),
             patch.object(OpenStreetMap, '_check_integrity', return_value=True),
         ):
             dataset = OpenStreetMap(bbox=bbox, paths=root, download=False)
@@ -429,7 +430,7 @@ class TestOpenStreetMap:
         bbox = (2.3520, 48.8565, 2.3525, 48.8570)
 
         with (
-            patch.object(OpenStreetMap, '_download_data'),
+            patch('torchgeo.datasets.geo.APIVectorDataset._download_data'),
             patch.object(OpenStreetMap, '_check_integrity', return_value=True),
         ):
             dataset = OpenStreetMap(bbox=bbox, paths=root, download=False)
@@ -456,7 +457,7 @@ class TestOpenStreetMap:
         bbox = (2.3520, 48.8565, 2.3525, 48.8570)
 
         with (
-            patch.object(OpenStreetMap, '_download_data'),
+            patch('torchgeo.datasets.geo.APIVectorDataset._download_data'),
             patch.object(OpenStreetMap, '_check_integrity', return_value=True),
             patch('geopandas.read_file') as mock_read_file,
         ):
@@ -479,7 +480,7 @@ class TestOpenStreetMap:
         bbox = (2.3520, 48.8565, 2.3525, 48.8570)
 
         with (
-            patch.object(OpenStreetMap, '_download_data'),
+            patch('torchgeo.datasets.geo.APIVectorDataset._download_data'),
             patch.object(OpenStreetMap, '_check_integrity', return_value=True),
             patch('geopandas.read_file') as mock_read_file,
         ):
@@ -503,7 +504,7 @@ class TestOpenStreetMap:
         bbox = (2.3520, 48.8565, 2.3525, 48.8570)
 
         with (
-            patch.object(OpenStreetMap, '_download_data'),
+            patch('torchgeo.datasets.geo.APIVectorDataset._download_data'),
             patch.object(OpenStreetMap, '_check_integrity', return_value=True),
         ):
             dataset = OpenStreetMap(bbox=bbox, paths=root)
@@ -612,7 +613,7 @@ class TestOpenStreetMap:
         root = os.path.join('tests', 'data', 'openstreetmap')
 
         # Should raise RuntimeError when all endpoints fail (covers line 251)
-        with patch('torchgeo.datasets.openstreetmap.OpenStreetMap._rate_limit'):
+        with patch('torchgeo.datasets.geo.APIVectorDataset._rate_limit'):
             with pytest.raises(RuntimeError, match='All Overpass API endpoints failed'):
                 OpenStreetMap(bbox=bbox, paths=root, download=True)
 

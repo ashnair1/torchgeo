@@ -77,6 +77,7 @@ from .ftw import FieldsOfTheWorld
 from .gbif import GBIF
 from .gbm import GlobalBuildingMap
 from .geo import (
+    APIVectorDataset,
     GeoDataset,
     IntersectionDataset,
     NonGeoClassificationDataset,
@@ -184,6 +185,7 @@ from .zuericrop import ZueriCrop
 
 __all__ = (
     'ADVANCE',
+    'APIVectorDataset',
     'BRIGHTDFC2025',
     'CDL',
     'COWC',
