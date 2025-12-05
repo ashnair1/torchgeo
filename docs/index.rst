@@ -32,15 +32,3 @@ torchgeo
    api/samplers
    api/trainers
    api/transforms
-
-.. toctree::
-   :maxdepth: 1
-   :caption: PyTorch Libraries
-
-   PyTorch <https://pytorch.org/docs>
-   torchaudio <https://pytorch.org/audio>
-   torchtext <https://pytorch.org/text>
-   torchvision <https://pytorch.org/vision>
-   TorchElastic <https://pytorch.org/elastic/>
-   TorchServe <https://pytorch.org/serve>
-   PyTorch on XLA Devices <https://pytorch.org/xla/>
