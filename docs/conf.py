@@ -12,8 +12,6 @@
 import os
 import sys
 
-import pytorch_sphinx_theme
-
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
@@ -50,8 +48,9 @@ extensions = [
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = ['_build']
 
-# Sphinx 4.0+ required for autodoc_typehints_description_traget
-needs_sphinx = '4.0'
+# Sphinx 5.3+ required to allow section titles inside autodoc class docstrings
+# https://github.com/sphinx-doc/sphinx/pull/10887
+needs_sphinx = '5.3'
 
 nitpicky = True
 nitpick_ignore = [
@@ -76,21 +75,54 @@ nitpick_ignore = [
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'pytorch_sphinx_theme'
-html_theme_path = [pytorch_sphinx_theme.get_html_theme_path()]
+html_theme = 'furo'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
-# documentation.
+# documentation: https://pradyunsg.me/furo/.
 html_theme_options = {
-    'collapse_navigation': False,
-    'display_version': True,
-    'logo_only': True,
-    'pytorch_project': 'docs',
+    # Sidebar
+    'sidebar_hide_name': False,
     'navigation_with_keys': True,
-    'analytics_id': 'UA-209075005-1',
+    # Light/dark mode colors
+    'light_css_variables': {
+        'color-brand-primary': '#0071bc',
+        'color-brand-content': '#0071bc',
+    },
+    'dark_css_variables': {
+        'color-brand-primary': '#5b9bd5',
+        'color-brand-content': '#5b9bd5',
+    },
+    # GitHub repository
+    'source_repository': 'https://github.com/torchgeo/torchgeo',
+    'source_branch': 'main',
+    'source_directory': 'docs/',
+    # Footer
+    'footer_icons': [
+        {
+            'name': 'GitHub',
+            'url': 'https://github.com/torchgeo/torchgeo',
+            'html': """
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+                </svg>
+            """,
+            'class': '',
+        },
+        {
+            'name': 'Slack',
+            'url': 'https://torchgeo.slack.com/join/shared_invite/zt-36dtc53qq-D9G35xRSQC702aX7x_PK~A#/shared-invite/email',
+            'html': """
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" style="margin-left: 0.5rem;">
+                    <path d="M3.362 10.11c0 .926-.756 1.681-1.681 1.681S0 11.036 0 10.111C0 9.186.756 8.43 1.68 8.43h1.682v1.68zm.846 0c0-.924.756-1.68 1.681-1.68s1.681.756 1.681 1.68v4.21c0 .924-.756 1.68-1.68 1.68a1.685 1.685 0 0 1-1.682-1.68v-4.21zM5.89 3.362c-.926 0-1.682-.756-1.682-1.681S4.964 0 5.89 0s1.68.756 1.68 1.68v1.682H5.89zm0 .846c.924 0 1.68.756 1.68 1.681S6.814 7.57 5.89 7.57H1.68C.757 7.57 0 6.814 0 5.89c0-.926.756-1.682 1.68-1.682h4.21zm6.749 1.682c0-.926.755-1.682 1.68-1.682s1.68.756 1.68 1.681-.756 1.681-1.68 1.681h-1.681V5.89zm-.848 0c0 .924-.755 1.68-1.68 1.68A1.685 1.685 0 0 1 8.43 5.89V1.68C8.43.757 9.186 0 10.11 0c.926 0 1.681.756 1.681 1.68v4.21zm-1.681 6.748c.926 0 1.682.756 1.682 1.681S11.036 16 10.11 16s-1.681-.756-1.681-1.68v-1.682h1.68zm0-.847c-.924 0-1.68-.755-1.68-1.68 0-.925.756-1.681 1.68-1.681h4.21c.924 0 1.68.756 1.68 1.68 0 .926-.756 1.681-1.68 1.681h-4.21z"/>
+                </svg>
+            """,
+            'class': '',
+        },
+    ],
 }
 
+html_logo = os.path.join('..', 'logo', 'logo-color.svg')
 html_favicon = os.path.join('..', 'logo', 'favicon.ico')
 
 html_static_path = ['_static']
@@ -132,8 +164,3 @@ intersphinx_mapping = {
 nbsphinx_execute = 'never'
 with open(os.path.join('tutorials', 'prolog.rst.jinja')) as f:
     nbsphinx_prolog = f.read()
-
-# Disables requirejs in nbsphinx to enable compatibility with the pytorch_sphinx_theme
-# See more information here https://github.com/spatialaudio/nbsphinx/issues/599
-# NOTE: This will likely break nbsphinx widgets
-nbsphinx_requirejs_path = ''
