@@ -12,7 +12,7 @@
 import os
 import sys
 
-import pytorch_sphinx_theme
+import pytorch_sphinx_theme2
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -48,10 +48,10 @@ extensions = [
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = ['_build']
+exclude_patterns = ['_build*']
 
-# Sphinx 4.0+ required for autodoc_typehints_description_traget
-needs_sphinx = '4.0'
+# Sphinx 5.3+ required for Python 3.11 and nitpicky mode fixes
+needs_sphinx = '5.3'
 
 nitpicky = True
 nitpick_ignore = [
@@ -76,8 +76,7 @@ nitpick_ignore = [
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'pytorch_sphinx_theme'
-html_theme_path = [pytorch_sphinx_theme.get_html_theme_path()]
+html_theme = 'pytorch_sphinx_theme2'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -85,12 +84,28 @@ html_theme_path = [pytorch_sphinx_theme.get_html_theme_path()]
 html_theme_options = {
     'collapse_navigation': False,
     'display_version': True,
-    'logo_only': True,
     'pytorch_project': 'docs',
-    'navigation_with_keys': True,
     'analytics_id': 'UA-209075005-1',
+
+    # GitHub repository
+    'github_url': 'https://github.com/torchgeo/torchgeo',
+
+    # Navigation - move banner to very top
+    'navbar_align': 'left',
+    'navbar_start': ['navbar-logo'],
+    'navbar_center': ['navbar-nav'],
+    'navbar_end': ['theme-switcher', 'navbar-icon-links'],
+
+    # Header and Footer control
+    'show_lf_header': False,
+    'show_lf_footer': True,
+
+    # Remove problematic templates from article layout
+    'article_header_end': [],
+    'article_footer_items': [],
 }
 
+html_logo = os.path.join('..', 'logo', 'logo-color.svg')
 html_favicon = os.path.join('..', 'logo', 'favicon.ico')
 
 html_static_path = ['_static']

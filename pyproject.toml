@@ -122,12 +122,10 @@ docs = [
     "ipywidgets>=7",
     # nbsphinx 0.8.5 fixes bug with nbformat attributes
     "nbsphinx>=0.8.5",
-    # release versions missing files, must install from master
-    "pytorch-sphinx-theme",
-    # sphinx 4+ required for autodoc_typehints_description_target
-    # sphinx 6+ is incompatible with pytorch-sphinx-theme
-    # https://github.com/pytorch/pytorch_sphinx_theme/issues/175
-    "sphinx>=4,<6",
+    # pytorch-sphinx-theme2 from git branch (pydata-based theme)
+    "pytorch-sphinx-theme2 @ git+https://github.com/pytorch/pytorch_sphinx_theme.git@pytorch_sphinx_theme2",
+    # sphinx 5.3+ required for Python 3.11 and nitpicky mode fixes
+    "sphinx>=5.3",
 ]
 models = [
     # microsoft-aurora 1.6+ required for timm 1.0+ support
