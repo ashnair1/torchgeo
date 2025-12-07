@@ -122,8 +122,8 @@ docs = [
     "ipywidgets>=7",
     # nbsphinx 0.8.5 fixes bug with nbformat attributes
     "nbsphinx>=0.8.5",
-    # pytorch-sphinx-theme2 from git branch (pydata-based theme)
-    "pytorch-sphinx-theme2 @ git+https://github.com/pytorch/pytorch_sphinx_theme.git@pytorch_sphinx_theme2",
+    # pytorch-sphinx-theme2 0.1.0+ required (pydata-based theme)
+    "pytorch-sphinx-theme2>=0.1.0",
     # sphinx 5.3+ required for Python 3.11 and nitpicky mode fixes
     "sphinx>=5.3",
 ]
