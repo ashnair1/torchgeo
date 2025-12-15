@@ -109,7 +109,7 @@ html_logo = os.path.join('..', 'logo', 'logo-color.svg')
 html_favicon = os.path.join('..', 'logo', 'favicon.ico')
 
 html_static_path = ['_static']
-html_css_files = ['badge-height.css', 'notebook-prompt.css', 'table-scroll.css']
+html_css_files = ['badge-height.css', 'notebook-prompt.css', 'table-scroll.css', 'navbar-top.css']
 
 # -- Extension configuration -------------------------------------------------
 
