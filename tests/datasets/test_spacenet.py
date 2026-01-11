@@ -13,6 +13,7 @@ from _pytest.fixtures import SubRequest
 from pytest import MonkeyPatch
 
 from torchgeo.datasets import DatasetNotFoundError, SpaceNet, SpaceNet1, SpaceNet6
+from torchgeo.datasets.spacenet.spacenet9 import SpaceNet9
 from torchgeo.datasets.utils import Executable
 
 
@@ -89,3 +90,70 @@ class TestSpaceNet:
         directory_glob = os.path.join('**', 'AOI_{aoi}_*', '{product}')
         monkeypatch.setattr(dataset, 'directory_glob', directory_glob)
         dataset._list_files(aoi=1)
+
+
+class TestSpaceNet9:
+    @pytest.fixture(params=['train', 'test'])
+    def dataset(
+        self, request: SubRequest, monkeypatch: MonkeyPatch, tmp_path: Path
+    ) -> SpaceNet9:
+        split = request.param
+        url = os.path.join(
+            'tests', 'data', 'spacenet', 'spacenet9', 'spacenet9', '{tarball}'
+        )
+        monkeypatch.setattr(SpaceNet9, 'url', url)
+        md5s = {
+            'train': '454103dedee51abcaa151a4650f4492a',
+            'test': '04bf832c8a655feae27056e382efda10',
+        }
+        monkeypatch.setattr(SpaceNet9, 'md5s', md5s)
+        return SpaceNet9(root=tmp_path, split=split, download=True, checksum=True)
+
+    def test_getitem(self, dataset: SpaceNet9) -> None:
+        sample = dataset[0]
+        assert isinstance(sample, dict)
+        assert 'optical' in sample
+        assert 'sar' in sample
+        assert isinstance(sample['optical'], torch.Tensor)
+        assert isinstance(sample['sar'], torch.Tensor)
+        # Check tiepoints for training split
+        if dataset.split == 'train':
+            assert 'tiepoints' in sample
+            assert isinstance(sample['tiepoints'], torch.Tensor)
+
+    def test_len(self, dataset: SpaceNet9) -> None:
+        assert len(dataset) == 2  # 2 AOIs
+        assert len(dataset.optical_images) == 2
+        assert len(dataset.sar_images) == 2
+
+    def test_tiepoints(self, dataset: SpaceNet9) -> None:
+        # Tiepoints only exist for train split
+        if dataset.split == 'train':
+            assert len(dataset.tiepoints) == 2  # 2 AOIs
+        else:
+            assert len(dataset.tiepoints) == 0
+
+    def test_already_extracted(self, dataset: SpaceNet9) -> None:
+        SpaceNet9(root=dataset.root, split=dataset.split)
+
+    def test_already_downloaded(self, dataset: SpaceNet9) -> None:
+        # Remove extracted files but keep tarball
+        foldername = 'publictest' if dataset.split == 'test' else dataset.split
+        extracted_path = os.path.join(dataset.root, 'spacenet9', foldername)
+        if os.path.exists(extracted_path):
+            shutil.rmtree(extracted_path)
+        SpaceNet9(root=dataset.root, split=dataset.split)
+
+    def test_not_downloaded(self, tmp_path: Path) -> None:
+        with pytest.raises(DatasetNotFoundError, match='Dataset not found'):
+            SpaceNet9(root=os.path.join(tmp_path, 'dummy'))
+
+    def test_plot(self, dataset: SpaceNet9) -> None:
+        sample = dataset[0]
+        dataset.plot(sample, show_titles=False)
+        plt.close()
+        dataset.plot(sample, suptitle='Test')
+        plt.close()
+        # Test with tiepoints disabled
+        dataset.plot(sample, show_tiepoints=False)
+        plt.close()
