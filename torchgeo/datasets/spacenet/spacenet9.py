@@ -29,14 +29,34 @@ from torchgeo.datasets.utils import (
 class SpaceNet9(NonGeoDataset):
     r"""SpaceNet9: Cross-Modal Satellite Imagery Registration.
 
-    `SpaceNet 9 <https://spacenet.ai/sn9-challenge/>`_ is a dataset focusing on
-    co-registering of optical and SAR imagery.
+    `SpaceNet 9 <https://spacenet.ai/sn9-challenge/>`_ is a dataset for cross-modal
+    satellite imagery registration, focusing on aligning optical and SAR imagery
+    in earthquake-affected regions for disaster response applications.
+
+    The dataset contains high-resolution imagery from:
+
+    * Optical: Maxar Open Data Program (3-channel RGB, 0.3-0.5m resolution)
+    * SAR: UMBRA satellite (single-channel, 0.3-0.5m resolution)
+
+    Manually labeled tie-points are provided for training to evaluate registration
+    quality. The challenge involves computing pixel-wise spatial transformations to
+    align imagery across modalities for downstream tasks like damage assessment and
+    change detection.
+
+    Dataset details:
+
+    * Train split: 3 samples (AOI 02: 2 images, AOI 03: 1 image)
+    * Test split: 2 samples (AOI 02 and 03, one each)
+    * Each sample includes optical image, SAR image, and tie-points (train only)
+    * Images have width and height < 13000 pixels
 
     If you use this dataset in your research, please cite the following paper:
 
     * https://elib.dlr.de/209238/1/IGARSS_24_SN9%20%285%29.pdf
 
-    .. versionadded:: 0.7
+    Challenge details: https://www.topcoder.com/challenges/9620f66a-767e-40ac-81d5-5cc61274b186
+
+    .. versionadded:: 0.9
     """
 
     url = 'https://spacenet-dataset.s3.us-east-1.amazonaws.com/spacenet/SN9_cross-modal/{tarball}'

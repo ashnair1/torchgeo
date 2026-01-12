@@ -103,8 +103,8 @@ class TestSpaceNet9:
         )
         monkeypatch.setattr(SpaceNet9, 'url', url)
         md5s = {
-            'train': '454103dedee51abcaa151a4650f4492a',
-            'test': '04bf832c8a655feae27056e382efda10',
+            'train': '0c4474cc4478155ea7c84579c0c11cf3',
+            'test': '66e1e5d39d26ebce0a63112caf2bafde',
         }
         monkeypatch.setattr(SpaceNet9, 'md5s', md5s)
         return SpaceNet9(root=tmp_path, split=split, download=True, checksum=True)
@@ -122,14 +122,16 @@ class TestSpaceNet9:
             assert isinstance(sample['tiepoints'], torch.Tensor)
 
     def test_len(self, dataset: SpaceNet9) -> None:
-        assert len(dataset) == 2  # 2 AOIs
-        assert len(dataset.optical_images) == 2
-        assert len(dataset.sar_images) == 2
+        # Train has 3 samples (02_01, 02_02, 03_01), test has 2 (02, 03)
+        expected_len = 3 if dataset.split == 'train' else 2
+        assert len(dataset) == expected_len
+        assert len(dataset.optical_images) == expected_len
+        assert len(dataset.sar_images) == expected_len
 
     def test_tiepoints(self, dataset: SpaceNet9) -> None:
-        # Tiepoints only exist for train split
+        # Tiepoints only exist for train split (3 samples)
         if dataset.split == 'train':
-            assert len(dataset.tiepoints) == 2  # 2 AOIs
+            assert len(dataset.tiepoints) == 3
         else:
             assert len(dataset.tiepoints) == 0
 

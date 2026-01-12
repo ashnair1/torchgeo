@@ -54,21 +54,30 @@ if os.path.exists(dataset_id):
 train_path = os.path.join(dataset_id, 'train')
 os.makedirs(train_path, exist_ok=True)
 
-# Generate train files (AOI 02 and 03)
-for aoi in ['02', '03']:
+# Generate train files matching real dataset structure:
+# - AOI 02: 2 samples (02_optical_train_01.tif, 02_optical_train_02.tif)
+# - AOI 03: 1 sample (03_optical_train_01.tif)
+# Total: 3 samples
+train_samples = [
+    ('02', '01'),
+    ('02', '02'),
+    ('03', '01'),
+]
+
+for aoi, sample_id in train_samples:
     # Create optical image
-    optical_file = os.path.join(train_path, f'aoi_{aoi}_optical_train_.tif')
+    optical_file = os.path.join(train_path, f'{aoi}_optical_train_{sample_id}.tif')
     with rasterio.open(optical_file, 'w', **profile) as src:
         src.write(Z, 1)
 
     # Create SAR image
-    sar_file = os.path.join(train_path, f'aoi_{aoi}_sar_train_.tif')
+    sar_file = os.path.join(train_path, f'{aoi}_sar_train_{sample_id}.tif')
     with rasterio.open(sar_file, 'w', **profile) as src:
         src.write(Z, 1)
 
     # Create tiepoints CSV matching real SpaceNet9 format
     # Format: sar_row,sar_col,optical_row,optical_col
-    tiepoints_file = os.path.join(train_path, f'aoi_{aoi}_tiepoints_train_.csv')
+    tiepoints_file = os.path.join(train_path, f'{aoi}_tiepoints_train_{sample_id}.csv')
     tiepoints_data = pd.DataFrame({
         'sar_row': [0.4, 1.6],      # sar_y
         'sar_col': [0.6, 1.4],      # sar_x
@@ -81,15 +90,18 @@ for aoi in ['02', '03']:
 test_path = os.path.join(dataset_id, 'publictest')
 os.makedirs(test_path, exist_ok=True)
 
-# Generate test files (AOI 02 and 03)
+# Generate test files matching real dataset structure:
+# - AOI 02: 1 sample (02_optical_publictest.tif)
+# - AOI 03: 1 sample (03_optical_publictest.tif)
+# Total: 2 samples
 for aoi in ['02', '03']:
-    # Create optical image (note: no underscore after 'publictest')
-    optical_file = os.path.join(test_path, f'aoi_{aoi}_optical_publictest.tif')
+    # Create optical image
+    optical_file = os.path.join(test_path, f'{aoi}_optical_publictest.tif')
     with rasterio.open(optical_file, 'w', **profile) as src:
         src.write(Z, 1)
 
     # Create SAR image
-    sar_file = os.path.join(test_path, f'aoi_{aoi}_sar_publictest.tif')
+    sar_file = os.path.join(test_path, f'{aoi}_sar_publictest.tif')
     with rasterio.open(sar_file, 'w', **profile) as src:
         src.write(Z, 1)
 
