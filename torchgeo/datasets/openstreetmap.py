@@ -160,15 +160,8 @@ class OpenStreetMap(VectorDataset):
             raise TypeError('classes must be a non-empty list')
 
         for i, class_def in enumerate(classes):
-            if not isinstance(class_def, dict):
-                raise TypeError(f'Class {i} must be a dictionary')
             if 'name' not in class_def or 'selector' not in class_def:
                 raise ValueError(f'Class {i} must have "name" and "selector" keys')
-            if not isinstance(class_def['selector'], list):
-                raise TypeError(f'Class {i} selector must be a list')
-            for j, selector in enumerate(class_def['selector']):
-                if not isinstance(selector, dict):
-                    raise TypeError(f'Class {i} selector {j} must be a dictionary')
 
     def _get_data_filename(self) -> pathlib.Path:
         """Get the filename for the cached data file.
@@ -244,6 +237,7 @@ class OpenStreetMap(VectorDataset):
                 headers = {
                     'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
                     'Accept': 'application/json',
+                    'User-Agent': 'torchgeo',
                 }
                 payload = {'data': query}
 
